@@ -1,0 +1,272 @@
+﻿<h1>Морфологический<br /> разбор</h1>
+<div class="form-group col-xs-12 lotte  js-syllMirror-chislo" style="display:none">
+    <label>Число</label>
+    <select class="form-control" name="Число">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">В единственном</option>
+        <option value="2">Во множественном</option>
+        <option value="3" id="propustit">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-deistvit" style="display:none">
+    <label>Действительность</label>
+    <select class="form-control" name="Действительность">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Действительное</option>
+        <option value="2">Страдательное</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-drob" style="display:none">
+    <label>Дробность</label>
+    <select class="form-control" name="Дробность">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Целое</option>
+        <option value="2">Дробное</option>
+        <option value="3">Собирательное</option>
+        <option value="4" id="propustitDrobnost">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-forma" style="display:none">
+    <label>Форма</label>
+    <select class="form-control" name="Форма">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Полная</option>
+        <option value="2">Краткая</option>
+        <option value="3" id="propustitForma">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-kolich" style="display:none">
+    <label>Разряд по значению</label>
+    <select class="form-control" name="Разряд по значению">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Количественное</option>
+        <option value="2">Порядковое</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-lico" style="display:none">
+    <label>Лицо</label>
+    <select class="form-control" name="Лицо">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">В 1-ом</option>
+        <option value="2">Во 2-ом</option>
+        <option value="3">В 3-ем</option>
+        <option value="4">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-naklon" style="display:none">
+    <label>Наклонение</label>
+    <select class="form-control" name="Наклонение">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Изъявительное</option>
+        <option value="2">Условное</option>
+        <option value="3">Повелительное</option>
+        <option value="4">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-naricat" style="display:none">
+    <label>Нарицательное/собственное</label>
+    <select class="form-control" name="Нарицательное/собственное">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Нарицательное</option>
+        <option value="2">Собственное</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-neizmen" style="display:none">
+    <label>Изменяемость</label>
+    <select class="form-control" name="Изменяемость">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Изменяемое</option>
+        <option value="2">Неизменяемое</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-odush" style="display:none">
+    <label>Одушевленность</label>
+    <select class="form-control" name="Одушевленность">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Одушевленное</option>
+        <option value="2">Неодушевленное</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-padezh" style="display:none">
+    <label>Падеж</label>
+    <select class="form-control" name="Падеж">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">В именительном</option>
+        <option value="2">В родительном</option>
+        <option value="3">В дательном</option>
+        <option value="4">В винительном</option>
+        <option value="5">В творительном</option>
+        <option value="6">В предложном</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-proizvodnost" style="display:none">
+    <label>Производность</label>
+    <select class="form-control" name="Производность">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Производный</option>
+        <option value="2">Непроизводный</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-prost" style="display:none">
+    <label>Разряд по структуре</label>
+    <select class="form-control" name="Разряд по структуре">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Простое</option>
+        <option value="2">Составное</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-razryad" style="display:none">
+    <label>Разряд</label>
+    <select class="form-control" name="Разряд">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Качественное</option>
+        <option value="2">Относительное</option>
+        <option value="3">Притяжательное</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-razryadznach" style="display:none">
+    <label>Разряд</label>
+    <select class="form-control" name="Разряд">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Личное</option>
+        <option value="2">Возвратное</option>
+        <option value="3">Вопросительное</option>
+        <option value="4">Относительное</option>
+        <option value="5">Неопределнное</option>
+        <option value="6">Отрицательное</option>
+        <option value="7">Притяжательное</option>
+        <option value="8">Указательное</option>
+        <option value="9">Определительное</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-rod" style="display:none">
+    <label>Род</label>
+    <select class="form-control" name="Род">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Мужской</option>
+        <option value="2">Женский</option>
+        <option value="3">Средний</option>
+        <option value="4" id="obschii">Общий</option>
+        <option value="5" id="propustitRod">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-sklonen" style="display:none">
+    <label>Склонение</label>
+    <select class="form-control" name="Склонение">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Первое</option>
+        <option value="2">Второе</option>
+        <option value="3">Третье</option>
+        <option value="4">Разносклоняемое</option>
+        <option value="5">Несклоняемое</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-sochinit" style="display:none">
+    <label>Разряд по значению</label>
+    <select class="form-control" name="Разряд по значению">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Cочинительный</option>
+        <option value="2">Подчинительный</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-spryazh" style="display:none">
+    <label>Спряжение</label>
+    <select class="form-control" name="Спряжение">
+        <option disabled selected value> -- Выберите спряжение -- </option>
+        <option value="1">Первое</option>
+        <option value="2">Второе</option>
+        <option value="3" id="propustitRaznospryagaemyi">Разноспрягаемый</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-stepsrav" style="display:none">
+    <label>Степень сравнения (если есть)</label>
+    <select class="form-control" name="Степень сравнения">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Сравнительная</option>
+        <option value="2">Превосходная</option>
+        <option value="3" id="polozhit">Положительная</option>
+        <option value="4" id="propustitStepenSravneniya">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-vid" style="display:none">
+    <label>Вид</label>
+    <select class="form-control" name="Вид">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Cовершенный</option>
+        <option value="2">Несовершенный</option>
+        <option value="3" id="dvyvidovoi">Двувидовой</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-vozvrat" style="display:none">
+    <label>Возвратность</label>
+    <select class="form-control" name="Возвратность">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Возвратный</option>
+        <option value="2">Невозвратный</option>
+        <option value="3" id="propustitVozvratnost">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-vremya" style="display:none">
+    <label>Время</label>
+    <select class="form-control" name="Время">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">В настоящем</option>
+        <option value="2">В прошедшем</option>
+        <option value="3">В будущем</option>
+        <option value="4" id="propustitVremya">Пропустить</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-znacobraz" style="display:none"> 
+    <label>Знакобраз</label>  
+    <select class="form-control" name="Знакобраз">    
+        <option disabled selected value> -- Выберите -- </option> 
+        <option value="1">Пространственные</option>   
+        <option value="2">Временные</option>  
+        <option value="3">Причинные</option>       
+        <option value="4">Целевые</option>      
+        <option value="5">Образа действия</option>   
+        <option value="6">Дополнительные</option> 
+    </select>
+ </div>
+<div class="form-group col-xs-12 lotte js-syllMirror-perehod" style="display:none">
+    <label>Переходность</label>
+    <select class="form-control" name="Переходность">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Переходный</option>
+        <option value="2">Непереходный</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-upotrebls" style="display:none">
+    <label>Употребляется с</label>
+    <select class="form-control" name="Употребляется с">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">родительным падежом</option>
+        <option value="2">дательным падежом</option>
+        <option value="3">винительным падежом</option>
+        <option value="4">творительным падежом</option>
+        <option value="5">предложным падежом</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-razryadpoznach" style="display:none">
+    <label>Разряд по значению</label>
+    <select class="form-control" name="Разряд по значению">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Формообразующая</option>
+        <option value="2">Отрицательная</option>
+        <option value="3">Модальная</option>
+    </select>
+</div>
+<div class="form-group col-xs-12 lotte js-syllMirror-podrazryad" style="display:none">
+    <label>Подразряд</label>
+    <select class="form-control" name="Подразряд">
+        <option disabled selected value> -- Выберите -- </option>
+        <option value="1">Выделительно-ограничительная</option>
+        <option value="2">Указательная</option>
+        <option value="3">Восклицательная</option>
+        <option value="4">Вопросительная</option>
+        <option value="5">Усилительная</option>
+        <option value="6">Сомнение</option>
+        <option value="7">Смягчение требований</option>
+        <option value="8">Пропустить</option>
+    </select>
+</div>

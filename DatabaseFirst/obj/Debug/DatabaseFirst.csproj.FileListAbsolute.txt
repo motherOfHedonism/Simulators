@@ -1,0 +1,379 @@
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\chead\OneDrive\Документы\Visual Studio 2015\Projects\AI\training\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\trainings-master\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master\DatabaseFirst\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\trainings-master — копия — копия — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion2 — копия (2)\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion3 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_2\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_3\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_4\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_5\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_6 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_9\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_10 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_11 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_12 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_14\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_16 — копия\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_17\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_18\DatabaseFirst\obj\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\DatabaseFirst.dll.config
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\DatabaseFirst.pdb
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\obj\Debug\DatabaseFirst.csprojAssemblyReference.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\obj\Debug\DatabaseFirst.csproj.CopyComplete
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\obj\Debug\DatabaseFirst.dll
+C:\Users\Nastya\Desktop\Новая папка\Диплом\lastversion5_14_21\DatabaseFirst\obj\Debug\DatabaseFirst.pdb

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DatabaseFirst.wordsListAll>
+@{
+    //ViewBag.Title = "Данные пользователей";
+}
+@using System.Web.Mvc.Html;
+@*Управление тренажёрами*@
+
+    @if (User.IsInRole("Владелец"))
+    {
+            <div class="row">
+        <h1 style="padding-left:12px;text-align:center">@ViewData["id_tr_name"]</h1>
+    </div>
+        <div class="row">
+            <div class="col-md-10">
+                @*  @Html.ActionLink("<< Назад", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+            </div>
+        </div>
+
+        <div class="panel panel-primary" style="margin-bottom:1%">
+            <div class="panel-heading" colspan="4" style="text-align:center">Упражнения</div>
+            <table class="table table-striped" id="exampleTable">
+
+                @if (Model.Count() == 0)
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">Упражнений нет</td>
+                    </tr>
+                }
+
+                else
+                {
+
+                    @Html.Partial("_table")
+                }
+            </table>
+        </div>
+        <div style="text-align:right; margin-right:1.5%" class="bottom">
+            @Html.ActionLink("Добавить", "Create", "Teacher", new { id_tr = ViewData["id_tr"] }, new { @class = "btn btn-primary" })
+        </div>
+    }
+    else
+    {
+        <div style="text-align:center">
+            <h1>Доступ запрещён.</h1>
+            <script>var strLocation = "http://" + location.host + "/Account/Login?ReturnUrl=%2FManage%2FManageLogins"; setTimeout('location.replace(strLocation)', 1000);</script>
+        </div>
+    }

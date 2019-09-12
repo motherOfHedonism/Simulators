@@ -1,0 +1,48 @@
+﻿@model training.Models.IndexViewModel
+@using Microsoft.AspNet.Identity;
+@{
+    ViewBag.Title = "Управление";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Изменение параметров учетной записи</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Смена пароля", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Создать", "SetPassword")
+            }
+            ]
+        </dd>
+        <dd>
+            @Html.ActionLink("Дневник", "Student", "Table", new { id = User.Identity.GetUserId() }, null)
+        </dd>
+        @if (User.IsInRole("Учитель") || User.IsInRole("Владелец"))
+        {
+            <dd>
+                @Html.ActionLink("Дневники", "Teacher", "Table", new { id = User.Identity.GetUserId() }, null)
+            </dd>
+            <dd>
+                @Html.ActionLink("Управление транажёрами", "Index", "Teacher")
+            </dd>
+            <dd>
+                @Html.ActionLink("Назначение учеников", "Index", "Admin")
+            </dd>
+
+        }
+        @if (User.IsInRole("admin"))
+        {
+
+        }
+
+    </dl>
+</div>

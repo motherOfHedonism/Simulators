@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DatabaseFirst.training>
+
+@{
+    ViewBag.Title = "Training";
+}
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_LoginPartial")
+    </div>
+</div>
+        <div style="text-align:center; color: #638289; margin-bottom:3%"><h1>Раздел находится в разработке.</h1></div>
+<ul class="c-tile-list">
+    @foreach (var item in Model)
+    {
+        <li class="c-tile-list__item">
+            <article class="c-article-tile t-sass">
+                <!-- шапка -->
+                <div class="c-article-tile__header">
+                    <div class="c-article-tile__category">
+                        @Html.ActionLink(@item.name, "ViewTraining", new { id_tr = item.id })
+                    </div>
+                </div>
+                <div class="c-article-tile__body">
+                    <div class="c-article-tile__title" itemprop="headline">
+
+                        @item.description
+
+                    </div>
+                </div>
+            </article>
+        </li>
+
+    }
+</ul>
+
+

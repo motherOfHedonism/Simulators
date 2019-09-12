@@ -1,0 +1,49 @@
+﻿@model IEnumerable<DatabaseFirst.progressUser>
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Дневник";
+}
+@if (User.Identity.GetUserId() == (string)ViewData["id"])
+{
+    <div class="row">
+        <div class="col-md-10">
+            @Html.ActionLink("<< Назад", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </div>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-10">
+            @Html.ActionLink("<< Назад", "Teacher", "Table", new { id = User.Identity.GetUserId() }, null)
+        </div>
+    </div>
+}
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Упражнение</th>
+                <th scope="col">Оценка</th>
+                <th scope="col">Дополнительная оценка</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@item.word</td>
+                    <td>@item.mark</td>
+                    @if (item.mark_add != null)
+                    {
+                        <td>@item.mark_add</td>
+                    }
+                    else
+                    {
+                        <td>-</td>
+                    }
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>

@@ -1,0 +1,201 @@
+﻿<!--Import jQuery before export.js-->
+
+@Scripts.Render("~/Scripts/teacher/jquery-2.1.1.min.js")
+
+
+<!--Data Table-->
+@*<script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/jquery.dataTables.min.js")
+@*<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/dataTables.buttons.min.js")
+<!--Export table buttons-->
+@*<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/jszip.min.js")
+@*<script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/pdfmake.min.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/pdfmake.min.js")
+@*<script type="text/javascript" src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.24/build/vfs_fonts.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/vfs_fonts.js")
+@*<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/buttons.html5.min.js")
+@*<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js"></script>*@
+@Scripts.Render("~/Scripts/teacher/buttons.print.min.js")
+
+
+<!--Export table button CSS-->
+@*<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">*@
+<link rel="stylesheet" href="~/Content/jquery.dataTables.min.css">
+@*<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">*@
+<link rel="stylesheet" href="~/Content/buttons.dataTables.min.css">
+
+@{
+    int i = 1; }
+
+<thead>
+    <tr>
+        <th>№</th>
+        <th>Исходное слово</th>
+        <th>Слово-ответ</th>
+        @if (@ViewData["level"].ToString() == "2" || @ViewData["level"].ToString() == "0")
+        {
+            <th>Слово-ответ</th>
+            <th>Слово-ответ</th>
+            <th>Слово-ответ</th>
+        }
+        <th></th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>@item.word1</td>*@
+            <td>@i</td>
+            <td>@item.word (@item.word_name)</td>
+            <td>@item.answer1_word (@item.answer1_name)</td>
+            @if (item.answer2_id_morphology != null)
+            {
+                <td>@item.answer2_word (@item.answer2_name)</td>
+            }
+            else if (@ViewData["level"].ToString() == "2" || (@ViewData["level"].ToString() == "0"))
+            {
+                <td></td>}
+            @if ((@ViewData["level"].ToString() == "2" && item.answer3_id_morphology != null) || (@ViewData["level"].ToString() == "0" && item.answer3_id_morphology != null))
+            {
+                <td>@item.answer3_word (@item.answer3_name)</td>
+            }
+            else if (@ViewData["level"].ToString() == "2" || (@ViewData["level"].ToString() == "0"))
+            {
+                <td></td>}
+            @if ((@ViewData["level"].ToString() == "2" && item.answer4_id_morphology != null) || (@ViewData["level"].ToString() == "0" && item.answer4_id_morphology != null))
+            {
+                <td>@item.answer4_word (@item.answer4_name)</td>
+            }
+            else if (@ViewData["level"].ToString() == "2" || (@ViewData["level"].ToString() == "0"))
+            {
+                <td></td>}
+            <td>
+                @Html.ActionLink("Редактировать", "Edit", "Teacher", new { id = item.id_exercise, level = ViewData["level"], id_tr = ViewData["id_tr"] }, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                <button class="btn btn-default" type="button" onclick="return della('@item.word','@item.answer1_word', @item.id_exercise, @ViewData["id_t"], @ViewData["level"], @ViewData["id_tr"], '@ViewData["id_tr_name"]')">
+                    Удалить
+                </button>
+            </td>
+            @{
+                i++; }
+        </tr>
+    }
+
+</tbody>
+<script>
+    function della(a,b, id, id_t, level, id_tr,c )
+    {
+        if (confirm('Удалить упражнение с исходным словом «' + a + '» и словом-ответом «' + b +'» из тренажёра «'+ c+'»? '))
+            location.href = '/Teacher/Delete/' + id + '?id_t=' + id_t + '&level='+level+'&id_tr='+id_tr;
+    }
+
+    if (@ViewData["level"].ToString() == "1") {
+        var table = $("table").DataTable({
+            columnDefs: [
+                {
+                    targets: [3,4],
+                    orderable: false
+                }]
+        });
+    }
+    else if (@ViewData["level"].ToString() == "2")
+    {
+        var table = $("table").DataTable({
+            columnDefs: [
+                {
+                    targets: [6, 7],
+                    orderable: false
+                }]
+        });
+    }
+    $(document).ready(function () {
+        $("#exampleTable").DataTable();
+        var a = document.getElementById("exampleTable_filter");
+        a.style.marginTop = 0.5 + "%";
+        a.style.marginRight = 0.5 + "%";
+        var aa = a.getElementsByTagName("label")[0];
+        aa.childNodes[0].nodeValue = "Найти";
+        var b = document.getElementById("exampleTable_length");
+        b.style.marginTop = 0.5 + "%";
+        b.style.marginLeft = 0.5 + "%";
+        var bb = b.getElementsByTagName("label")[0];
+        bb.childNodes[0].nodeValue = "Показывать ";
+        bb.childNodes[2].nodeValue = " упражнений";
+        var c = document.getElementById("exampleTable_previous");
+        c.innerHTML = "Предыдущая";
+        var d = document.getElementById("exampleTable_next");
+        d.innerHTML = "Следующая";
+        var e = document.getElementById("exampleTable_info");
+        e.innerHTML = " ";
+        var input = document.getElementById("exampleTable_filter").getElementsByTagName("input")[0];
+        $(input).on('input', function () {
+            var c = document.getElementById("exampleTable_previous");
+            c.innerHTML = "Предыдущая";
+            var d = document.getElementById("exampleTable_next");
+            d.innerHTML = "Следующая";
+            var e = document.getElementById("exampleTable_info");
+            e.innerHTML = " ";
+            try {
+                var empty = document.getElementsByClassName("dataTables_empty")[0];
+                empty.innerHTML = "Нет записей";
+            } catch (exc) { 1 === 1; }
+        });
+        try {
+            var empty = document.getElementsByClassName("dataTables_empty")[0];
+            empty.innerHTML = "Нет записей";
+        } catch (exc) { 1 === 1; }
+    });
+    $(document).change(function () {
+        var a = document.getElementById("exampleTable_filter");
+        a.style.marginTop = 0.5 + "%";
+        a.style.marginRight = 0.5 + "%";
+        var aa = a.getElementsByTagName("label")[0];
+        aa.childNodes[0].nodeValue = "Найти";
+        var b = document.getElementById("exampleTable_length");
+        b.style.marginTop = 0.5 + "%";
+        b.style.marginLeft = 0.5 + "%";
+        var bb = b.getElementsByTagName("label")[0];
+        bb.childNodes[0].nodeValue = "Показывать ";
+        bb.childNodes[2].nodeValue = " упражнений";
+        var c = document.getElementById("exampleTable_previous");
+        c.innerHTML = "Предыдущая";
+        var d = document.getElementById("exampleTable_next");
+        d.innerHTML = "Следующая";
+        var e = document.getElementById("exampleTable_info");
+        e.innerHTML = " ";
+        try {
+            var empty = document.getElementsByClassName("dataTables_empty")[0];
+            empty.innerHTML = "Нет записей";
+        } catch (exc) { 1 === 1; }
+    });
+    $("thead").click(function () {
+        var c = document.getElementById("exampleTable_previous");
+        c.innerHTML = "Предыдущая";
+        var d = document.getElementById("exampleTable_next");
+        d.innerHTML = "Следующая";
+        var e = document.getElementById("exampleTable_info");
+        e.innerHTML = " ";
+        try {
+            var empty = document.getElementsByClassName("dataTables_empty")[0];
+            empty.innerHTML = "Нет записей";
+        } catch (exc) { 1 === 1; }
+    });
+    $(document).click(function () {
+        var c = document.getElementById("exampleTable_previous");
+        c.innerHTML = "Предыдущая";
+        var d = document.getElementById("exampleTable_next");
+        d.innerHTML = "Следующая";
+        var e = document.getElementById("exampleTable_info");
+        e.innerHTML = " ";
+        try {
+            var empty = document.getElementsByClassName("dataTables_empty")[0];
+            empty.innerHTML = "Нет записей";
+        } catch (exc) { 1 === 1; } });
+</script>

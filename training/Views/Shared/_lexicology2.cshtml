@@ -1,0 +1,32 @@
+﻿<h1 id="otcomment" style="text-align:center; margin-top:-1%;margin-left:-5%">Откомментируй</h1>
+@*<h3 style="margin-left:38%;margin-right:20%; margin-bottom:2%">Слова-ответы являются</h3>*@
+<div style="margin-left:22%">
+    <div style="margin-left:30%" class="radio">
+        @foreach (var item in ViewData["lexic"] as List<DatabaseFirst.lexic>)
+        {
+            <input type="radio" name="lexika" class="lexic2_12 L">@item.name<Br>
+        }
+    </div>
+    <div style="width:auto; margin-left:22%; margin-top:-5%">
+        <div class="forLexic" id="answerL" style="display:inline; width:10%;height:10%;font-size:18px; text-align:center"></div> @*<hr style="width:200px; display:inline-block; border: 0; border-top: 2px solid #8c8c8c;border-bottom: 1px solid #fff;" />*@
+        <canvas width="110" height="80" style="display:inline-block;" id="canvas10"></canvas>
+        <div class="forLexic" id="answer2L" style="display:inline; width:10%;height:10%; text-align:center;font-size:18px"></div>
+        <div style="vertical-align:bottom;top:0;width:auto;">
+            <div class="forLexicText" style="vertical-align:bottom;top:0;width:10%;display:inline"></div>
+            <div class="forLexicText" style="vertical-align:bottom;top:0;width:10%; display:inline"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var lexicText1 = document.getElementsByClassName('forLexicText')[0];
+       
+       // lexicText1.style.marginLeft = (parseFloat(answerL.style.marginLeft).toString())+ "px";
+        var cnvs = document.getElementById("canvas10"); 
+        var ctxt = cnvs.getContext("2d");
+        ctxt.strokeStyle = "darkgrey";
+        ctxt.lineWidth = 3;
+        ctxt.arc(55, 130, 75, 1.25 * Math.PI, 1.75 * Math.PI, false);
+        ctxt.stroke();
+    });
+</script>

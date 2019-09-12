@@ -1,0 +1,146 @@
+﻿@helper CurrentItem(String item)
+{
+    if (item != ViewContext.RouteData.Values["action"].ToString())
+    {
+        return;
+    }
+    @:class="acctive1"
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -Тренажеры по русскому языку</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/jquery-ui.css">
+    <link rel="stylesheet" href="~/Content/balloon.css-master/balloon.min.css">
+    @*<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>*@
+    @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+    @Scripts.Render("~/Scripts/jquery-1.10.3.ui.min.js")
+    @* @Scripts.Render("~/Scripts/jquery-3.3.1.min.js")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @*<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/flick/jquery-ui.css">*@
+    <link href="~/Content/themes/flick/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <style>
+        .header1 {
+            top: 0px;
+            position: fixed;
+            height: 72px;
+            width: 100%;
+            background-color: red; /*#43454e;*/
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //    //Управление тренажёрами
+            //if (User.IsInRole("Учитель")) {
+            //    document.getElementById('righter').style.marginLeft = 5 + "%";
+            //    document.getElementById("righter").style.marginTop = -3 + "%";
+            //}
+            //else {
+            //    document.getElementById('righter').style.marginLeft = 0 + "%";
+            //    document.getElementById("righter").style.marginTop = 1 + "%";
+            //}
+            var header = $(".header");
+            var scrollPrev = 0; // Предыдущее значение скролла
+
+            $(window).scroll(function () {
+                var a = $(window).scrollLeft();
+                var b = $(window).scrollTop();
+                if (a > 0) {
+                    document.getElementsByClassName('header')[0].style.position = 'fixed';
+                    document.getElementsByClassName('header')[0].style.backgroundColor = '#43454e';
+                    document.getElementsByClassName('header')[0].style.height = "72px";
+                    if (b > 50) { document.getElementsByClassName('header')[0].style.display = 'none'; }
+                    else { document.getElementsByClassName('header')[0].style.display = 'block'; }
+                }
+                else {
+                    // $('.header').removeClass('header1');
+                    document.getElementsByClassName('header')[0].style.position = 'absolute';
+                    document.getElementsByClassName('header')[0].style.backgroundColor = '#43454e';
+                    document.getElementsByClassName('header')[0].style.height = "72px";
+                    document.getElementsByClassName('header')[0].style.display = 'block';
+                }
+            });
+        });
+    </script>
+    @* <div id="h1" style="display:block;top:0;height:72px;background-color:#43454e;width:10000px;position:absolute;float:left; overflow:hidden"></div>*@
+    <div class="header" style="width:100%"></div>
+    <div class="logo-menu">
+        @*<div class="Rectangle" style="z-index:-1000; top:0;width:100%;position:absolute"></div>*@
+        <nav class="Rectangle">
+            <div class="container" id="body_center">
+                <!-- Brand and toggle get grouped for better mobile display min_haight -->
+                <div class="navbar-header" id="header_center" style="position:relative">
+                    <a class="navbar-brand" href="@Url.Action("Index", "Site")">
+                        <img src="/img/invalid-name.png" class="layer">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    @*Управление тренажёрами*@
+                    @if (User.IsInRole("Учитель")||(User.IsInRole("Владелец")))
+                    {
+                        <ul class="ter nav navbar-nav navbar-left" id="righter" style="margin-left:5%;margin-top:-3.5%;white-space: nowrap;">
+                            <li class="@ViewBag.NavClassIndex"><a href=@Url.Action("Index", "Site")>Обо мне</a></li>
+                            <li class="@ViewBag.NavClassT"><a href=@Url.Action("Index", "Training")>Тренажеры</a></li>
+
+                            <li class="@ViewBag.NavClassManageTraining"><a href=@Url.Action("Index", "Teacher")>Управление тренажерами</a></li>
+
+                            <li class="@ViewBag.NavClassTeach"><a href=@Url.Action("Teach", "Site")>Учителю</a></li>
+                            <li class="@ViewBag.NavClassFit"><a href=@Url.Action("Fit", "Site")>Материалы о Тютчеве</a></li>
+                            <li class="@ViewBag.NavClassLiric">
+                                <a href=@Url.Action("Books", "Site")>Лирика</a>
+                                <ul class="submenu">
+                                    <li><a href=@Url.Action("Books", "Site")>Книги</a></li>
+                                    <li><a href=@Url.Action("Poems", "Site")>Поэмы</a></li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li class="@ViewBag.NavClassBn"><a href=@Url.Action("Bn", "Site")>Борис Непомнящий </a></li>
+                        </ul>
+                    }
+                    @* /////////////////////////////// *@
+                    else  {
+                    <ul class="ter nav navbar-nav navbar-left" style="white-space: nowrap;">
+                        <li class="@ViewBag.NavClassIndex"><a href=@Url.Action("Index", "Site")>Обо мне</a></li>
+                        <li class="@ViewBag.NavClassT"><a href=@Url.Action("Index", "Training")>Тренажеры</a></li>
+                        <li class="@ViewBag.NavClassTeach"><a href=@Url.Action("Teach", "Site")>Учителю</a></li>
+                        <li class="@ViewBag.NavClassFit"><a href=@Url.Action("Fit", "Site")>Материалы о Тютчеве</a></li>
+                        <li class="@ViewBag.NavClassLiric">
+                            <a href=@Url.Action("Books", "Site")>Лирика</a>
+                            <ul class="submenu">
+                                <li><a href=@Url.Action("Books", "Site")>Книги</a></li>
+                                <li><a href=@Url.Action("Poems", "Site")>Поэмы</a></li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li class="@ViewBag.NavClassBn"><a href=@Url.Action("Bn", "Site")>Борис Непомнящий </a></li>
+                    </ul>
+                    }
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container1" style="min-width:900px">
+        @RenderBody()
+
+    </div>
+    <footer>
+        <div class="Rectangle_bottom"></div>
+    </footer>
+  
+    @RenderSection("scripts", required: false)
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<div class="form-group row wordDiv">
+    <label for="answer" class="col-sm-4 col-form-label wordLabel">Слово-ответ</label>
+    <div class="col-sm-4 wordDivInput">
+        <input maxlength="30" type="text" placeholder="нами" class="form-control js-syllMirror-word-answer morphii wordInput" id="answer" onkeypress="return testAnswer(event)" onchange="wordToBonus()">
+    </div>
+    <button tabIndex="-1" type="button" class="btn btn-light btn-circle wordBtn" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите слово-ответ, составленное из слогов предыдущего слова. Например, для слова 'мина' словом-ответом будет 'нами'">?</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top'
+            });
+        });
+    </script>
+</div>
+<div class="form-group row phoneticDiv">
+    <label for="phonetic2" class="col-sm-4 col-form-label pnoneticLabel">Фонетическая <br /> запись слова</label>
+    <div class="col-sm-4">
+        <input maxlength="30" type="text" placeholder="на-м'и" class="form-control js-syllMirror-word-answer-phonetic phoneticInput" id="phonetic2" name="secondInput" onkeypress="return testPhonetic(event)">
+    </div>
+    <button tabIndex="-1" type="button" class="btn btn-light btn-circle phoneticBtn" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите фонетическую запись. Для разделения слогов используйте знак -, для мягкости '. Вместо апострофа можно вводить точку, запятую, цифру 8 или символ *">?</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top'
+            });
+        });
+    </script>
+</div>
+<div class="form-group row primaryDiv" style="height:50px;margin-top:-10px;">
+    <label for="answerPrimary" class="col-sm-4 col-form-label primaryLabel" id="answerPrimaryLabel">Начальная <br /> форма слова</label>
+    <div class="col-sm-4" id="answerPrimary">
+        <input maxlength="30" type="text" placeholder="мы" id="answerPrimaryInput" name="answerPrimaryInput" class="form-control primaryInput" onkeypress="return testPrimary(event)">
+    </div>
+    <button tabIndex="-1" type="button" class="btn btn-light btn-circle primaryBtn" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите инфинитив. Примеры инфинитивов - верить, великолепный, дорога. Если слово неизменяемое, введите символ -">?</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top'
+            });
+        });
+    </script>
+</div>
+<div class="form-group row contextDiv" style="margin-top:-3%">
+    <label class="col-sm-4 col-form-label contextLabel">Контекст</label>
+    <div class="col-sm-7 contextDivInput">
+        <input maxlength="50" type="text" placeholder="Нами проделана работа." class="form-control contextInput" id="contextAnswer" onchange="contextToBonus()">
+    </div>
+</div>
+@Html.Partial("_parts")
+<div class="js-word-answer-morphem morphologyDiv" style="display:none;">
+    @Html.Partial("_styllMirrorMorphology")
+</div>

@@ -1,0 +1,2155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище trainingsModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="chislo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="comments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="deistvit">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="drob">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="exercise">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id_training" Type="int" />
+  </EntityType>
+  <EntityType Name="forma">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="kolich">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="lexic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="lexicAll">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lexic_1_2" Type="int" />
+    <Property Name="lexic_2_3" Type="int" />
+    <Property Name="lexic_1_3" Type="int" />
+    <Property Name="lexic_3_4" Type="int" />
+    <Property Name="lexic_2_4" Type="int" />
+    <Property Name="lexic_1_4" Type="int" />
+  </EntityType>
+  <EntityType Name="lexicology">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_word1" Type="int" />
+    <Property Name="id_word2" Type="int" />
+    <Property Name="id_comment" Type="int" />
+  </EntityType>
+  <EntityType Name="lico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="morphems">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prefix1" Type="nvarchar" MaxLength="50" />
+    <Property Name="prefix2" Type="nvarchar" MaxLength="50" />
+    <Property Name="prefix3" Type="nvarchar" MaxLength="50" />
+    <Property Name="root1" Type="nvarchar" MaxLength="50" />
+    <Property Name="root2" Type="nvarchar" MaxLength="50" />
+    <Property Name="suffix1" Type="nvarchar" MaxLength="50" />
+    <Property Name="suffix2" Type="nvarchar" MaxLength="50" />
+    <Property Name="suffix3" Type="nvarchar" MaxLength="50" />
+    <Property Name="suffix4" Type="nvarchar" MaxLength="50" />
+    <Property Name="okonchan1" Type="nvarchar" MaxLength="50" />
+    <Property Name="okonchan2" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="morphology">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_part" Type="int" />
+    <Property Name="odush" Type="int" />
+    <Property Name="naricat" Type="int" />
+    <Property Name="rod" Type="int" />
+    <Property Name="sklonen" Type="int" />
+    <Property Name="chislo" Type="int" />
+    <Property Name="padezh" Type="int" />
+    <Property Name="razryad" Type="int" />
+    <Property Name="forma" Type="int" />
+    <Property Name="stepsrav" Type="int" />
+    <Property Name="prost" Type="int" />
+    <Property Name="kolich" Type="int" />
+    <Property Name="drob" Type="int" />
+    <Property Name="razryadznach" Type="int" />
+    <Property Name="lico" Type="int" />
+    <Property Name="vid" Type="int" />
+    <Property Name="spryazh" Type="int" />
+    <Property Name="vozvrat" Type="int" />
+    <Property Name="perehod" Type="int" />
+    <Property Name="naklon" Type="int" />
+    <Property Name="vremya" Type="int" />
+    <Property Name="deistvit" Type="int" />
+    <Property Name="neizmen" Type="int" />
+    <Property Name="znacobraz" Type="int" />
+    <Property Name="proizvodnost" Type="int" />
+    <Property Name="sochinit" Type="int" />
+    <Property Name="upotrebls" Type="int" />
+    <Property Name="razryadpoznach" Type="int" />
+    <Property Name="podrazryad" Type="int" />
+  </EntityType>
+  <EntityType Name="naklon">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="naricat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="neizmen">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="odush">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="padezh">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="parts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="odush" Type="bit" />
+    <Property Name="naricat" Type="bit" />
+    <Property Name="rod" Type="bit" />
+    <Property Name="sklonen" Type="bit" />
+    <Property Name="chislo" Type="bit" />
+    <Property Name="padezh" Type="bit" />
+    <Property Name="razryad" Type="bit" />
+    <Property Name="forma" Type="bit" />
+    <Property Name="stepsrav" Type="bit" />
+    <Property Name="prost" Type="bit" />
+    <Property Name="kolich" Type="bit" />
+    <Property Name="drob" Type="bit" />
+    <Property Name="razryadznach" Type="bit" />
+    <Property Name="lico" Type="bit" />
+    <Property Name="vid" Type="bit" />
+    <Property Name="spryazh" Type="bit" />
+    <Property Name="vozvrat" Type="bit" />
+    <Property Name="perehod" Type="bit" />
+    <Property Name="naklon" Type="bit" />
+    <Property Name="vremya" Type="bit" />
+    <Property Name="deistvit" Type="bit" />
+    <Property Name="neizmen" Type="bit" />
+    <Property Name="znacobraz" Type="bit" />
+    <Property Name="proizvodnost" Type="bit" />
+    <Property Name="sochinit" Type="bit" />
+    <Property Name="order_id" Type="int" />
+    <Property Name="upotrebls" Type="bit" />
+    <Property Name="razryadpoznach" Type="bit" />
+    <Property Name="podrazryad" Type="bit" />
+  </EntityType>
+  <EntityType Name="perehod">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="podrazryad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="progress">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_user" Type="nvarchar" MaxLength="128" />
+    <Property Name="id_exercice" Type="int" />
+    <Property Name="mark" Type="int" />
+    <Property Name="mark_add" Type="int" />
+  </EntityType>
+  <EntityType Name="proizvodnost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="prost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="razryad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="razryadpoznach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="razryadznach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="rod">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sklonen">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sochinit">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="spryazh">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="stepsrav">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="syll_mirror">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_word" Type="int" />
+    <Property Name="id_answer1" Type="int" />
+    <Property Name="id_answer2" Type="int" />
+    <Property Name="id_answer3" Type="int" />
+    <Property Name="id_answer4" Type="int" />
+    <Property Name="level" Type="int" />
+    <Property Name="id_lexic" Type="int" />
+    <Property Name="isMorphemes" Type="bit" />
+    <Property Name="isComment" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="teach_user">
+    <Key>
+      <PropertyRef Name="id_user1" />
+      <PropertyRef Name="id_user2" />
+    </Key>
+    <Property Name="id_user1" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="id_user2" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="theme">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="id_training" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="trainings">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="256" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="upotrebls">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="vid">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="vozvrat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="vremya">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="words">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="primary_form" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_morphems" Type="int" />
+    <Property Name="phonetic" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_morphology" Type="int" />
+    <Property Name="num_accent" Type="int" />
+    <Property Name="context" Type="nvarchar" MaxLength="250" />
+    <Property Name="morphems" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="znacobraz">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.lexic_view" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="lexic_view">
+    <Key>
+      <PropertyRef Name="id_lexicAll" />
+      <PropertyRef Name="id_exercise" />
+    </Key>
+    <Property Name="id_lexicAll" Type="int" Nullable="false" />
+    <Property Name="lexic_1_2" Type="int" />
+    <Property Name="name12" Type="nvarchar" MaxLength="50" />
+    <Property Name="lexic_2_3" Type="int" />
+    <Property Name="name23" Type="nvarchar" MaxLength="50" />
+    <Property Name="lexic_1_3" Type="int" />
+    <Property Name="name13" Type="nvarchar" MaxLength="50" />
+    <Property Name="lexic_3_4" Type="int" />
+    <Property Name="name34" Type="nvarchar" MaxLength="50" />
+    <Property Name="lexic_2_4" Type="int" />
+    <Property Name="name24" Type="nvarchar" MaxLength="50" />
+    <Property Name="lexic_1_4" Type="int" />
+    <Property Name="name14" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="level" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.lexicIds_view" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="lexicIds_view">
+    <Key>
+      <PropertyRef Name="id_lexicAll" />
+      <PropertyRef Name="id_exercise" />
+    </Key>
+    <Property Name="id_lexicAll" Type="int" Nullable="false" />
+    <Property Name="lexic_1_2" Type="int" />
+    <Property Name="lexic_2_3" Type="int" />
+    <Property Name="lexic_1_3" Type="int" />
+    <Property Name="lexic_3_4" Type="int" />
+    <Property Name="lexic_2_4" Type="int" />
+    <Property Name="lexic_1_4" Type="int" />
+    <Property Name="id_lexic" Type="int" />
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="level" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.morphology_view" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="morphology_view">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="primary_form" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_morphems" Type="int" />
+    <Property Name="phonetic" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_morphology" Type="int" />
+    <Property Name="num_accent" Type="int" />
+    <Property Name="Expr1" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" />
+    <Property Name="odush" Type="int" />
+    <Property Name="naricat" Type="int" />
+    <Property Name="rod" Type="int" />
+    <Property Name="sklonen" Type="int" />
+    <Property Name="chislo" Type="int" />
+    <Property Name="padezh" Type="int" />
+    <Property Name="razryad" Type="int" />
+    <Property Name="forma" Type="int" />
+    <Property Name="stepsrav" Type="int" />
+    <Property Name="prost" Type="int" />
+    <Property Name="kolich" Type="int" />
+    <Property Name="drob" Type="int" />
+    <Property Name="razryadznach" Type="int" />
+    <Property Name="lico" Type="int" />
+    <Property Name="vid" Type="int" />
+    <Property Name="spryazh" Type="int" />
+    <Property Name="vozvrat" Type="int" />
+    <Property Name="perehod" Type="int" />
+    <Property Name="naklon" Type="int" />
+    <Property Name="vremya" Type="int" />
+    <Property Name="deistvit" Type="int" />
+    <Property Name="neizmen" Type="int" />
+    <Property Name="znacobraz" Type="int" />
+    <Property Name="proizvodnost" Type="int" />
+    <Property Name="sochinit" Type="int" />
+    <Property Name="context" Type="nvarchar" MaxLength="250" />
+    <Property Name="upotrebls" Type="int" />
+    <Property Name="razryadpoznach" Type="int" />
+    <Property Name="podrazryad" Type="int" />
+    <Property Name="morphems" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.nextView" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="nextView">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id_word" Type="int" />
+    <Property Name="id_answer1" Type="int" />
+    <Property Name="id_answer2" Type="int" />
+    <Property Name="id_answer3" Type="int" />
+    <Property Name="id_answer4" Type="int" />
+    <Property Name="isMorphemes" Type="bit" />
+    <Property Name="level" Type="int" />
+    <Property Name="isComment" Type="bit" />
+    <Property Name="id_training" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.nextView1" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="nextView1">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id_word" Type="int" />
+    <Property Name="id_answer1" Type="int" />
+    <Property Name="id_answer2" Type="int" />
+    <Property Name="id_answer3" Type="int" />
+    <Property Name="id_answer4" Type="int" />
+    <Property Name="level" Type="int" />
+    <Property Name="id_training" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.part1" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="part1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="odush" Type="bit" />
+    <Property Name="naricat" Type="bit" />
+    <Property Name="rod" Type="bit" />
+    <Property Name="sklonen" Type="bit" />
+    <Property Name="chislo" Type="bit" />
+    <Property Name="padezh" Type="bit" />
+    <Property Name="razryad" Type="bit" />
+    <Property Name="forma" Type="bit" />
+    <Property Name="stepsrav" Type="bit" />
+    <Property Name="prost" Type="bit" />
+    <Property Name="kolich" Type="bit" />
+    <Property Name="drob" Type="bit" />
+    <Property Name="razryadznach" Type="bit" />
+    <Property Name="lico" Type="bit" />
+    <Property Name="vid" Type="bit" />
+    <Property Name="spryazh" Type="bit" />
+    <Property Name="vozvrat" Type="bit" />
+    <Property Name="perehod" Type="bit" />
+    <Property Name="naklon" Type="bit" />
+    <Property Name="vremya" Type="bit" />
+    <Property Name="deistvit" Type="bit" />
+    <Property Name="neizmen" Type="bit" />
+    <Property Name="znacobraz" Type="bit" />
+    <Property Name="proizvodnost" Type="bit" />
+    <Property Name="sochinit" Type="bit" />
+    <Property Name="upotrebls" Type="bit" />
+    <Property Name="razryadpoznach" Type="bit" />
+    <Property Name="podrazryad" Type="bit" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.progressUser" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="progressUser">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id_user" Type="nvarchar" MaxLength="128" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="mark" Type="int" />
+    <Property Name="mark_add" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.Teachers" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Teachers">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Expr1" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.TeachUs" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="TeachUs">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmailConfirmed" />
+      <PropertyRef Name="PhoneNumberConfirmed" />
+      <PropertyRef Name="TwoFactorEnabled" />
+      <PropertyRef Name="LockoutEnabled" />
+      <PropertyRef Name="AccessFailedCount" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="id_user1" />
+      <PropertyRef Name="id_user2" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="id_user1" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="id_user2" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.Thems" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Thems">
+    <Key>
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id_training" />
+      <PropertyRef Name="id_exercise" />
+    </Key>
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_training" Type="int" Nullable="false" />
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="level" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.wordsList" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="wordsList">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="level" Type="int" />
+    <Property Name="answer2_id_morphology" Type="int" />
+    <Property Name="answer3_id_morphology" Type="int" />
+    <Property Name="answer4_id_morphology" Type="int" />
+    <Property Name="word_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_training" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.wordsListAll" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="wordsListAll">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="level" Type="int" />
+    <Property Name="answer2_id_morphology" Type="int" />
+    <Property Name="answer3_id_morphology" Type="int" />
+    <Property Name="answer4_id_morphology" Type="int" />
+    <Property Name="word_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_training" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.wordsMorphologyIds" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="wordsMorphologyIds">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="level" Type="int" />
+    <Property Name="id_morphology" Type="int" />
+    <Property Name="answer1_id_morphology" Type="int" />
+    <Property Name="answer2_id_morphology" Type="int" />
+    <Property Name="answer3_id_morphology" Type="int" />
+    <Property Name="answer4_id_morphology" Type="int" />
+    <Property Name="id_training" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.wordsNames" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="wordsNames">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="word_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="level" Type="int" />
+    <Property Name="id_training" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.wordsPartsIds" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="wordsPartsIds">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+    </Key>
+    <Property Name="id_exercise" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer1_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer2_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer3_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="answer4_word" Type="nvarchar" MaxLength="50" />
+    <Property Name="level" Type="int" />
+    <Property Name="id_morphology" Type="int" />
+    <Property Name="answer1_id_morphology" Type="int" />
+    <Property Name="answer2_id_morphology" Type="int" />
+    <Property Name="answer3_id_morphology" Type="int" />
+    <Property Name="answer4_id_morphology" Type="int" />
+    <Property Name="word_id_part" Type="int" />
+    <Property Name="answer1_id_part" Type="int" />
+    <Property Name="answer2_id_part" Type="int" />
+    <Property Name="answer3_id_part" Type="int" />
+    <Property Name="answer4_id_part" Type="int" />
+    <Property Name="id_training" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "trainings.dbo.wordsView" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="wordsView">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id_part" Type="int" />
+    <Property Name="Expr1" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" MaxLength="50" />
+    <Property Name="id_morphology" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_exercise_trainings1">
+    <End Role="trainings" Type="Self.trainings" Multiplicity="0..1" />
+    <End Role="exercise" Type="Self.exercise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="trainings">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="exercise">
+        <PropertyRef Name="id_training" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic">
+    <End Role="lexic" Type="Self.lexic" Multiplicity="0..1" />
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_1_2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic1">
+    <End Role="lexic" Type="Self.lexic" Multiplicity="0..1" />
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_2_3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic2">
+    <End Role="lexic" Type="Self.lexic" Multiplicity="0..1" />
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_1_3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic3">
+    <End Role="lexic" Type="Self.lexic" Multiplicity="0..1" />
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_3_4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic4">
+    <End Role="lexic" Type="Self.lexic" Multiplicity="0..1" />
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_2_4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic5">
+    <End Role="lexic" Type="Self.lexic" Multiplicity="0..1" />
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_1_4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicology_comments">
+    <End Role="comments" Type="Self.comments" Multiplicity="0..1" />
+    <End Role="lexicology" Type="Self.lexicology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="comments">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicology">
+        <PropertyRef Name="id_comment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicology_words">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="lexicology" Type="Self.lexicology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicology">
+        <PropertyRef Name="id_word1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicology_words1">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="lexicology" Type="Self.lexicology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicology">
+        <PropertyRef Name="id_word2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_chislo">
+    <End Role="chislo" Type="Self.chislo" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="chislo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="chislo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_deistvit">
+    <End Role="deistvit" Type="Self.deistvit" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="deistvit">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="deistvit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_drob">
+    <End Role="drob" Type="Self.drob" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="drob">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="drob" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_forma">
+    <End Role="forma" Type="Self.forma" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="forma">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="forma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_kolich">
+    <End Role="kolich" Type="Self.kolich" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kolich">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="kolich" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_lico">
+    <End Role="lico" Type="Self.lico" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="lico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_naklon">
+    <End Role="naklon" Type="Self.naklon" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="naklon">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="naklon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_naricat">
+    <End Role="naricat" Type="Self.naricat" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="naricat">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="naricat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_neizmen">
+    <End Role="neizmen" Type="Self.neizmen" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="neizmen">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="neizmen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_odush">
+    <End Role="odush" Type="Self.odush" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="odush">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="odush" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_padezh">
+    <End Role="padezh" Type="Self.padezh" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="padezh">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="padezh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_parts">
+    <End Role="parts" Type="Self.parts" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="id_part" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_perehod">
+    <End Role="perehod" Type="Self.perehod" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="perehod">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="perehod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_podrazryad">
+    <End Role="podrazryad" Type="Self.podrazryad" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="podrazryad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="podrazryad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_proizvodnost">
+    <End Role="proizvodnost" Type="Self.proizvodnost" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proizvodnost">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="proizvodnost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_prost">
+    <End Role="prost" Type="Self.prost" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="prost">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="prost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_razryad">
+    <End Role="razryad" Type="Self.razryad" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="razryad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="razryad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_razryadpoznach">
+    <End Role="razryadpoznach" Type="Self.razryadpoznach" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="razryadpoznach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="razryadpoznach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_razryadznach">
+    <End Role="razryadznach" Type="Self.razryadznach" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="razryadznach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="razryadznach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_rod">
+    <End Role="rod" Type="Self.rod" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rod">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="rod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_sklonen">
+    <End Role="sklonen" Type="Self.sklonen" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sklonen">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="sklonen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_sochinit">
+    <End Role="sochinit" Type="Self.sochinit" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sochinit">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="sochinit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_spryazh">
+    <End Role="spryazh" Type="Self.spryazh" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="spryazh">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="spryazh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_stepsrav">
+    <End Role="stepsrav" Type="Self.stepsrav" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="stepsrav">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="stepsrav" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_upotrebls">
+    <End Role="upotrebls" Type="Self.upotrebls" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="upotrebls">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="upotrebls" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_vid">
+    <End Role="vid" Type="Self.vid" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vid">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="vid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_vozvrat">
+    <End Role="vozvrat" Type="Self.vozvrat" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vozvrat">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="vozvrat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_vremya">
+    <End Role="vremya" Type="Self.vremya" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vremya">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="vremya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_znacobraz">
+    <End Role="znacobraz" Type="Self.znacobraz" Multiplicity="0..1" />
+    <End Role="morphology" Type="Self.morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="znacobraz">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="znacobraz" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_progress_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1" />
+    <End Role="progress" Type="Self.progress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="progress">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_progress_exercise">
+    <End Role="exercise" Type="Self.exercise" Multiplicity="0..1" />
+    <End Role="progress" Type="Self.progress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exercise">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="progress">
+        <PropertyRef Name="id_exercice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_lexicAll">
+    <End Role="lexicAll" Type="Self.lexicAll" Multiplicity="0..1" />
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexicAll">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_lexic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words4">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_word" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words5">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words6">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words7">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words8">
+    <End Role="words" Type="Self.words" Multiplicity="0..1" />
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="words">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_teach_user_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="teach_user" Type="Self.teach_user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="teach_user">
+        <PropertyRef Name="id_user1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_teach_user_AspNetUsers1">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="teach_user" Type="Self.teach_user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="teach_user">
+        <PropertyRef Name="id_user2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_parts">
+    <End Role="parts" Type="Self.parts" Multiplicity="1" />
+    <End Role="theme" Type="Self.theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_part" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_syll_mirror">
+    <End Role="syll_mirror" Type="Self.syll_mirror" Multiplicity="1" />
+    <End Role="theme" Type="Self.theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="syll_mirror">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_exercise" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_trainings">
+    <End Role="trainings" Type="Self.trainings" Multiplicity="1" />
+    <End Role="theme" Type="Self.theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="trainings">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_training" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_trainings1">
+    <End Role="trainings" Type="Self.trainings" Multiplicity="1" />
+    <End Role="theme" Type="Self.theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="trainings">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_training" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_words_morphems">
+    <End Role="morphems" Type="Self.morphems" Multiplicity="0..1" />
+    <End Role="words" Type="Self.words" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="morphems">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="words">
+        <PropertyRef Name="id_morphems" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_words_morphology">
+    <End Role="morphology" Type="Self.morphology" Multiplicity="0..1" />
+    <End Role="words" Type="Self.words" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="morphology">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="words">
+        <PropertyRef Name="id_morphology" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="InsStud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id1" Type="nvarchar" Mode="In" />
+    <Parameter Name="id2" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="Procedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param1" Type="int" Mode="In" />
+    <Parameter Name="param2" Type="int" Mode="In" />
+  </Function>
+  <Function Name="progressPro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param1" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="RemStud" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id1" Type="nvarchar" Mode="In" />
+    <Parameter Name="id2" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище trainingsModelContainer">
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="chislo" EntityType="Self.chislo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="comments" EntityType="Self.comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="deistvit" EntityType="Self.deistvit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="drob" EntityType="Self.drob" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="exercise" EntityType="Self.exercise" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="forma" EntityType="Self.forma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kolich" EntityType="Self.kolich" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lexic" EntityType="Self.lexic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lexicAll" EntityType="Self.lexicAll" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lexicology" EntityType="Self.lexicology" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lico" EntityType="Self.lico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="morphems" EntityType="Self.morphems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="morphology" EntityType="Self.morphology" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="naklon" EntityType="Self.naklon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="naricat" EntityType="Self.naricat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="neizmen" EntityType="Self.neizmen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="odush" EntityType="Self.odush" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="padezh" EntityType="Self.padezh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="parts" EntityType="Self.parts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="perehod" EntityType="Self.perehod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="podrazryad" EntityType="Self.podrazryad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="progress" EntityType="Self.progress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="proizvodnost" EntityType="Self.proizvodnost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="prost" EntityType="Self.prost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="razryad" EntityType="Self.razryad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="razryadpoznach" EntityType="Self.razryadpoznach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="razryadznach" EntityType="Self.razryadznach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="rod" EntityType="Self.rod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sklonen" EntityType="Self.sklonen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sochinit" EntityType="Self.sochinit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="spryazh" EntityType="Self.spryazh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="stepsrav" EntityType="Self.stepsrav" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="syll_mirror" EntityType="Self.syll_mirror" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="teach_user" EntityType="Self.teach_user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="theme" EntityType="Self.theme" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="trainings" EntityType="Self.trainings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="upotrebls" EntityType="Self.upotrebls" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vid" EntityType="Self.vid" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vozvrat" EntityType="Self.vozvrat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vremya" EntityType="Self.vremya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="words" EntityType="Self.words" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="znacobraz" EntityType="Self.znacobraz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lexic_view" EntityType="Self.lexic_view" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [lexic_view].[id_lexicAll] AS [id_lexicAll], 
+    [lexic_view].[lexic_1_2] AS [lexic_1_2], 
+    [lexic_view].[name12] AS [name12], 
+    [lexic_view].[lexic_2_3] AS [lexic_2_3], 
+    [lexic_view].[name23] AS [name23], 
+    [lexic_view].[lexic_1_3] AS [lexic_1_3], 
+    [lexic_view].[name13] AS [name13], 
+    [lexic_view].[lexic_3_4] AS [lexic_3_4], 
+    [lexic_view].[name34] AS [name34], 
+    [lexic_view].[lexic_2_4] AS [lexic_2_4], 
+    [lexic_view].[name24] AS [name24], 
+    [lexic_view].[lexic_1_4] AS [lexic_1_4], 
+    [lexic_view].[name14] AS [name14], 
+    [lexic_view].[id_exercise] AS [id_exercise], 
+    [lexic_view].[level] AS [level]
+    FROM [dbo].[lexic_view] AS [lexic_view]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="lexicIds_view" EntityType="Self.lexicIds_view" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [lexicIds_view].[id_lexicAll] AS [id_lexicAll], 
+    [lexicIds_view].[lexic_1_2] AS [lexic_1_2], 
+    [lexicIds_view].[lexic_2_3] AS [lexic_2_3], 
+    [lexicIds_view].[lexic_1_3] AS [lexic_1_3], 
+    [lexicIds_view].[lexic_3_4] AS [lexic_3_4], 
+    [lexicIds_view].[lexic_2_4] AS [lexic_2_4], 
+    [lexicIds_view].[lexic_1_4] AS [lexic_1_4], 
+    [lexicIds_view].[id_lexic] AS [id_lexic], 
+    [lexicIds_view].[id_exercise] AS [id_exercise], 
+    [lexicIds_view].[level] AS [level]
+    FROM [dbo].[lexicIds_view] AS [lexicIds_view]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="morphology_view" EntityType="Self.morphology_view" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [morphology_view].[id] AS [id], 
+    [morphology_view].[word] AS [word], 
+    [morphology_view].[primary_form] AS [primary_form], 
+    [morphology_view].[id_morphems] AS [id_morphems], 
+    [morphology_view].[phonetic] AS [phonetic], 
+    [morphology_view].[id_morphology] AS [id_morphology], 
+    [morphology_view].[num_accent] AS [num_accent], 
+    [morphology_view].[Expr1] AS [Expr1], 
+    [morphology_view].[id_part] AS [id_part], 
+    [morphology_view].[odush] AS [odush], 
+    [morphology_view].[naricat] AS [naricat], 
+    [morphology_view].[rod] AS [rod], 
+    [morphology_view].[sklonen] AS [sklonen], 
+    [morphology_view].[chislo] AS [chislo], 
+    [morphology_view].[padezh] AS [padezh], 
+    [morphology_view].[razryad] AS [razryad], 
+    [morphology_view].[forma] AS [forma], 
+    [morphology_view].[stepsrav] AS [stepsrav], 
+    [morphology_view].[prost] AS [prost], 
+    [morphology_view].[kolich] AS [kolich], 
+    [morphology_view].[drob] AS [drob], 
+    [morphology_view].[razryadznach] AS [razryadznach], 
+    [morphology_view].[lico] AS [lico], 
+    [morphology_view].[vid] AS [vid], 
+    [morphology_view].[spryazh] AS [spryazh], 
+    [morphology_view].[vozvrat] AS [vozvrat], 
+    [morphology_view].[perehod] AS [perehod], 
+    [morphology_view].[naklon] AS [naklon], 
+    [morphology_view].[vremya] AS [vremya], 
+    [morphology_view].[deistvit] AS [deistvit], 
+    [morphology_view].[neizmen] AS [neizmen], 
+    [morphology_view].[znacobraz] AS [znacobraz], 
+    [morphology_view].[proizvodnost] AS [proizvodnost], 
+    [morphology_view].[sochinit] AS [sochinit], 
+    [morphology_view].[context] AS [context], 
+    [morphology_view].[upotrebls] AS [upotrebls], 
+    [morphology_view].[razryadpoznach] AS [razryadpoznach], 
+    [morphology_view].[podrazryad] AS [podrazryad], 
+    [morphology_view].[morphems] AS [morphems], 
+    [morphology_view].[name] AS [name]
+    FROM [dbo].[morphology_view] AS [morphology_view]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="nextView" EntityType="Self.nextView" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [nextView].[id_exercise] AS [id_exercise], 
+    [nextView].[id_part] AS [id_part], 
+    [nextView].[id] AS [id], 
+    [nextView].[id_word] AS [id_word], 
+    [nextView].[id_answer1] AS [id_answer1], 
+    [nextView].[id_answer2] AS [id_answer2], 
+    [nextView].[id_answer3] AS [id_answer3], 
+    [nextView].[id_answer4] AS [id_answer4], 
+    [nextView].[isMorphemes] AS [isMorphemes], 
+    [nextView].[level] AS [level], 
+    [nextView].[isComment] AS [isComment], 
+    [nextView].[id_training] AS [id_training]
+    FROM [dbo].[nextView] AS [nextView]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="nextView1" EntityType="Self.nextView1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [nextView1].[id_exercise] AS [id_exercise], 
+    [nextView1].[id] AS [id], 
+    [nextView1].[id_word] AS [id_word], 
+    [nextView1].[id_answer1] AS [id_answer1], 
+    [nextView1].[id_answer2] AS [id_answer2], 
+    [nextView1].[id_answer3] AS [id_answer3], 
+    [nextView1].[id_answer4] AS [id_answer4], 
+    [nextView1].[level] AS [level], 
+    [nextView1].[id_training] AS [id_training]
+    FROM [dbo].[nextView1] AS [nextView1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="part1" EntityType="Self.part1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [part1].[id] AS [id], 
+    [part1].[name] AS [name], 
+    [part1].[odush] AS [odush], 
+    [part1].[naricat] AS [naricat], 
+    [part1].[rod] AS [rod], 
+    [part1].[sklonen] AS [sklonen], 
+    [part1].[chislo] AS [chislo], 
+    [part1].[padezh] AS [padezh], 
+    [part1].[razryad] AS [razryad], 
+    [part1].[forma] AS [forma], 
+    [part1].[stepsrav] AS [stepsrav], 
+    [part1].[prost] AS [prost], 
+    [part1].[kolich] AS [kolich], 
+    [part1].[drob] AS [drob], 
+    [part1].[razryadznach] AS [razryadznach], 
+    [part1].[lico] AS [lico], 
+    [part1].[vid] AS [vid], 
+    [part1].[spryazh] AS [spryazh], 
+    [part1].[vozvrat] AS [vozvrat], 
+    [part1].[perehod] AS [perehod], 
+    [part1].[naklon] AS [naklon], 
+    [part1].[vremya] AS [vremya], 
+    [part1].[deistvit] AS [deistvit], 
+    [part1].[neizmen] AS [neizmen], 
+    [part1].[znacobraz] AS [znacobraz], 
+    [part1].[proizvodnost] AS [proizvodnost], 
+    [part1].[sochinit] AS [sochinit], 
+    [part1].[upotrebls] AS [upotrebls], 
+    [part1].[razryadpoznach] AS [razryadpoznach], 
+    [part1].[podrazryad] AS [podrazryad]
+    FROM [dbo].[part1] AS [part1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="progressUser" EntityType="Self.progressUser" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [progressUser].[id] AS [id], 
+    [progressUser].[id_user] AS [id_user], 
+    [progressUser].[word] AS [word], 
+    [progressUser].[mark] AS [mark], 
+    [progressUser].[mark_add] AS [mark_add]
+    FROM [dbo].[progressUser] AS [progressUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Teachers" EntityType="Self.Teachers" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Teachers].[Name] AS [Name], 
+    [Teachers].[Id] AS [Id], 
+    [Teachers].[Expr1] AS [Expr1], 
+    [Teachers].[Email] AS [Email]
+    FROM [dbo].[Teachers] AS [Teachers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TeachUs" EntityType="Self.TeachUs" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TeachUs].[Id] AS [Id], 
+    [TeachUs].[Email] AS [Email], 
+    [TeachUs].[EmailConfirmed] AS [EmailConfirmed], 
+    [TeachUs].[PasswordHash] AS [PasswordHash], 
+    [TeachUs].[SecurityStamp] AS [SecurityStamp], 
+    [TeachUs].[PhoneNumber] AS [PhoneNumber], 
+    [TeachUs].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+    [TeachUs].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+    [TeachUs].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+    [TeachUs].[LockoutEnabled] AS [LockoutEnabled], 
+    [TeachUs].[AccessFailedCount] AS [AccessFailedCount], 
+    [TeachUs].[UserName] AS [UserName], 
+    [TeachUs].[id_user1] AS [id_user1], 
+    [TeachUs].[id_user2] AS [id_user2]
+    FROM [dbo].[TeachUs] AS [TeachUs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Thems" EntityType="Self.Thems" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Thems].[id_part] AS [id_part], 
+    [Thems].[name] AS [name], 
+    [Thems].[id_training] AS [id_training], 
+    [Thems].[id_exercise] AS [id_exercise], 
+    [Thems].[level] AS [level]
+    FROM [dbo].[Thems] AS [Thems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="wordsList" EntityType="Self.wordsList" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [wordsList].[id_exercise] AS [id_exercise], 
+    [wordsList].[id_part] AS [id_part], 
+    [wordsList].[word] AS [word], 
+    [wordsList].[answer1_word] AS [answer1_word], 
+    [wordsList].[answer2_word] AS [answer2_word], 
+    [wordsList].[answer3_word] AS [answer3_word], 
+    [wordsList].[answer4_word] AS [answer4_word], 
+    [wordsList].[level] AS [level], 
+    [wordsList].[answer2_id_morphology] AS [answer2_id_morphology], 
+    [wordsList].[answer3_id_morphology] AS [answer3_id_morphology], 
+    [wordsList].[answer4_id_morphology] AS [answer4_id_morphology], 
+    [wordsList].[word_name] AS [word_name], 
+    [wordsList].[answer1_name] AS [answer1_name], 
+    [wordsList].[answer2_name] AS [answer2_name], 
+    [wordsList].[answer3_name] AS [answer3_name], 
+    [wordsList].[answer4_name] AS [answer4_name], 
+    [wordsList].[id_training] AS [id_training]
+    FROM [dbo].[wordsList] AS [wordsList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="wordsListAll" EntityType="Self.wordsListAll" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [wordsListAll].[id_exercise] AS [id_exercise], 
+    [wordsListAll].[word] AS [word], 
+    [wordsListAll].[answer1_word] AS [answer1_word], 
+    [wordsListAll].[answer2_word] AS [answer2_word], 
+    [wordsListAll].[answer3_word] AS [answer3_word], 
+    [wordsListAll].[answer4_word] AS [answer4_word], 
+    [wordsListAll].[level] AS [level], 
+    [wordsListAll].[answer2_id_morphology] AS [answer2_id_morphology], 
+    [wordsListAll].[answer3_id_morphology] AS [answer3_id_morphology], 
+    [wordsListAll].[answer4_id_morphology] AS [answer4_id_morphology], 
+    [wordsListAll].[word_name] AS [word_name], 
+    [wordsListAll].[answer1_name] AS [answer1_name], 
+    [wordsListAll].[answer2_name] AS [answer2_name], 
+    [wordsListAll].[answer3_name] AS [answer3_name], 
+    [wordsListAll].[answer4_name] AS [answer4_name], 
+    [wordsListAll].[id_training] AS [id_training]
+    FROM [dbo].[wordsListAll] AS [wordsListAll]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="wordsMorphologyIds" EntityType="Self.wordsMorphologyIds" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [wordsMorphologyIds].[id_exercise] AS [id_exercise], 
+    [wordsMorphologyIds].[id_part] AS [id_part], 
+    [wordsMorphologyIds].[word] AS [word], 
+    [wordsMorphologyIds].[answer1_word] AS [answer1_word], 
+    [wordsMorphologyIds].[answer2_word] AS [answer2_word], 
+    [wordsMorphologyIds].[answer3_word] AS [answer3_word], 
+    [wordsMorphologyIds].[answer4_word] AS [answer4_word], 
+    [wordsMorphologyIds].[level] AS [level], 
+    [wordsMorphologyIds].[id_morphology] AS [id_morphology], 
+    [wordsMorphologyIds].[answer1_id_morphology] AS [answer1_id_morphology], 
+    [wordsMorphologyIds].[answer2_id_morphology] AS [answer2_id_morphology], 
+    [wordsMorphologyIds].[answer3_id_morphology] AS [answer3_id_morphology], 
+    [wordsMorphologyIds].[answer4_id_morphology] AS [answer4_id_morphology], 
+    [wordsMorphologyIds].[id_training] AS [id_training]
+    FROM [dbo].[wordsMorphologyIds] AS [wordsMorphologyIds]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="wordsNames" EntityType="Self.wordsNames" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [wordsNames].[id_exercise] AS [id_exercise], 
+    [wordsNames].[id_part] AS [id_part], 
+    [wordsNames].[word_word] AS [word_word], 
+    [wordsNames].[answer1_word] AS [answer1_word], 
+    [wordsNames].[answer2_word] AS [answer2_word], 
+    [wordsNames].[answer3_word] AS [answer3_word], 
+    [wordsNames].[answer4_word] AS [answer4_word], 
+    [wordsNames].[level] AS [level], 
+    [wordsNames].[id_training] AS [id_training]
+    FROM [dbo].[wordsNames] AS [wordsNames]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="wordsPartsIds" EntityType="Self.wordsPartsIds" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [wordsPartsIds].[id_exercise] AS [id_exercise], 
+    [wordsPartsIds].[id_part] AS [id_part], 
+    [wordsPartsIds].[word] AS [word], 
+    [wordsPartsIds].[answer1_word] AS [answer1_word], 
+    [wordsPartsIds].[answer2_word] AS [answer2_word], 
+    [wordsPartsIds].[answer3_word] AS [answer3_word], 
+    [wordsPartsIds].[answer4_word] AS [answer4_word], 
+    [wordsPartsIds].[level] AS [level], 
+    [wordsPartsIds].[id_morphology] AS [id_morphology], 
+    [wordsPartsIds].[answer1_id_morphology] AS [answer1_id_morphology], 
+    [wordsPartsIds].[answer2_id_morphology] AS [answer2_id_morphology], 
+    [wordsPartsIds].[answer3_id_morphology] AS [answer3_id_morphology], 
+    [wordsPartsIds].[answer4_id_morphology] AS [answer4_id_morphology], 
+    [wordsPartsIds].[word_id_part] AS [word_id_part], 
+    [wordsPartsIds].[answer1_id_part] AS [answer1_id_part], 
+    [wordsPartsIds].[answer2_id_part] AS [answer2_id_part], 
+    [wordsPartsIds].[answer3_id_part] AS [answer3_id_part], 
+    [wordsPartsIds].[answer4_id_part] AS [answer4_id_part], 
+    [wordsPartsIds].[id_training] AS [id_training]
+    FROM [dbo].[wordsPartsIds] AS [wordsPartsIds]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="wordsView" EntityType="Self.wordsView" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [wordsView].[id] AS [id], 
+    [wordsView].[id_part] AS [id_part], 
+    [wordsView].[Expr1] AS [Expr1], 
+    [wordsView].[word] AS [word], 
+    [wordsView].[id_morphology] AS [id_morphology], 
+    [wordsView].[name] AS [name]
+    FROM [dbo].[wordsView] AS [wordsView]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_exercise_trainings1" Association="Self.FK_exercise_trainings1">
+      <End Role="trainings" EntitySet="trainings" />
+      <End Role="exercise" EntitySet="exercise" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic" Association="Self.FK_lexicAll_lexic">
+      <End Role="lexic" EntitySet="lexic" />
+      <End Role="lexicAll" EntitySet="lexicAll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic1" Association="Self.FK_lexicAll_lexic1">
+      <End Role="lexic" EntitySet="lexic" />
+      <End Role="lexicAll" EntitySet="lexicAll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic2" Association="Self.FK_lexicAll_lexic2">
+      <End Role="lexic" EntitySet="lexic" />
+      <End Role="lexicAll" EntitySet="lexicAll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic3" Association="Self.FK_lexicAll_lexic3">
+      <End Role="lexic" EntitySet="lexic" />
+      <End Role="lexicAll" EntitySet="lexicAll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic4" Association="Self.FK_lexicAll_lexic4">
+      <End Role="lexic" EntitySet="lexic" />
+      <End Role="lexicAll" EntitySet="lexicAll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic5" Association="Self.FK_lexicAll_lexic5">
+      <End Role="lexic" EntitySet="lexic" />
+      <End Role="lexicAll" EntitySet="lexicAll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicology_comments" Association="Self.FK_lexicology_comments">
+      <End Role="comments" EntitySet="comments" />
+      <End Role="lexicology" EntitySet="lexicology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicology_words" Association="Self.FK_lexicology_words">
+      <End Role="words" EntitySet="words" />
+      <End Role="lexicology" EntitySet="lexicology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicology_words1" Association="Self.FK_lexicology_words1">
+      <End Role="words" EntitySet="words" />
+      <End Role="lexicology" EntitySet="lexicology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_chislo" Association="Self.FK_morphology_chislo">
+      <End Role="chislo" EntitySet="chislo" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_deistvit" Association="Self.FK_morphology_deistvit">
+      <End Role="deistvit" EntitySet="deistvit" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_drob" Association="Self.FK_morphology_drob">
+      <End Role="drob" EntitySet="drob" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_forma" Association="Self.FK_morphology_forma">
+      <End Role="forma" EntitySet="forma" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_kolich" Association="Self.FK_morphology_kolich">
+      <End Role="kolich" EntitySet="kolich" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_lico" Association="Self.FK_morphology_lico">
+      <End Role="lico" EntitySet="lico" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_naklon" Association="Self.FK_morphology_naklon">
+      <End Role="naklon" EntitySet="naklon" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_naricat" Association="Self.FK_morphology_naricat">
+      <End Role="naricat" EntitySet="naricat" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_neizmen" Association="Self.FK_morphology_neizmen">
+      <End Role="neizmen" EntitySet="neizmen" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_odush" Association="Self.FK_morphology_odush">
+      <End Role="odush" EntitySet="odush" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_padezh" Association="Self.FK_morphology_padezh">
+      <End Role="padezh" EntitySet="padezh" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_parts" Association="Self.FK_morphology_parts">
+      <End Role="parts" EntitySet="parts" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_perehod" Association="Self.FK_morphology_perehod">
+      <End Role="perehod" EntitySet="perehod" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_podrazryad" Association="Self.FK_morphology_podrazryad">
+      <End Role="podrazryad" EntitySet="podrazryad" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_proizvodnost" Association="Self.FK_morphology_proizvodnost">
+      <End Role="proizvodnost" EntitySet="proizvodnost" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_prost" Association="Self.FK_morphology_prost">
+      <End Role="prost" EntitySet="prost" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_razryad" Association="Self.FK_morphology_razryad">
+      <End Role="razryad" EntitySet="razryad" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_razryadpoznach" Association="Self.FK_morphology_razryadpoznach">
+      <End Role="razryadpoznach" EntitySet="razryadpoznach" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_razryadznach" Association="Self.FK_morphology_razryadznach">
+      <End Role="razryadznach" EntitySet="razryadznach" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_rod" Association="Self.FK_morphology_rod">
+      <End Role="rod" EntitySet="rod" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_sklonen" Association="Self.FK_morphology_sklonen">
+      <End Role="sklonen" EntitySet="sklonen" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_sochinit" Association="Self.FK_morphology_sochinit">
+      <End Role="sochinit" EntitySet="sochinit" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_spryazh" Association="Self.FK_morphology_spryazh">
+      <End Role="spryazh" EntitySet="spryazh" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_stepsrav" Association="Self.FK_morphology_stepsrav">
+      <End Role="stepsrav" EntitySet="stepsrav" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_upotrebls" Association="Self.FK_morphology_upotrebls">
+      <End Role="upotrebls" EntitySet="upotrebls" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_vid" Association="Self.FK_morphology_vid">
+      <End Role="vid" EntitySet="vid" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_vozvrat" Association="Self.FK_morphology_vozvrat">
+      <End Role="vozvrat" EntitySet="vozvrat" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_vremya" Association="Self.FK_morphology_vremya">
+      <End Role="vremya" EntitySet="vremya" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_znacobraz" Association="Self.FK_morphology_znacobraz">
+      <End Role="znacobraz" EntitySet="znacobraz" />
+      <End Role="morphology" EntitySet="morphology" />
+    </AssociationSet>
+    <AssociationSet Name="FK_progress_AspNetUsers" Association="Self.FK_progress_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="progress" EntitySet="progress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_progress_exercise" Association="Self.FK_progress_exercise">
+      <End Role="exercise" EntitySet="exercise" />
+      <End Role="progress" EntitySet="progress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_lexicAll" Association="Self.FK_syll_mirror_lexicAll">
+      <End Role="lexicAll" EntitySet="lexicAll" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words4" Association="Self.FK_syll_mirror_words4">
+      <End Role="words" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words5" Association="Self.FK_syll_mirror_words5">
+      <End Role="words" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words6" Association="Self.FK_syll_mirror_words6">
+      <End Role="words" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words7" Association="Self.FK_syll_mirror_words7">
+      <End Role="words" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words8" Association="Self.FK_syll_mirror_words8">
+      <End Role="words" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_teach_user_AspNetUsers" Association="Self.FK_teach_user_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="teach_user" EntitySet="teach_user" />
+    </AssociationSet>
+    <AssociationSet Name="FK_teach_user_AspNetUsers1" Association="Self.FK_teach_user_AspNetUsers1">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="teach_user" EntitySet="teach_user" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_parts" Association="Self.FK_theme_parts">
+      <End Role="parts" EntitySet="parts" />
+      <End Role="theme" EntitySet="theme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_syll_mirror" Association="Self.FK_theme_syll_mirror">
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+      <End Role="theme" EntitySet="theme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_trainings" Association="Self.FK_theme_trainings">
+      <End Role="trainings" EntitySet="trainings" />
+      <End Role="theme" EntitySet="theme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_trainings1" Association="Self.FK_theme_trainings1">
+      <End Role="trainings" EntitySet="trainings" />
+      <End Role="theme" EntitySet="theme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_words_morphems" Association="Self.FK_words_morphems">
+      <End Role="morphems" EntitySet="morphems" />
+      <End Role="words" EntitySet="words" />
+    </AssociationSet>
+    <AssociationSet Name="FK_words_morphology" Association="Self.FK_words_morphology">
+      <End Role="morphology" EntitySet="morphology" />
+      <End Role="words" EntitySet="words" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

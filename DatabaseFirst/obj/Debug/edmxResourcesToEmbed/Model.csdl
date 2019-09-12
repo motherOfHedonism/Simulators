@@ -1,0 +1,1913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="trainingsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="trainingsEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="Procedure" ReturnType="Collection(trainingsModel.Procedure_Result)">
+      <Parameter Name="param1" Mode="In" Type="Int32" />
+      <Parameter Name="param2" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="progressPro" ReturnType="Collection(trainingsModel.progressPro_Result)">
+      <Parameter Name="param1" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(trainingsModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(trainingsModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="InsStud">
+      <Parameter Name="id1" Mode="In" Type="String" />
+      <Parameter Name="id2" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="RemStud">
+      <Parameter Name="id1" Mode="In" Type="String" />
+      <Parameter Name="id2" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="AspNetRoles" EntityType="trainingsModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="trainingsModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="trainingsModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="trainingsModel.AspNetUser" />
+    <EntitySet Name="chisloes" EntityType="trainingsModel.chislo" />
+    <EntitySet Name="comments" EntityType="trainingsModel.comment" />
+    <EntitySet Name="deistvits" EntityType="trainingsModel.deistvit" />
+    <EntitySet Name="drobs" EntityType="trainingsModel.drob" />
+    <EntitySet Name="exercises" EntityType="trainingsModel.exercise" />
+    <EntitySet Name="formas" EntityType="trainingsModel.forma" />
+    <EntitySet Name="koliches" EntityType="trainingsModel.kolich" />
+    <EntitySet Name="lexics" EntityType="trainingsModel.lexic" />
+    <EntitySet Name="lexicAlls" EntityType="trainingsModel.lexicAll" />
+    <EntitySet Name="lexicologies" EntityType="trainingsModel.lexicology" />
+    <EntitySet Name="licoes" EntityType="trainingsModel.lico" />
+    <EntitySet Name="morphems" EntityType="trainingsModel.morphem" />
+    <EntitySet Name="morphologies" EntityType="trainingsModel.morphology" />
+    <EntitySet Name="naklons" EntityType="trainingsModel.naklon" />
+    <EntitySet Name="naricats" EntityType="trainingsModel.naricat" />
+    <EntitySet Name="neizmen" EntityType="trainingsModel.neizman" />
+    <EntitySet Name="odushes" EntityType="trainingsModel.odush" />
+    <EntitySet Name="padezhs" EntityType="trainingsModel.padezh" />
+    <EntitySet Name="parts" EntityType="trainingsModel.part" />
+    <EntitySet Name="perehods" EntityType="trainingsModel.perehod" />
+    <EntitySet Name="podrazryads" EntityType="trainingsModel.podrazryad" />
+    <EntitySet Name="progresses" EntityType="trainingsModel.progress" />
+    <EntitySet Name="proizvodnosts" EntityType="trainingsModel.proizvodnost" />
+    <EntitySet Name="prosts" EntityType="trainingsModel.prost" />
+    <EntitySet Name="razryads" EntityType="trainingsModel.razryad" />
+    <EntitySet Name="razryadpoznaches" EntityType="trainingsModel.razryadpoznach" />
+    <EntitySet Name="razryadznaches" EntityType="trainingsModel.razryadznach" />
+    <EntitySet Name="rods" EntityType="trainingsModel.rod" />
+    <EntitySet Name="sklonens" EntityType="trainingsModel.sklonen" />
+    <EntitySet Name="sochinits" EntityType="trainingsModel.sochinit" />
+    <EntitySet Name="spryazhs" EntityType="trainingsModel.spryazh" />
+    <EntitySet Name="stepsravs" EntityType="trainingsModel.stepsrav" />
+    <EntitySet Name="syll_mirror" EntityType="trainingsModel.syll_mirror" />
+    <EntitySet Name="sysdiagrams" EntityType="trainingsModel.sysdiagram" />
+    <EntitySet Name="themes" EntityType="trainingsModel.theme" />
+    <EntitySet Name="trainings" EntityType="trainingsModel.training" />
+    <EntitySet Name="upotrebls" EntityType="trainingsModel.upotrebl" />
+    <EntitySet Name="vids" EntityType="trainingsModel.vid" />
+    <EntitySet Name="vozvrats" EntityType="trainingsModel.vozvrat" />
+    <EntitySet Name="vremyas" EntityType="trainingsModel.vremya" />
+    <EntitySet Name="words" EntityType="trainingsModel.word" />
+    <EntitySet Name="znacobrazs" EntityType="trainingsModel.znacobraz" />
+    <EntitySet Name="lexic_view" EntityType="trainingsModel.lexic_view" />
+    <EntitySet Name="lexicIds_view" EntityType="trainingsModel.lexicIds_view" />
+    <EntitySet Name="morphology_view" EntityType="trainingsModel.morphology_view" />
+    <EntitySet Name="nextViews" EntityType="trainingsModel.nextView" />
+    <EntitySet Name="nextView1" EntityType="trainingsModel.nextView1" />
+    <EntitySet Name="part1" EntityType="trainingsModel.part1" />
+    <EntitySet Name="progressUsers" EntityType="trainingsModel.progressUser" />
+    <EntitySet Name="Teachers" EntityType="trainingsModel.Teacher" />
+    <EntitySet Name="TeachUs" EntityType="trainingsModel.TeachU" />
+    <EntitySet Name="Thems" EntityType="trainingsModel.Them" />
+    <EntitySet Name="wordsLists" EntityType="trainingsModel.wordsList" />
+    <EntitySet Name="wordsListAlls" EntityType="trainingsModel.wordsListAll" />
+    <EntitySet Name="wordsMorphologyIds" EntityType="trainingsModel.wordsMorphologyId" />
+    <EntitySet Name="wordsNames" EntityType="trainingsModel.wordsName" />
+    <EntitySet Name="wordsPartsIds" EntityType="trainingsModel.wordsPartsId" />
+    <EntitySet Name="wordsViews" EntityType="trainingsModel.wordsView" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="trainingsModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="trainingsModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_progress_AspNetUsers" Association="trainingsModel.FK_progress_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="progress" EntitySet="progresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_chislo" Association="trainingsModel.FK_morphology_chislo">
+      <End Role="chislo" EntitySet="chisloes" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicology_comments" Association="trainingsModel.FK_lexicology_comments">
+      <End Role="comment" EntitySet="comments" />
+      <End Role="lexicology" EntitySet="lexicologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_deistvit" Association="trainingsModel.FK_morphology_deistvit">
+      <End Role="deistvit" EntitySet="deistvits" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_drob" Association="trainingsModel.FK_morphology_drob">
+      <End Role="drob" EntitySet="drobs" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_exercise_trainings1" Association="trainingsModel.FK_exercise_trainings1">
+      <End Role="training" EntitySet="trainings" />
+      <End Role="exercise" EntitySet="exercises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_progress_exercise" Association="trainingsModel.FK_progress_exercise">
+      <End Role="exercise" EntitySet="exercises" />
+      <End Role="progress" EntitySet="progresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_forma" Association="trainingsModel.FK_morphology_forma">
+      <End Role="forma" EntitySet="formas" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_kolich" Association="trainingsModel.FK_morphology_kolich">
+      <End Role="kolich" EntitySet="koliches" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic" Association="trainingsModel.FK_lexicAll_lexic">
+      <End Role="lexic" EntitySet="lexics" />
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic1" Association="trainingsModel.FK_lexicAll_lexic1">
+      <End Role="lexic" EntitySet="lexics" />
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic2" Association="trainingsModel.FK_lexicAll_lexic2">
+      <End Role="lexic" EntitySet="lexics" />
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic3" Association="trainingsModel.FK_lexicAll_lexic3">
+      <End Role="lexic" EntitySet="lexics" />
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic4" Association="trainingsModel.FK_lexicAll_lexic4">
+      <End Role="lexic" EntitySet="lexics" />
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicAll_lexic5" Association="trainingsModel.FK_lexicAll_lexic5">
+      <End Role="lexic" EntitySet="lexics" />
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_lexicAll" Association="trainingsModel.FK_syll_mirror_lexicAll">
+      <End Role="lexicAll" EntitySet="lexicAlls" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicology_words" Association="trainingsModel.FK_lexicology_words">
+      <End Role="word" EntitySet="words" />
+      <End Role="lexicology" EntitySet="lexicologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lexicology_words1" Association="trainingsModel.FK_lexicology_words1">
+      <End Role="word" EntitySet="words" />
+      <End Role="lexicology" EntitySet="lexicologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_lico" Association="trainingsModel.FK_morphology_lico">
+      <End Role="lico" EntitySet="licoes" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_words_morphems" Association="trainingsModel.FK_words_morphems">
+      <End Role="morphem" EntitySet="morphems" />
+      <End Role="word" EntitySet="words" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_naklon" Association="trainingsModel.FK_morphology_naklon">
+      <End Role="naklon" EntitySet="naklons" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_naricat" Association="trainingsModel.FK_morphology_naricat">
+      <End Role="naricat" EntitySet="naricats" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_neizmen" Association="trainingsModel.FK_morphology_neizmen">
+      <End Role="neizman" EntitySet="neizmen" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_odush" Association="trainingsModel.FK_morphology_odush">
+      <End Role="odush" EntitySet="odushes" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_padezh" Association="trainingsModel.FK_morphology_padezh">
+      <End Role="padezh" EntitySet="padezhs" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_parts" Association="trainingsModel.FK_morphology_parts">
+      <End Role="part" EntitySet="parts" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_perehod" Association="trainingsModel.FK_morphology_perehod">
+      <End Role="perehod" EntitySet="perehods" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_podrazryad" Association="trainingsModel.FK_morphology_podrazryad">
+      <End Role="podrazryad" EntitySet="podrazryads" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_proizvodnost" Association="trainingsModel.FK_morphology_proizvodnost">
+      <End Role="proizvodnost" EntitySet="proizvodnosts" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_prost" Association="trainingsModel.FK_morphology_prost">
+      <End Role="prost" EntitySet="prosts" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_razryad" Association="trainingsModel.FK_morphology_razryad">
+      <End Role="razryad" EntitySet="razryads" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_razryadpoznach" Association="trainingsModel.FK_morphology_razryadpoznach">
+      <End Role="razryadpoznach" EntitySet="razryadpoznaches" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_razryadznach" Association="trainingsModel.FK_morphology_razryadznach">
+      <End Role="razryadznach" EntitySet="razryadznaches" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_rod" Association="trainingsModel.FK_morphology_rod">
+      <End Role="rod" EntitySet="rods" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_sklonen" Association="trainingsModel.FK_morphology_sklonen">
+      <End Role="sklonen" EntitySet="sklonens" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_sochinit" Association="trainingsModel.FK_morphology_sochinit">
+      <End Role="sochinit" EntitySet="sochinits" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_spryazh" Association="trainingsModel.FK_morphology_spryazh">
+      <End Role="spryazh" EntitySet="spryazhs" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_stepsrav" Association="trainingsModel.FK_morphology_stepsrav">
+      <End Role="stepsrav" EntitySet="stepsravs" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_upotrebls" Association="trainingsModel.FK_morphology_upotrebls">
+      <End Role="upotrebl" EntitySet="upotrebls" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_vid" Association="trainingsModel.FK_morphology_vid">
+      <End Role="vid" EntitySet="vids" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_vozvrat" Association="trainingsModel.FK_morphology_vozvrat">
+      <End Role="vozvrat" EntitySet="vozvrats" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_vremya" Association="trainingsModel.FK_morphology_vremya">
+      <End Role="vremya" EntitySet="vremyas" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_morphology_znacobraz" Association="trainingsModel.FK_morphology_znacobraz">
+      <End Role="znacobraz" EntitySet="znacobrazs" />
+      <End Role="morphology" EntitySet="morphologies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_words_morphology" Association="trainingsModel.FK_words_morphology">
+      <End Role="morphology" EntitySet="morphologies" />
+      <End Role="word" EntitySet="words" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_parts" Association="trainingsModel.FK_theme_parts">
+      <End Role="part" EntitySet="parts" />
+      <End Role="theme" EntitySet="themes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words4" Association="trainingsModel.FK_syll_mirror_words4">
+      <End Role="word" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words5" Association="trainingsModel.FK_syll_mirror_words5">
+      <End Role="word" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words6" Association="trainingsModel.FK_syll_mirror_words6">
+      <End Role="word" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words7" Association="trainingsModel.FK_syll_mirror_words7">
+      <End Role="word" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_syll_mirror_words8" Association="trainingsModel.FK_syll_mirror_words8">
+      <End Role="word" EntitySet="words" />
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_syll_mirror" Association="trainingsModel.FK_theme_syll_mirror">
+      <End Role="syll_mirror" EntitySet="syll_mirror" />
+      <End Role="theme" EntitySet="themes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_trainings" Association="trainingsModel.FK_theme_trainings">
+      <End Role="training" EntitySet="trainings" />
+      <End Role="theme" EntitySet="themes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_theme_trainings1" Association="trainingsModel.FK_theme_trainings1">
+      <End Role="training" EntitySet="trainings" />
+      <End Role="theme" EntitySet="themes" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="trainingsModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <AssociationSet Name="teach_user" Association="trainingsModel.teach_user">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUser1" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="Procedure_Result">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+    <Property Type="Int32" Name="Column2" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="progressPro_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="word" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="mark" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="trainingsModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="trainingsModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="trainingsModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="trainingsModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="trainingsModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="progresses" Relationship="trainingsModel.FK_progress_AspNetUsers" FromRole="AspNetUser" ToRole="progress" />
+    <NavigationProperty Name="AspNetRoles" Relationship="trainingsModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+    <NavigationProperty Name="AspNetUsers1" Relationship="trainingsModel.teach_user" FromRole="AspNetUser" ToRole="AspNetUser1" />
+    <NavigationProperty Name="AspNetUsers" Relationship="trainingsModel.teach_user" FromRole="AspNetUser1" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="chislo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_chislo" FromRole="chislo" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="comment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="lexicologies" Relationship="trainingsModel.FK_lexicology_comments" FromRole="comment" ToRole="lexicology" />
+  </EntityType>
+  <EntityType Name="deistvit">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_deistvit" FromRole="deistvit" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="drob">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_drob" FromRole="drob" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="exercise">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id_training" Type="Int32" />
+    <NavigationProperty Name="training" Relationship="trainingsModel.FK_exercise_trainings1" FromRole="exercise" ToRole="training" />
+    <NavigationProperty Name="progresses" Relationship="trainingsModel.FK_progress_exercise" FromRole="exercise" ToRole="progress" />
+  </EntityType>
+  <EntityType Name="forma">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_forma" FromRole="forma" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="kolich">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_kolich" FromRole="kolich" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="lexic">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="lexicAlls" Relationship="trainingsModel.FK_lexicAll_lexic" FromRole="lexic" ToRole="lexicAll" />
+    <NavigationProperty Name="lexicAlls1" Relationship="trainingsModel.FK_lexicAll_lexic1" FromRole="lexic" ToRole="lexicAll" />
+    <NavigationProperty Name="lexicAlls2" Relationship="trainingsModel.FK_lexicAll_lexic2" FromRole="lexic" ToRole="lexicAll" />
+    <NavigationProperty Name="lexicAlls3" Relationship="trainingsModel.FK_lexicAll_lexic3" FromRole="lexic" ToRole="lexicAll" />
+    <NavigationProperty Name="lexicAlls4" Relationship="trainingsModel.FK_lexicAll_lexic4" FromRole="lexic" ToRole="lexicAll" />
+    <NavigationProperty Name="lexicAlls5" Relationship="trainingsModel.FK_lexicAll_lexic5" FromRole="lexic" ToRole="lexicAll" />
+  </EntityType>
+  <EntityType Name="lexicAll">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="lexic_1_2" Type="Int32" />
+    <Property Name="lexic_2_3" Type="Int32" />
+    <Property Name="lexic_1_3" Type="Int32" />
+    <Property Name="lexic_3_4" Type="Int32" />
+    <Property Name="lexic_2_4" Type="Int32" />
+    <Property Name="lexic_1_4" Type="Int32" />
+    <NavigationProperty Name="lexic" Relationship="trainingsModel.FK_lexicAll_lexic" FromRole="lexicAll" ToRole="lexic" />
+    <NavigationProperty Name="lexic1" Relationship="trainingsModel.FK_lexicAll_lexic1" FromRole="lexicAll" ToRole="lexic" />
+    <NavigationProperty Name="lexic2" Relationship="trainingsModel.FK_lexicAll_lexic2" FromRole="lexicAll" ToRole="lexic" />
+    <NavigationProperty Name="lexic3" Relationship="trainingsModel.FK_lexicAll_lexic3" FromRole="lexicAll" ToRole="lexic" />
+    <NavigationProperty Name="lexic4" Relationship="trainingsModel.FK_lexicAll_lexic4" FromRole="lexicAll" ToRole="lexic" />
+    <NavigationProperty Name="lexic5" Relationship="trainingsModel.FK_lexicAll_lexic5" FromRole="lexicAll" ToRole="lexic" />
+    <NavigationProperty Name="syll_mirror" Relationship="trainingsModel.FK_syll_mirror_lexicAll" FromRole="lexicAll" ToRole="syll_mirror" />
+  </EntityType>
+  <EntityType Name="lexicology">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_word1" Type="Int32" />
+    <Property Name="id_word2" Type="Int32" />
+    <Property Name="id_comment" Type="Int32" />
+    <NavigationProperty Name="comment" Relationship="trainingsModel.FK_lexicology_comments" FromRole="lexicology" ToRole="comment" />
+    <NavigationProperty Name="word" Relationship="trainingsModel.FK_lexicology_words" FromRole="lexicology" ToRole="word" />
+    <NavigationProperty Name="word1" Relationship="trainingsModel.FK_lexicology_words1" FromRole="lexicology" ToRole="word" />
+  </EntityType>
+  <EntityType Name="lico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_lico" FromRole="lico" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="morphem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prefix1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prefix2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prefix3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="root1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="root2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="suffix1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="suffix2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="suffix3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="suffix4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="okonchan1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="okonchan2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="words" Relationship="trainingsModel.FK_words_morphems" FromRole="morphem" ToRole="word" />
+  </EntityType>
+  <EntityType Name="morphology">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_part" Type="Int32" />
+    <Property Name="odush" Type="Int32" />
+    <Property Name="naricat" Type="Int32" />
+    <Property Name="rod" Type="Int32" />
+    <Property Name="sklonen" Type="Int32" />
+    <Property Name="chislo" Type="Int32" />
+    <Property Name="padezh" Type="Int32" />
+    <Property Name="razryad" Type="Int32" />
+    <Property Name="forma" Type="Int32" />
+    <Property Name="stepsrav" Type="Int32" />
+    <Property Name="prost" Type="Int32" />
+    <Property Name="kolich" Type="Int32" />
+    <Property Name="drob" Type="Int32" />
+    <Property Name="razryadznach" Type="Int32" />
+    <Property Name="lico" Type="Int32" />
+    <Property Name="vid" Type="Int32" />
+    <Property Name="spryazh" Type="Int32" />
+    <Property Name="vozvrat" Type="Int32" />
+    <Property Name="perehod" Type="Int32" />
+    <Property Name="naklon" Type="Int32" />
+    <Property Name="vremya" Type="Int32" />
+    <Property Name="deistvit" Type="Int32" />
+    <Property Name="neizmen" Type="Int32" />
+    <Property Name="znacobraz" Type="Int32" />
+    <Property Name="proizvodnost" Type="Int32" />
+    <Property Name="sochinit" Type="Int32" />
+    <Property Name="upotrebls" Type="Int32" />
+    <Property Name="razryadpoznach" Type="Int32" />
+    <Property Name="podrazryad" Type="Int32" />
+    <NavigationProperty Name="chislo1" Relationship="trainingsModel.FK_morphology_chislo" FromRole="morphology" ToRole="chislo" />
+    <NavigationProperty Name="deistvit1" Relationship="trainingsModel.FK_morphology_deistvit" FromRole="morphology" ToRole="deistvit" />
+    <NavigationProperty Name="drob1" Relationship="trainingsModel.FK_morphology_drob" FromRole="morphology" ToRole="drob" />
+    <NavigationProperty Name="forma1" Relationship="trainingsModel.FK_morphology_forma" FromRole="morphology" ToRole="forma" />
+    <NavigationProperty Name="kolich1" Relationship="trainingsModel.FK_morphology_kolich" FromRole="morphology" ToRole="kolich" />
+    <NavigationProperty Name="lico1" Relationship="trainingsModel.FK_morphology_lico" FromRole="morphology" ToRole="lico" />
+    <NavigationProperty Name="naklon1" Relationship="trainingsModel.FK_morphology_naklon" FromRole="morphology" ToRole="naklon" />
+    <NavigationProperty Name="naricat1" Relationship="trainingsModel.FK_morphology_naricat" FromRole="morphology" ToRole="naricat" />
+    <NavigationProperty Name="neizman" Relationship="trainingsModel.FK_morphology_neizmen" FromRole="morphology" ToRole="neizman" />
+    <NavigationProperty Name="odush1" Relationship="trainingsModel.FK_morphology_odush" FromRole="morphology" ToRole="odush" />
+    <NavigationProperty Name="padezh1" Relationship="trainingsModel.FK_morphology_padezh" FromRole="morphology" ToRole="padezh" />
+    <NavigationProperty Name="part" Relationship="trainingsModel.FK_morphology_parts" FromRole="morphology" ToRole="part" />
+    <NavigationProperty Name="perehod1" Relationship="trainingsModel.FK_morphology_perehod" FromRole="morphology" ToRole="perehod" />
+    <NavigationProperty Name="podrazryad1" Relationship="trainingsModel.FK_morphology_podrazryad" FromRole="morphology" ToRole="podrazryad" />
+    <NavigationProperty Name="proizvodnost1" Relationship="trainingsModel.FK_morphology_proizvodnost" FromRole="morphology" ToRole="proizvodnost" />
+    <NavigationProperty Name="prost1" Relationship="trainingsModel.FK_morphology_prost" FromRole="morphology" ToRole="prost" />
+    <NavigationProperty Name="razryad1" Relationship="trainingsModel.FK_morphology_razryad" FromRole="morphology" ToRole="razryad" />
+    <NavigationProperty Name="razryadpoznach1" Relationship="trainingsModel.FK_morphology_razryadpoznach" FromRole="morphology" ToRole="razryadpoznach" />
+    <NavigationProperty Name="razryadznach1" Relationship="trainingsModel.FK_morphology_razryadznach" FromRole="morphology" ToRole="razryadznach" />
+    <NavigationProperty Name="rod1" Relationship="trainingsModel.FK_morphology_rod" FromRole="morphology" ToRole="rod" />
+    <NavigationProperty Name="sklonen1" Relationship="trainingsModel.FK_morphology_sklonen" FromRole="morphology" ToRole="sklonen" />
+    <NavigationProperty Name="sochinit1" Relationship="trainingsModel.FK_morphology_sochinit" FromRole="morphology" ToRole="sochinit" />
+    <NavigationProperty Name="spryazh1" Relationship="trainingsModel.FK_morphology_spryazh" FromRole="morphology" ToRole="spryazh" />
+    <NavigationProperty Name="stepsrav1" Relationship="trainingsModel.FK_morphology_stepsrav" FromRole="morphology" ToRole="stepsrav" />
+    <NavigationProperty Name="upotrebl" Relationship="trainingsModel.FK_morphology_upotrebls" FromRole="morphology" ToRole="upotrebl" />
+    <NavigationProperty Name="vid1" Relationship="trainingsModel.FK_morphology_vid" FromRole="morphology" ToRole="vid" />
+    <NavigationProperty Name="vozvrat1" Relationship="trainingsModel.FK_morphology_vozvrat" FromRole="morphology" ToRole="vozvrat" />
+    <NavigationProperty Name="vremya1" Relationship="trainingsModel.FK_morphology_vremya" FromRole="morphology" ToRole="vremya" />
+    <NavigationProperty Name="znacobraz1" Relationship="trainingsModel.FK_morphology_znacobraz" FromRole="morphology" ToRole="znacobraz" />
+    <NavigationProperty Name="words" Relationship="trainingsModel.FK_words_morphology" FromRole="morphology" ToRole="word" />
+  </EntityType>
+  <EntityType Name="naklon">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_naklon" FromRole="naklon" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="naricat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_naricat" FromRole="naricat" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="neizman">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_neizmen" FromRole="neizman" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="odush">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_odush" FromRole="odush" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="padezh">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_padezh" FromRole="padezh" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="part">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="odush" Type="Boolean" />
+    <Property Name="naricat" Type="Boolean" />
+    <Property Name="rod" Type="Boolean" />
+    <Property Name="sklonen" Type="Boolean" />
+    <Property Name="chislo" Type="Boolean" />
+    <Property Name="padezh" Type="Boolean" />
+    <Property Name="razryad" Type="Boolean" />
+    <Property Name="forma" Type="Boolean" />
+    <Property Name="stepsrav" Type="Boolean" />
+    <Property Name="prost" Type="Boolean" />
+    <Property Name="kolich" Type="Boolean" />
+    <Property Name="drob" Type="Boolean" />
+    <Property Name="razryadznach" Type="Boolean" />
+    <Property Name="lico" Type="Boolean" />
+    <Property Name="vid" Type="Boolean" />
+    <Property Name="spryazh" Type="Boolean" />
+    <Property Name="vozvrat" Type="Boolean" />
+    <Property Name="perehod" Type="Boolean" />
+    <Property Name="naklon" Type="Boolean" />
+    <Property Name="vremya" Type="Boolean" />
+    <Property Name="deistvit" Type="Boolean" />
+    <Property Name="neizmen" Type="Boolean" />
+    <Property Name="znacobraz" Type="Boolean" />
+    <Property Name="proizvodnost" Type="Boolean" />
+    <Property Name="sochinit" Type="Boolean" />
+    <Property Name="order_id" Type="Int32" />
+    <Property Name="upotrebls" Type="Boolean" />
+    <Property Name="razryadpoznach" Type="Boolean" />
+    <Property Name="podrazryad" Type="Boolean" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_parts" FromRole="part" ToRole="morphology" />
+    <NavigationProperty Name="themes" Relationship="trainingsModel.FK_theme_parts" FromRole="part" ToRole="theme" />
+  </EntityType>
+  <EntityType Name="perehod">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_perehod" FromRole="perehod" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="podrazryad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_podrazryad" FromRole="podrazryad" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="progress">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_user" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="id_exercice" Type="Int32" />
+    <Property Name="mark" Type="Int32" />
+    <Property Name="mark_add" Type="Int32" />
+    <NavigationProperty Name="AspNetUser" Relationship="trainingsModel.FK_progress_AspNetUsers" FromRole="progress" ToRole="AspNetUser" />
+    <NavigationProperty Name="exercise" Relationship="trainingsModel.FK_progress_exercise" FromRole="progress" ToRole="exercise" />
+  </EntityType>
+  <EntityType Name="proizvodnost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_proizvodnost" FromRole="proizvodnost" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="prost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_prost" FromRole="prost" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="razryad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_razryad" FromRole="razryad" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="razryadpoznach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_razryadpoznach" FromRole="razryadpoznach" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="razryadznach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_razryadznach" FromRole="razryadznach" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="rod">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_rod" FromRole="rod" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="sklonen">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_sklonen" FromRole="sklonen" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="sochinit">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_sochinit" FromRole="sochinit" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="spryazh">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_spryazh" FromRole="spryazh" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="stepsrav">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_stepsrav" FromRole="stepsrav" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="syll_mirror">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_word" Type="Int32" />
+    <Property Name="id_answer1" Type="Int32" />
+    <Property Name="id_answer2" Type="Int32" />
+    <Property Name="id_answer3" Type="Int32" />
+    <Property Name="id_answer4" Type="Int32" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="id_lexic" Type="Int32" />
+    <Property Name="isMorphemes" Type="Boolean" />
+    <Property Name="isComment" Type="Boolean" />
+    <NavigationProperty Name="lexicAll" Relationship="trainingsModel.FK_syll_mirror_lexicAll" FromRole="syll_mirror" ToRole="lexicAll" />
+    <NavigationProperty Name="word" Relationship="trainingsModel.FK_syll_mirror_words4" FromRole="syll_mirror" ToRole="word" />
+    <NavigationProperty Name="word1" Relationship="trainingsModel.FK_syll_mirror_words5" FromRole="syll_mirror" ToRole="word" />
+    <NavigationProperty Name="word2" Relationship="trainingsModel.FK_syll_mirror_words6" FromRole="syll_mirror" ToRole="word" />
+    <NavigationProperty Name="word3" Relationship="trainingsModel.FK_syll_mirror_words7" FromRole="syll_mirror" ToRole="word" />
+    <NavigationProperty Name="word4" Relationship="trainingsModel.FK_syll_mirror_words8" FromRole="syll_mirror" ToRole="word" />
+    <NavigationProperty Name="themes" Relationship="trainingsModel.FK_theme_syll_mirror" FromRole="syll_mirror" ToRole="theme" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="theme">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="id_training" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="part" Relationship="trainingsModel.FK_theme_parts" FromRole="theme" ToRole="part" />
+    <NavigationProperty Name="syll_mirror" Relationship="trainingsModel.FK_theme_syll_mirror" FromRole="theme" ToRole="syll_mirror" />
+    <NavigationProperty Name="training" Relationship="trainingsModel.FK_theme_trainings" FromRole="theme" ToRole="training" />
+    <NavigationProperty Name="training1" Relationship="trainingsModel.FK_theme_trainings1" FromRole="theme" ToRole="training" />
+  </EntityType>
+  <EntityType Name="training">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="exercises" Relationship="trainingsModel.FK_exercise_trainings1" FromRole="training" ToRole="exercise" />
+    <NavigationProperty Name="themes" Relationship="trainingsModel.FK_theme_trainings" FromRole="training" ToRole="theme" />
+    <NavigationProperty Name="themes1" Relationship="trainingsModel.FK_theme_trainings1" FromRole="training" ToRole="theme" />
+  </EntityType>
+  <EntityType Name="upotrebl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_upotrebls" FromRole="upotrebl" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="vid">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_vid" FromRole="vid" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="vozvrat">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_vozvrat" FromRole="vozvrat" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="vremya">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_vremya" FromRole="vremya" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="word">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="word1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="primary_form" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_morphems" Type="Int32" />
+    <Property Name="phonetic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_morphology" Type="Int32" />
+    <Property Name="num_accent" Type="Int32" />
+    <Property Name="context" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="morphems" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="lexicologies" Relationship="trainingsModel.FK_lexicology_words" FromRole="word" ToRole="lexicology" />
+    <NavigationProperty Name="lexicologies1" Relationship="trainingsModel.FK_lexicology_words1" FromRole="word" ToRole="lexicology" />
+    <NavigationProperty Name="morphem" Relationship="trainingsModel.FK_words_morphems" FromRole="word" ToRole="morphem" />
+    <NavigationProperty Name="morphology" Relationship="trainingsModel.FK_words_morphology" FromRole="word" ToRole="morphology" />
+    <NavigationProperty Name="syll_mirror" Relationship="trainingsModel.FK_syll_mirror_words4" FromRole="word" ToRole="syll_mirror" />
+    <NavigationProperty Name="syll_mirror1" Relationship="trainingsModel.FK_syll_mirror_words5" FromRole="word" ToRole="syll_mirror" />
+    <NavigationProperty Name="syll_mirror2" Relationship="trainingsModel.FK_syll_mirror_words6" FromRole="word" ToRole="syll_mirror" />
+    <NavigationProperty Name="syll_mirror3" Relationship="trainingsModel.FK_syll_mirror_words7" FromRole="word" ToRole="syll_mirror" />
+    <NavigationProperty Name="syll_mirror4" Relationship="trainingsModel.FK_syll_mirror_words8" FromRole="word" ToRole="syll_mirror" />
+  </EntityType>
+  <EntityType Name="znacobraz">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="morphologies" Relationship="trainingsModel.FK_morphology_znacobraz" FromRole="znacobraz" ToRole="morphology" />
+  </EntityType>
+  <EntityType Name="lexic_view">
+    <Key>
+      <PropertyRef Name="id_lexicAll" />
+      <PropertyRef Name="id_exercise" />
+    </Key>
+    <Property Name="id_lexicAll" Type="Int32" Nullable="false" />
+    <Property Name="lexic_1_2" Type="Int32" />
+    <Property Name="name12" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lexic_2_3" Type="Int32" />
+    <Property Name="name23" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lexic_1_3" Type="Int32" />
+    <Property Name="name13" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lexic_3_4" Type="Int32" />
+    <Property Name="name34" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lexic_2_4" Type="Int32" />
+    <Property Name="name24" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lexic_1_4" Type="Int32" />
+    <Property Name="name14" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="level" Type="Int32" />
+  </EntityType>
+  <EntityType Name="lexicIds_view">
+    <Key>
+      <PropertyRef Name="id_lexicAll" />
+      <PropertyRef Name="id_exercise" />
+    </Key>
+    <Property Name="id_lexicAll" Type="Int32" Nullable="false" />
+    <Property Name="lexic_1_2" Type="Int32" />
+    <Property Name="lexic_2_3" Type="Int32" />
+    <Property Name="lexic_1_3" Type="Int32" />
+    <Property Name="lexic_3_4" Type="Int32" />
+    <Property Name="lexic_2_4" Type="Int32" />
+    <Property Name="lexic_1_4" Type="Int32" />
+    <Property Name="id_lexic" Type="Int32" />
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="level" Type="Int32" />
+  </EntityType>
+  <EntityType Name="morphology_view">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="primary_form" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_morphems" Type="Int32" />
+    <Property Name="phonetic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_morphology" Type="Int32" />
+    <Property Name="num_accent" Type="Int32" />
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" />
+    <Property Name="odush" Type="Int32" />
+    <Property Name="naricat" Type="Int32" />
+    <Property Name="rod" Type="Int32" />
+    <Property Name="sklonen" Type="Int32" />
+    <Property Name="chislo" Type="Int32" />
+    <Property Name="padezh" Type="Int32" />
+    <Property Name="razryad" Type="Int32" />
+    <Property Name="forma" Type="Int32" />
+    <Property Name="stepsrav" Type="Int32" />
+    <Property Name="prost" Type="Int32" />
+    <Property Name="kolich" Type="Int32" />
+    <Property Name="drob" Type="Int32" />
+    <Property Name="razryadznach" Type="Int32" />
+    <Property Name="lico" Type="Int32" />
+    <Property Name="vid" Type="Int32" />
+    <Property Name="spryazh" Type="Int32" />
+    <Property Name="vozvrat" Type="Int32" />
+    <Property Name="perehod" Type="Int32" />
+    <Property Name="naklon" Type="Int32" />
+    <Property Name="vremya" Type="Int32" />
+    <Property Name="deistvit" Type="Int32" />
+    <Property Name="neizmen" Type="Int32" />
+    <Property Name="znacobraz" Type="Int32" />
+    <Property Name="proizvodnost" Type="Int32" />
+    <Property Name="sochinit" Type="Int32" />
+    <Property Name="context" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="upotrebls" Type="Int32" />
+    <Property Name="razryadpoznach" Type="Int32" />
+    <Property Name="podrazryad" Type="Int32" />
+    <Property Name="morphems" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="nextView">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id_word" Type="Int32" />
+    <Property Name="id_answer1" Type="Int32" />
+    <Property Name="id_answer2" Type="Int32" />
+    <Property Name="id_answer3" Type="Int32" />
+    <Property Name="id_answer4" Type="Int32" />
+    <Property Name="isMorphemes" Type="Boolean" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="isComment" Type="Boolean" />
+    <Property Name="id_training" Type="Int32" />
+  </EntityType>
+  <EntityType Name="nextView1">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id_word" Type="Int32" />
+    <Property Name="id_answer1" Type="Int32" />
+    <Property Name="id_answer2" Type="Int32" />
+    <Property Name="id_answer3" Type="Int32" />
+    <Property Name="id_answer4" Type="Int32" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="id_training" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="part1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="odush" Type="Boolean" />
+    <Property Name="naricat" Type="Boolean" />
+    <Property Name="rod" Type="Boolean" />
+    <Property Name="sklonen" Type="Boolean" />
+    <Property Name="chislo" Type="Boolean" />
+    <Property Name="padezh" Type="Boolean" />
+    <Property Name="razryad" Type="Boolean" />
+    <Property Name="forma" Type="Boolean" />
+    <Property Name="stepsrav" Type="Boolean" />
+    <Property Name="prost" Type="Boolean" />
+    <Property Name="kolich" Type="Boolean" />
+    <Property Name="drob" Type="Boolean" />
+    <Property Name="razryadznach" Type="Boolean" />
+    <Property Name="lico" Type="Boolean" />
+    <Property Name="vid" Type="Boolean" />
+    <Property Name="spryazh" Type="Boolean" />
+    <Property Name="vozvrat" Type="Boolean" />
+    <Property Name="perehod" Type="Boolean" />
+    <Property Name="naklon" Type="Boolean" />
+    <Property Name="vremya" Type="Boolean" />
+    <Property Name="deistvit" Type="Boolean" />
+    <Property Name="neizmen" Type="Boolean" />
+    <Property Name="znacobraz" Type="Boolean" />
+    <Property Name="proizvodnost" Type="Boolean" />
+    <Property Name="sochinit" Type="Boolean" />
+    <Property Name="upotrebls" Type="Boolean" />
+    <Property Name="razryadpoznach" Type="Boolean" />
+    <Property Name="podrazryad" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="progressUser">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id_user" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mark" Type="Int32" />
+    <Property Name="mark_add" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TeachU">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmailConfirmed" />
+      <PropertyRef Name="PhoneNumberConfirmed" />
+      <PropertyRef Name="TwoFactorEnabled" />
+      <PropertyRef Name="LockoutEnabled" />
+      <PropertyRef Name="AccessFailedCount" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="id_user1" />
+      <PropertyRef Name="id_user2" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="id_user1" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="id_user2" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Them">
+    <Key>
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id_training" />
+      <PropertyRef Name="id_exercise" />
+    </Key>
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_training" Type="Int32" Nullable="false" />
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="level" Type="Int32" />
+  </EntityType>
+  <EntityType Name="wordsList">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="answer2_id_morphology" Type="Int32" />
+    <Property Name="answer3_id_morphology" Type="Int32" />
+    <Property Name="answer4_id_morphology" Type="Int32" />
+    <Property Name="word_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_training" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="wordsListAll">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_training" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="answer2_id_morphology" Type="Int32" />
+    <Property Name="answer3_id_morphology" Type="Int32" />
+    <Property Name="answer4_id_morphology" Type="Int32" />
+    <Property Name="word_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_training" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="wordsMorphologyId">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="id_morphology" Type="Int32" />
+    <Property Name="answer1_id_morphology" Type="Int32" />
+    <Property Name="answer2_id_morphology" Type="Int32" />
+    <Property Name="answer3_id_morphology" Type="Int32" />
+    <Property Name="answer4_id_morphology" Type="Int32" />
+    <Property Name="id_training" Type="Int32" />
+  </EntityType>
+  <EntityType Name="wordsName">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="word_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="id_training" Type="Int32" />
+  </EntityType>
+  <EntityType Name="wordsPartsId">
+    <Key>
+      <PropertyRef Name="id_exercise" />
+      <PropertyRef Name="id_part" />
+    </Key>
+    <Property Name="id_exercise" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer1_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer2_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer3_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="answer4_word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="level" Type="Int32" />
+    <Property Name="id_morphology" Type="Int32" />
+    <Property Name="answer1_id_morphology" Type="Int32" />
+    <Property Name="answer2_id_morphology" Type="Int32" />
+    <Property Name="answer3_id_morphology" Type="Int32" />
+    <Property Name="answer4_id_morphology" Type="Int32" />
+    <Property Name="word_id_part" Type="Int32" />
+    <Property Name="answer1_id_part" Type="Int32" />
+    <Property Name="answer2_id_part" Type="Int32" />
+    <Property Name="answer3_id_part" Type="Int32" />
+    <Property Name="answer4_id_part" Type="Int32" />
+    <Property Name="id_training" Type="Int32" />
+  </EntityType>
+  <EntityType Name="wordsView">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Expr1" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id_part" Type="Int32" />
+    <Property Name="Expr1" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_morphology" Type="Int32" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="trainingsModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="trainingsModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="trainingsModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="trainingsModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_progress_AspNetUsers">
+    <End Type="trainingsModel.AspNetUser" Role="AspNetUser" Multiplicity="0..1" />
+    <End Type="trainingsModel.progress" Role="progress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="progress">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_chislo">
+    <End Type="trainingsModel.chislo" Role="chislo" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="chislo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="chislo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicology_comments">
+    <End Type="trainingsModel.comment" Role="comment" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicology" Role="lexicology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="comment">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicology">
+        <PropertyRef Name="id_comment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_deistvit">
+    <End Type="trainingsModel.deistvit" Role="deistvit" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="deistvit">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="deistvit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_drob">
+    <End Type="trainingsModel.drob" Role="drob" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="drob">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="drob" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_exercise_trainings1">
+    <End Type="trainingsModel.training" Role="training" Multiplicity="0..1" />
+    <End Type="trainingsModel.exercise" Role="exercise" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="training">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="exercise">
+        <PropertyRef Name="id_training" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_progress_exercise">
+    <End Type="trainingsModel.exercise" Role="exercise" Multiplicity="0..1" />
+    <End Type="trainingsModel.progress" Role="progress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exercise">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="progress">
+        <PropertyRef Name="id_exercice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_forma">
+    <End Type="trainingsModel.forma" Role="forma" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="forma">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="forma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_kolich">
+    <End Type="trainingsModel.kolich" Role="kolich" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kolich">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="kolich" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic">
+    <End Type="trainingsModel.lexic" Role="lexic" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_1_2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic1">
+    <End Type="trainingsModel.lexic" Role="lexic" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_2_3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic2">
+    <End Type="trainingsModel.lexic" Role="lexic" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_1_3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic3">
+    <End Type="trainingsModel.lexic" Role="lexic" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_3_4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic4">
+    <End Type="trainingsModel.lexic" Role="lexic" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_2_4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicAll_lexic5">
+    <End Type="trainingsModel.lexic" Role="lexic" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexic">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicAll">
+        <PropertyRef Name="lexic_1_4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_lexicAll">
+    <End Type="trainingsModel.lexicAll" Role="lexicAll" Multiplicity="0..1" />
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lexicAll">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_lexic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicology_words">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicology" Role="lexicology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicology">
+        <PropertyRef Name="id_word1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lexicology_words1">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.lexicology" Role="lexicology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lexicology">
+        <PropertyRef Name="id_word2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_lico">
+    <End Type="trainingsModel.lico" Role="lico" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="lico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_words_morphems">
+    <End Type="trainingsModel.morphem" Role="morphem" Multiplicity="0..1" />
+    <End Type="trainingsModel.word" Role="word" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="morphem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="word">
+        <PropertyRef Name="id_morphems" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_naklon">
+    <End Type="trainingsModel.naklon" Role="naklon" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="naklon">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="naklon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_naricat">
+    <End Type="trainingsModel.naricat" Role="naricat" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="naricat">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="naricat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_neizmen">
+    <End Type="trainingsModel.neizman" Role="neizman" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="neizman">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="neizmen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_odush">
+    <End Type="trainingsModel.odush" Role="odush" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="odush">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="odush" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_padezh">
+    <End Type="trainingsModel.padezh" Role="padezh" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="padezh">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="padezh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_parts">
+    <End Type="trainingsModel.part" Role="part" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="part">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="id_part" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_perehod">
+    <End Type="trainingsModel.perehod" Role="perehod" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="perehod">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="perehod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_podrazryad">
+    <End Type="trainingsModel.podrazryad" Role="podrazryad" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="podrazryad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="podrazryad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_proizvodnost">
+    <End Type="trainingsModel.proizvodnost" Role="proizvodnost" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proizvodnost">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="proizvodnost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_prost">
+    <End Type="trainingsModel.prost" Role="prost" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="prost">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="prost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_razryad">
+    <End Type="trainingsModel.razryad" Role="razryad" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="razryad">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="razryad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_razryadpoznach">
+    <End Type="trainingsModel.razryadpoznach" Role="razryadpoznach" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="razryadpoznach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="razryadpoznach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_razryadznach">
+    <End Type="trainingsModel.razryadznach" Role="razryadznach" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="razryadznach">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="razryadznach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_rod">
+    <End Type="trainingsModel.rod" Role="rod" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rod">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="rod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_sklonen">
+    <End Type="trainingsModel.sklonen" Role="sklonen" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sklonen">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="sklonen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_sochinit">
+    <End Type="trainingsModel.sochinit" Role="sochinit" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sochinit">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="sochinit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_spryazh">
+    <End Type="trainingsModel.spryazh" Role="spryazh" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="spryazh">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="spryazh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_stepsrav">
+    <End Type="trainingsModel.stepsrav" Role="stepsrav" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="stepsrav">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="stepsrav" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_upotrebls">
+    <End Type="trainingsModel.upotrebl" Role="upotrebl" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="upotrebl">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="upotrebls" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_vid">
+    <End Type="trainingsModel.vid" Role="vid" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vid">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="vid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_vozvrat">
+    <End Type="trainingsModel.vozvrat" Role="vozvrat" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vozvrat">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="vozvrat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_vremya">
+    <End Type="trainingsModel.vremya" Role="vremya" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vremya">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="vremya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_morphology_znacobraz">
+    <End Type="trainingsModel.znacobraz" Role="znacobraz" Multiplicity="0..1" />
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="znacobraz">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="morphology">
+        <PropertyRef Name="znacobraz" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_words_morphology">
+    <End Type="trainingsModel.morphology" Role="morphology" Multiplicity="0..1" />
+    <End Type="trainingsModel.word" Role="word" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="morphology">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="word">
+        <PropertyRef Name="id_morphology" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_parts">
+    <End Type="trainingsModel.part" Role="part" Multiplicity="1" />
+    <End Type="trainingsModel.theme" Role="theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="part">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_part" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words4">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_word" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words5">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words6">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words7">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_syll_mirror_words8">
+    <End Type="trainingsModel.word" Role="word" Multiplicity="0..1" />
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="syll_mirror">
+        <PropertyRef Name="id_answer4" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_syll_mirror">
+    <End Type="trainingsModel.syll_mirror" Role="syll_mirror" Multiplicity="1" />
+    <End Type="trainingsModel.theme" Role="theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="syll_mirror">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_exercise" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_trainings">
+    <End Type="trainingsModel.training" Role="training" Multiplicity="1" />
+    <End Type="trainingsModel.theme" Role="theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="training">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_training" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_theme_trainings1">
+    <End Type="trainingsModel.training" Role="training" Multiplicity="1" />
+    <End Type="trainingsModel.theme" Role="theme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="training">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="theme">
+        <PropertyRef Name="id_training" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="trainingsModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="trainingsModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+  <Association Name="teach_user">
+    <End Type="trainingsModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+    <End Type="trainingsModel.AspNetUser" Role="AspNetUser1" Multiplicity="*" />
+  </Association>
+</Schema>

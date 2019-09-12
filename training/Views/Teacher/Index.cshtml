@@ -1,0 +1,42 @@
+﻿@model IEnumerable<DatabaseFirst.training>
+@{
+    ViewBag.Title = "Training";
+}
+@*Управление тренажёрами*@
+@if (User.IsInRole("Учитель")||(User.IsInRole("Владелец")))
+{
+    <div class="row">
+        <div class="col-md-12">
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+    <div style="text-align:center; color: black; margin-bottom:3%"><h1>Управление тренажёрами.</h1></div>
+    <ul class="c-tile-list">
+        @foreach (var item in Model)
+        {
+            <li class="c-tile-list__item">
+                <article class="c-article-tile t-sass">
+                    <!-- шапка -->
+                    <div class="c-article-tile__header">
+                        <div class="c-article-tile__category">
+                            @Html.ActionLink(@item.name, "ViewTraining", new { id_tr = item.id })
+                        </div>
+                    </div>
+                    <div class="c-article-tile__body">
+                        <div class="c-article-tile__title" itemprop="headline">
+                            @item.description
+                        </div>
+                    </div>
+                </article>
+            </li>
+
+        }
+    </ul>
+}
+else
+{
+    <div style="text-align:center">
+        <h1>Доступ запрещён.</h1>
+        <script>var strLocation = "http://" + location.host + "/Account/Login?ReturnUrl=%2FManage%2FManageLogins"; setTimeout('location.replace(strLocation)', 1000);</script>
+    </div>
+}

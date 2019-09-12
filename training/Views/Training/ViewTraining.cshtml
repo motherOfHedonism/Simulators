@@ -1,0 +1,91 @@
+﻿@model DatabaseFirst.training
+@{
+    ViewBag.Title = "ViewTrainng";
+}
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_LoginPartial")
+    </div>
+</div>
+<div class="row">
+    <h1 style="padding-left:12px">@Model.name</h1>
+
+    <div class="col-md-2">
+        <section>
+            @*@if (Model.id == 1||M)
+            {*@
+                <div>О тренажере</div>
+            @* } *@
+        </section>
+    </div>
+    <div class="col-md-10" style="padding-left:7%;padding-right:10%;">
+        @if (Model.id == 1)
+        {
+            <div style="margin-left:-34%;margin-top:5%; margin-bottom:3%">
+                «Слоговое зеркало» обращает внимание ученика на принципы слогоделения, обучает учитывать семантические и звуковые допуски для создания конвергента. При нахождении ответа в данном тренажере активизируются знания по словообразованию и морфологии.
+            </div>
+            <div style="text-align:center; margin-left:-15%; border-bottom:inset">1 уровень</div>
+            foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                //<div style="background-color:aliceblue; border-color:cadetblue;border-width:medium;border-style:ridge; border-radius:20px; margin-left:2%;margin-top:2%; padding:30px; width:25%;text-align:center;">
+                @Html.ActionLink(@item.name, "ExerciseOne", "Exercise", new { id_t = item.id, level = 1, id_tr = Model.id }, new { @class = "btn btn-success btn-lg levelClass" })
+                //  </div>
+            }
+            <div style="text-align:center; margin-left:-15%; border-bottom:inset">2 уровень</div>
+            foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                //<div style="background-color:aliceblue; border-color:cadetblue;border-width:medium;border-style:ridge; border-radius:20px; margin-left:2%;margin-top:2%; padding:30px; width:25%;text-align:center;">
+                @Html.ActionLink(@item.name, "ExerciseTwo", "Exercise", new { id_t = item.id, level = 2, id_tr = Model.id }, new { @class = "btn btn-success btn-lg levelClass" })
+                //  </div>
+            }
+        }
+        @if (Model.id == 2)
+        {
+            <div style="margin-left:-34%;margin-top:5%; margin-bottom:3%">
+                «Звуковое зеркало» служит для привлечения внимания учеников к различиям «звучание-написание». Обращается внимание на необходимость знаний акустических и артикуляционных характеристик, изменений звука в зависимости от места в слове, от рядом стоящих звуков.
+            </div>
+            <div style="text-align:center; margin-left:-15%; border-bottom:inset">1 уровень</div>
+            foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                @Html.ActionLink(@item.name, "ExerciseOne", "Exercise", new { id_t = item.id, level = 1, id_tr = Model.id }, new { @class = "btn btn-success btn-lg levelClass" })
+            }
+            <div style="text-align:center; margin-left:-15%; border-bottom:inset">2 уровень</div>
+            foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                @Html.ActionLink(@item.name, "ExerciseTwo", "Exercise", new { id_t = item.id, level = 2, id_tr = Model.id }, new { @class = "btn btn-success btn-lg levelClass" })
+            }
+        }
+        @if (Model.id == 1007)
+        {
+            <div style="margin-left:-34%;margin-top:5%; margin-bottom:3%;">
+                «Узнай в лицо» помогает привлечь внимание учащихся к межуровневым языковым связям.Формирует у учеников представления о фонетическом слове и тренирует знания фонетики, словообразования и морфологии.
+            </div>
+            <div style="text-align:center; margin-left:-15%; border-bottom:inset">1 уровень</div>
+            foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                @Html.ActionLink(@item.name, "ExerciseOne", "Exercise", new { id_t = item.id, level = 1, id_tr = Model.id }, new { @class = "btn btn-success btn-lg levelClass" })
+            }
+            <div style="text-align:center; margin-left:-15%; border-bottom:inset">2 уровень</div>
+            foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                @Html.ActionLink(@item.name, "ExerciseTwo", "Exercise", new { id_t = item.id, level = 2, id_tr = Model.id }, new { @class = "btn btn-success btn-lg levelClass" })
+            }
+        }
+        @*<div class="col-md-8" style="display:flex; flex-direction:row; align-items:stretch; justify-content:center; flex-wrap:wrap; ">*@
+        @*<label>Темы</label>
+        <ul>
+            @foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                <li>@Html.ActionLink(@item.name, "ExerciseOne", "Exercise", new { id_t = item.id, k = true }, null)</li>
+            }
+        </ul>
+        <label>Уровни</label>
+        <ul>
+            <li>@Html.ActionLink("1 уровень", "ExerciseOne", "Exercise", new { id_t = 1, k = false }, null)</li>
+            <li>@Html.ActionLink("2 уровень", "ExerciseTwo", "Exercise", new { id_t = 2, k = false }, null)</li>
+        </ul>*@
+        <div style="margin-bottom:10%"></div>
+    </div>
+</div>
+
+

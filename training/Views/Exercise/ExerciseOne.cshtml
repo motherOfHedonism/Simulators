@@ -1,0 +1,308 @@
+﻿@model DatabaseFirst.syll_mirror
+@{
+    ViewBag.Title = "Exercise";
+}
+@Scripts.Render("~/Scripts/syllMirror.js")
+@if (Model != null)
+{
+    <style>
+        #prefix1, #prefix2, #prefix3, #root1, #root2, #suffix1, #suffix2, #suffix3, #suffix4, #okonchanie1, #okonchanie2 {
+            min-width: 50px;
+            min-height: 25px;
+            padding: 0;
+            font-weight: 600;
+            border: 1px solid #808080;
+            box-shadow: inset 0 2px 2px rgba(0,0,0,.075);
+            /*overflow:hidden;*/
+            display: inline-flex;
+            /*vertical-align: top;*/
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .morphemLines {
+            display: inline-block;
+            margin-bottom: 2%;
+        }
+    </style>
+
+    <div>
+        <h1 class="js-syllMirror-word">@ViewData["word1"]</h1>
+    </div>
+    <script>
+        function closeClick() {
+            var ball = document.getElementById('formEtalon');
+            ball.style.display = 'none';
+            document.onmousemove = null;
+            ball.style.top = document.body.clientHeight / 2.5 + 'px';
+            ball.style.left = document.body.clientWidth / 2.5 + 'px';
+            $('.js-syllMirror-next-step').prop("disabled", false);
+            document.getElementById('btnBonus').style.display = 'block';
+        }
+        function closeClickBonus() {
+            var ball = document.getElementById('formBonus');
+            ball.style.display = 'none';
+            document.onmousemove = null;
+            ball.style.top = document.documentElement.scrollTop + ball.offsetHeight + "px";
+            ball.style.left = document.body.clientWidth / 2.5 + 'px';
+            document.getElementById("formBonusWord").innerHTML = null;
+            document.getElementById("formBonusAnswer").innerHTML = null;
+            document.getElementById("formBonusResult").innerHTML = null;
+        }
+
+        function additionClick() {
+            closeClick();
+        }
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);
+        }
+        function drop(ev) {
+            var data = ev.dataTransfer.getData("Text");
+            if (ev.target.tagName.toLowerCase() == 'span') {
+                ev.target.parentNode.appendChild(document.getElementById(data));
+                ev.preventDefault();
+            }
+            else {
+                ev.target.appendChild(document.getElementById(data));
+                ev.preventDefault();
+            }
+        }
+        function revisedRandId() {
+            return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+        }
+        function lettersId() {
+            var letters = $(".letters").length;
+            for (var i = 0; i < letters; i++) {
+                $(".letters").get(i).setAttribute('id', revisedRandId());
+            }
+        }
+    </script>
+
+    <div id="formEtalon" style="border:2px solid grey; background-color:rgb(230,230,230); right:30%; width:500px; height:auto; z-index:999999; position:absolute; overflow-x:hidden; display:none;">
+        <div id="formEtalonResult" style="padding:5px; text-align:center; border-bottom:solid; border-bottom-width:1px;"> </div>
+        <div class="row" style="padding:5px; margin-bottom:30px">
+            <div id="formEtalonWord" class="col-sm-6">
+            </div>
+            <div id="formEtalonAnswer" class="col-sm-offset-6">
+            </div>
+        </div>
+        <button onfocus="closeClick()" id="formEtalonButton" style="position:absolute; right:0;bottom:0;">Закрыть</button>
+    </div>
+
+    <div id="formBonus" style="border:2px solid grey; background-color:rgb(230,230,230); right:30%; width:500px; height:auto; z-index:999999; position:absolute; overflow-x:hidden;display:none">
+        <div id="formBonusResult" style="padding:5px; text-align:center; border-bottom:solid; border-bottom-width:1px;"> </div>
+        <div style="padding:2px; text-align:center;font-size:14px;font-weight:900">Морфемный разбор</div>
+        <div class="row" style="padding:5px; margin-bottom:30px;text-align:center">
+            <div id="formBonusWord" class="col-sm-6">
+            </div>
+            <div id="formBonusAnswer" class="col-sm-offset-6">
+            </div>
+        </div>
+        <button onfocus="closeClickBonus()" id="formBonusButton" style="position:absolute; right:0;bottom:0;">Закрыть</button>
+    </div>
+
+
+
+    <div class="row disabledClass">
+        <form class="exercise1 ex" id="@Model.id" data-id="@Model.id" data-pId="@ViewData["nextWord"]" data-realLevel="@ViewData["realLevel"]" data-id_tr="@ViewData["id_tr"]">
+            <div id="contextWord" class="form-group row" style="height:20px; margin-left:2px;">
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4" style="margin-top:7%">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phonetic1" class="col-sm-4 col-form-label">Фонетическая запись слова</label>
+                <div class="col-sm-4">
+                    <input maxlength="30" type="text" placeholder="м'и-на" class="form-control js-syllMirror-word-phonetic" id="phonetic1" name="firstInput" onkeypress="return testPhonetic(event)">
+                </div>
+                <button tabIndex="-1" type="button" class="btn btn-light btn-circle" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите фонетическую запись. Для разделения слогов используйте знак -, для мягкости '. Вместо апострофа можно вводить точку, запятую, цифру 8 или символ *">?</button>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        //Инициализация всплывающей панели для
+                        //элементов веб-страницы, имеющих атрибут
+                        //data-toggle="popover"
+                        $('[data-toggle="popover"]').popover({
+                            //Установление направления отображения popover
+                            placement: 'top'
+                        });
+                    });
+                </script>
+            </div>
+            <div class="form-group row" style="height:50px;margin-top:-10px;">
+                <label for="wordPrimary" id="wordPrimaryLabel" class="col-sm-4 col-form-label">Начальная форма слова</label>
+                <div class="col-sm-4" id="wordPrimary">
+                    <input maxlength="30" type="text" placeholder="мина" id="wordPrimaryInput" class="form-control" onkeypress="return testPrimary(event)">
+                </div>
+                @* <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Введите инфинитив. Примеры инфинитивов - верить, великолепный, дорога">?</button>*@
+                <button tabIndex="-1" type="button" class="btn btn-light btn-circle" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите начальную форму. Примеры - верить, великолепный, дорога. Если слово неизменяемое, введите символ -">?</button>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('[data-toggle="popover"]').popover({
+                            placement: 'top'
+                        });
+                    });
+                </script>
+            </div>
+
+            <fieldset class="form-group row">
+                <legend class="col-form-legend col-sm-6">Выберите часть речи</legend>
+
+                <div class="col-sm-10">
+                    <div class="radio_buttons rb1">
+                        @foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+                        {
+                            <div class="form-check-label">
+                                <label onclick="marmelad.call(this,event || window.event)">
+                                    <input class="js-radio-word" type="radio" name="optradio1" id="gridRadios1" value="@item.id">
+                                    @*
+                                        тень
+                                        <strong>@item.name</strong>*@
+                                    @item.name
+                                </label><br />
+                            </div>
+                        }
+                        <script>
+
+                        </script>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <div class="js-word-morphem" style="display: none;">
+                @Html.Partial("_styllMirrorMorphology")
+            </div>
+        </form>
+
+        <form class="exercise2" id="@Model.id_answer1">
+            <div id="contextAnswer" class="form-group row" style="height:20px; margin-left:2px;">
+
+            </div>
+            <div class="form-group row">
+                <label for="answer" class="col-sm-4 col-form-label">Слово-ответ</label>
+                <div class="col-sm-4">
+                    <input maxlength="30" type="text" placeholder="нами" class="form-control js-syllMirror-word-answer" id="answer" onkeypress="return testAnswer(event)">
+                </div>
+                <button tabIndex="-1" type="button" class="btn btn-light btn-circle" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите слово-ответ, составленное из слогов предыдущего слова. Например, для слова 'мина' словом-ответом будет 'нами'">?</button>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('[data-toggle="popover"]').popover({
+                            placement: 'top'
+                        });
+                    });
+                </script>
+            </div>
+            <div class="form-group row">
+                <label for="phonetic2" class="col-sm-4 col-form-label">Фонетическая запись слова</label>
+                <div class="col-sm-4">
+                    <input maxlength="30" type="text" placeholder="на-м'и" class="form-control js-syllMirror-word-answer-phonetic" id="phonetic2" name="secondInput" onkeypress="return testPhonetic(event)">
+                </div>
+                <button tabIndex="-1" type="button" class="btn btn-light btn-circle" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите фонетическую запись. Для разделения слогов используйте знак -, для мягкости '. Вместо апострофа можно вводить точку, запятую, цифру 8 или символ *">?</button>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('[data-toggle="popover"]').popover({
+                            placement: 'top'
+                        });
+                    });
+                </script>
+            </div>
+            <div class="form-group row" style="height:50px;margin-top:-10px;">
+                <label for="answerPrimary" class="col-sm-4 col-form-label" id="answerPrimaryLabel">Начальная форма слова</label>
+                <div class="col-sm-4" id="answerPrimary">
+                    <input maxlength="30" type="text" placeholder="мы" id="answerPrimaryInput" name="answerPrimaryInput" class="form-control" onkeypress="return testPrimary(event)">
+                </div>
+                @* <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Введите инфинитив. Примеры инфинитивов - верить, великолепный, дорога">?</button>*@
+                <button tabIndex="-1" type="button" class="btn btn-light btn-circle" style="border-radius:50%;border:0;outline: none;" data-toggle="popover" data-content="Введите начальную форму. Примеры - верить, великолепный, дорога. Если слово неизменяемое, введите символ -">?</button>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('[data-toggle="popover"]').popover({
+                            placement: 'top'
+                        });
+                    });
+                </script>
+            </div>
+            <fieldset class="form-group row">
+                <legend class="col-form-legend col-sm-6">Выберите часть речи</legend>
+                <div class="col-sm-10">
+                    <div class="radio_buttons rb2">
+                        @foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+                        {
+                            <div class="form-check-label">
+                                <label onclick="marmelad2.call(this,event || window.event)">
+                                    <input class="js-radio-word-answer" type="radio" name="optradio2" id="gridRadios2" value="@item.id">
+                                    @item.name
+                                </label><br />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </fieldset>
+            <div class="js-word-answer-morphem" style="display:none;">
+                @Html.Partial("_styllMirrorMorphology")
+            </div>
+        </form>
+
+    </div>
+    <div class="row" id="ozenka" style="display:none;color:red; margin-left:50%; margin-top:2%; font-size:50px; font-style: italic;font-family:Snell Roundhand, cursive">
+    </div>
+    <div id="morphems" style="align-content:center; margin-top: 1%; margin-bottom: 2%; border-top: 1px solid; padding-top: 2%;display:none">
+        @Html.Partial("_morphems")
+    </div>
+    <div class="row" id="ozenkaBonus" style="display:none;color:red; text-align:center; font-size:50px; font-style: italic;font-family:Snell Roundhand, cursive">
+    </div>
+    <div class="row" id="ozenkaResult" style="display:none;color:red; text-align:center; margin-top:2%; font-size:50px; font-style: italic;font-family:Snell Roundhand, cursive">
+    </div>
+    <div class="row" id="disabledClassBtn" style="margin-bottom:10%; margin-top:2%">
+        <div class="butt form-group row">
+            <div class="offset-sm-2 col-sm-2" id="buttonNext" style="display:none">
+                <button type="submit" disabled class="btn btn-primary js-syllMirror-next-step" @*onclick="wordInit()"*@>Перейти к следующему заданию</button>
+
+            </div>
+        </div>
+        <div class="butt form-group row" id="btnBonus" style="margin-right:1%;display:none">
+            <div class="offset-sm-2 col-sm-2">
+                <button type="submit" class="btn btn-primary js-syllMirror-bonus">Выполнить дополнительное задание</button>
+            </div>
+        </div>
+        <div class="butt form-group row" id="btnBonusCheck" style="display:none; margin-right:1%">
+            <div class="offset-sm-2 col-sm-2">
+                <button type="submit" class="btn btn-success js-syllMirror-bonusCheck">Проверить дополнительное задание</button>
+            </div>
+        </div>
+        <div class="butt form-group row buttonOk">
+            <div class="offset-sm-2 col-sm-2">
+                <button type="submit" disabled class="btn btn-success js-syllMirror-ok" data-toggle="tooltip" title="Нельзя проверить работу,пока все поля не заполнены" id="proverka">Проверить работу</button>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div>
+        <h1 style="text-align:center"> Упражнений  ещё нет. </h1>
+
+
+    </div>
+}
+<script>
+    var two = $('[type="radio"][value="2"]').parents('.form-check-label');
+    var four = $('[type="radio"][value="4"]').parents('.form-check-label');
+    var six = $('[type="radio"][value="6"]').parents('.form-check-label');
+    var seven = $('[type="radio"][value="7"]').parents('.form-check-label');
+    var eight = $('[type="radio"][value="8"]').parents('.form-check-label');
+    var fteen = $('[type="radio"][value="15"]').parents('.form-check-label');
+    for (var i = 0; i < two.length; i++) {
+        $(seven.get(i)).insertAfter(two.get(i));
+        $(eight.get(i)).insertAfter(seven.get(i));
+        $(four.get(i)).insertAfter(six.get(i));
+        $(fteen.get(i)).insertAfter(four.get(i));
+    }
+</script>

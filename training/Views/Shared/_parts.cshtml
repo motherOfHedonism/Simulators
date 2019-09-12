@@ -1,0 +1,16 @@
+﻿<fieldset class="form-group row chooseFieldset">
+    <legend class="col-form-legend col-sm-6 chooseLegend">Выберите часть речи</legend>
+    <div class="col-sm-10">
+        <div class="radio_buttons rb1 chooseDiv">
+            @foreach (var item in ViewData["part"] as List<DatabaseFirst.part>)
+            {
+                <div class="form-check-label chooseDivLabel">
+                    <label class="chooseLabel">
+                        <input class="js-radio-word-answer chooseInput" type="radio" name="optradio1" value="@item.id">
+                        @item.name
+                    </label><br />
+                </div>
+            }
+        </div>
+    </div>
+</fieldset>

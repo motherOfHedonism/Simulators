@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CFA6991-DDCD-4DB8-A40F-2EB47B55F66F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>training</RootNamespace>
+    <AssemblyName>training</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ExerciseController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
+    <Compile Include="Controllers\TableController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
+    <Compile Include="Controllers\TrainingController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\balloon.css-master\balloon.css" />
+    <Content Include="Content\balloon.css-master\balloon.min.css" />
+    <Content Include="Content\balloon.css-master\logo.png" />
+    <Content Include="Content\balloon.css-master\sample.gif" />
+    <Content Include="Content\BookReaderDemo.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\buttons.dataTables.min.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\okonchanie.png" />
+    <Content Include="Content\images\prefix.png" />
+    <Content Include="Content\images\root.png" />
+    <Content Include="Content\images\suffix.png" />
+    <Content Include="Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui.theme.min.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\m.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\flick\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\flick\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="Content\themes\flick\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="Content\themes\flick\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="Content\themes\flick\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="Content\themes\flick\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\flick\images\ui-icons_666666_256x240.png" />
+    <Content Include="Content\themes\flick\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="Content\themes\flick\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\flick\jquery-ui.css" />
+    <Content Include="Content\themes\flick\jquery-ui.min.css" />
+    <Content Include="Content\themes\flick\theme.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\sort_asc.png" />
+    <Content Include="images\sort_asc_disabled.png" />
+    <Content Include="images\sort_both.png" />
+    <Content Include="images\sort_desc.png" />
+    <Content Include="images\sort_desc_disabled.png" />
+    <Content Include="img\1-min.jpg" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\chehov.jpg" />
+    <Content Include="img\group-2.jpg" />
+    <Content Include="img\igor-borisovich.jpg" />
+    <Content Include="img\invalid-name.png" />
+    <Content Include="img\iskusstvo.jpg" />
+    <Content Include="img\lomonosov.jpg" />
+    <Content Include="img\Novy_Bereg_Magazine-min.jpg" />
+    <Content Include="img\Novy_Bereg_Magazine.jpg" />
+    <Content Include="img\olimpiada.jpg" />
+    <Content Include="img\PlavMost-min.jpg" />
+    <Content Include="img\PlavMost.jpg" />
+    <Content Include="img\proza.jpg" />
+    <Content Include="img\soavtor.jpg" />
+    <Content Include="img\table.jpg" />
+    <Content Include="img\traning.jpg" />
+    <Content Include="img\tutchev.jpg" />
+    <Content Include="img\tutchev2.jpg" />
+    <Content Include="img\znak.jpg" />
+    <Content Include="img\ВосковоеКрыло.jpg" />
+    <Content Include="img\ЗнакПереноса.jpg" />
+    <Content Include="img\НочнойПеррон.jpeg" />
+    <Content Include="img\СмотроваяПлощадка.jpeg" />
+    <Content Include="img\Тютчев.jpg" />
+    <Content Include="img\УчебноеПособие.jpg" />
+    <Content Include="img\ЧасСнегопада.jpg" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\AUTHORS.txt" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\external\jquery\jquery.js" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\images\ui-icons_444444_256x240.png" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\images\ui-icons_555555_256x240.png" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\images\ui-icons_777620_256x240.png" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\images\ui-icons_777777_256x240.png" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\index.html" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.css" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.js" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.structure.css" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.structure.min.css" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.theme.css" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\jquery-ui.theme.min.css" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\LICENSE.txt" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\edit.js" />
+    <Content Include="Scripts\create.js" />
+    <Content Include="Scripts\teacher\buttons.html5.min.js" />
+    <Content Include="Scripts\teacher\buttons.print.min.js" />
+    <Content Include="Scripts\teacher\dataTables.buttons.min.js" />
+    <Content Include="Scripts\teacher\jquery.dataTables.min.js" />
+    <Content Include="Scripts\teacher\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\teacher\jszip.min.js" />
+    <Content Include="Scripts\teacher\pdfmake.min.js" />
+    <Content Include="Scripts\teacher\vfs_fonts.js" />
+    <Content Include="Lirika\~%24ак переноса.doc" />
+    <Content Include="Lirika\~%24сковое крыло %28избранное%29.doc" />
+    <Content Include="Lirika\~%24стая книга.doc" />
+    <Content Include="Lirika\~WRL0003.tmp" />
+    <Content Include="Lirika\~WRL0004.tmp" />
+    <Content Include="Lirika\~WRL0142.tmp" />
+    <Content Include="Lirika\~WRL2867.tmp" />
+    <Content Include="Lirika\~WRL3696.tmp" />
+    <Content Include="Lirika\Восковое крыло %28избранное%29.doc" />
+    <Content Include="Lirika\Восковое крыло.doc" />
+    <Content Include="Lirika\Знак переноса.doc" />
+    <Content Include="Lirika\Ночной перрон %28избранное%29.doc" />
+    <Content Include="Lirika\Ночной перрон.doc" />
+    <Content Include="Lirika\Поэмы\В плюсквамперфекте.doc" />
+    <Content Include="Lirika\Поэмы\КОМАНДИРОВКА.doc" />
+    <Content Include="Lirika\Поэмы\На родине отца....doc" />
+    <Content Include="Lirika\Смотровая площадка.doc" />
+    <Content Include="Lirika\Час снегопада %28избранное%29.doc" />
+    <Content Include="Lirika\Час снегопада.doc" />
+    <Content Include="Lirika\Шестая книга.doc" />
+    <Content Include="pdf\Восковое_крыло_%28избранное%29.PDF" />
+    <Content Include="pdf\2_СВЯТАЯ_НОЧЬ_НА_НЕБОСКЛОН_ВЗОШЛА.PDF" />
+    <Content Include="pdf\4_ВСЯ_В_НАСТОЯЩЕМ_РАЗЛИТА.PDF" />
+    <Content Include="pdf\5_ПРИМЕЧАНИЯ_К_ПЕРВОЙ_ГЛАВЕ.PDF" />
+    <Content Include="pdf\автореферат.PDF" />
+    <Content Include="pdf\Ася.PDF" />
+    <Content Include="pdf\Безумие.PDF" />
+    <Content Include="pdf\В_плюсквамперфекте.PDF" />
+    <Content Include="pdf\Введение__монограию_%28без_литературы%29.PDF" />
+    <Content Include="pdf\Диссертация_из_12пт.PDF" />
+    <Content Include="pdf\Знак_переноса.PDF" />
+    <Content Include="pdf\КОМАНДИРОВКА.PDF" />
+    <Content Include="pdf\ЛирикаТютчева_и_вопросы_интертекста.PDF" />
+    <Content Include="pdf\Материалы_Говорящие_знаки %281%29.PDF" />
+    <Content Include="pdf\Материалы_Говорящие_знаки.PDF" />
+    <Content Include="pdf\Материалы_Стань_соавтором.PDF" />
+    <Content Include="pdf\Методика_русский.PDF" />
+    <Content Include="pdf\На_родине_отца....PDF" />
+    <Content Include="pdf\Ночной_перрон_%28избранное%29.PDF" />
+    <Content Include="pdf\олимп10-11.PDF" />
+    <Content Include="pdf\Предисловие_Льва_Озерова.PDF" />
+    <Content Include="pdf\Программа__Искусство_слова.PDF" />
+    <Content Include="pdf\Программа_занятий_с_олимпиадниками.PDF" />
+    <Content Include="pdf\Программа_спецкурса_по_Тютчеву.PDF" />
+    <Content Include="pdf\СВЕТ_ПОЛЯРНОЙ.PDF" />
+    <Content Include="pdf\Час_снегопада_%28избранное%29.PDF" />
+    <Content Include="pdf\Смотровая_площадка.PDF" />
+    <Content Include="pdf\1_О_тютчевской_циклизации.PDF" />
+    <Content Include="pdf\3_ЗДЕСЬ_ЧЕЛОВЕК_ЛИШЬ_СНИТСЯ_САМ_СЕБЕ.PDF" />
+    <Content Include="Content\balloon.css-master\.gitignore" />
+    <Content Include="Content\balloon.css-master\LICENSE" />
+    <Content Include="Content\balloon.css-master\package.json" />
+    <Content Include="Content\balloon.css-master\readme.md" />
+    <Content Include="Content\balloon.css-master\src\balloon.less" />
+    <Content Include="Content\balloon.css-master\src\balloon.scss" />
+    <Content Include="pdf\Послесловие Потупова-converted.pdf" />
+    <Content Include="pdf\ТАЙНОЙ ДОБРОТЫ СОГЛЯДАТАЙ-converted.pdf" />
+    <Content Include="jquery-ui-1_12_1\jquery-ui-1.12.1\package.json" />
+    <Content Include="pdf\Оглянувшийся Орфей.pdf" />
+    <Content Include="pdf\new\BESEDA.pdf" />
+    <Content Include="pdf\new\Faust ╤В╨╡╨╖╨╕╤Б╤Л.pdf" />
+    <Content Include="pdf\new\FAUST.pdf" />
+    <Content Include="pdf\new\PIGM.pdf" />
+    <Content Include="pdf\new\POLESYE.pdf" />
+    <Content Include="pdf\new\TEZIS.pdf" />
+    <Content Include="pdf\new\Безумие.pdf" />
+    <Content Include="pdf\new\Лебедь.pdf" />
+    <Content Include="pdf\new\ЛирикаТютчева_и_вопросы_интертек.pdf" />
+    <Content Include="pdf\new\НадЭтойТёмноюТолпой.pdf" />
+    <Content Include="pdf\new\О ЛИТЕРАТУРНЫХ ИСТОЧНИКАХ декабр.pdf" />
+    <Content Include="pdf\new\О некоторых неучтённых.pdf" />
+    <Content Include="pdf\new\ОБ ОДНОМ ИЗ ВОЗМОЖНЫХ ИСТОЧНИКОВ.pdf" />
+    <Content Include="pdf\new\Проблемы интертекстуальности%28Бр%25D.pdf" />
+    <Content Include="pdf\new\Слово РиЛ в лирике Тютчева.pdf" />
+    <Content Include="pdf\new\тютчев и козлов.pdf" />
+    <Content Include="pdf\new\Хоть я и свил гнездо в долине.pdf" />
+    <Content Include="pdf\new\Проблемы интертекстуальности%28Брянск%29.pdf" />
+    <Content Include="pdf\new\Ахматова.pdf" />
+    <Content Include="pdf\new\Возрожденец.pdf" />
+    <Content Include="pdf\new\К вопросу  о метонимической природ.pdf" />
+    <Content Include="pdf\new\К вопросу о классификации реминисD.pdf" />
+    <Content Include="pdf\new\О стихотворении Пушкина Анчар.pdf" />
+    <Content Include="pdf\new\центонные ряды.pdf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\dialog.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.10.3.ui.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\syllMirror.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Training\Index.cshtml" />
+    <Content Include="Views\Training\ViewTraining.cshtml" />
+    <Content Include="Views\Site\Index.cshtml" />
+    <Content Include="Views\Site\Teach.cshtml" />
+    <Content Include="Views\Site\Fit.cshtml" />
+    <Content Include="Views\Site\Books.cshtml" />
+    <Content Include="Views\Site\Poems.cshtml" />
+    <Content Include="Views\Site\Bn.cshtml" />
+    <Content Include="Views\Exercise\ExerciseOne.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Shared\_styllMirrorMorphology.cshtml" />
+    <Content Include="Views\Table\Student.cshtml" />
+    <Content Include="Views\Table\Teacher.cshtml" />
+    <Content Include="Views\Exercise\ExerciseTwo.cshtml" />
+    <Content Include="Views\Admin\TeachUser.cshtml" />
+    <Content Include="Views\Training\testdialog.cshtml" />
+    <Content Include="Views\Teacher\Index.cshtml" />
+    <Content Include="Views\Teacher\ViewTraining.cshtml" />
+    <Content Include="Views\Teacher\ExercisesList.cshtml" />
+    <Content Include="Views\Shared\_lexicology2.cshtml" />
+    <Content Include="Views\Shared\_lexicology3.cshtml" />
+    <Content Include="Views\Shared\_table.cshtml" />
+    <Content Include="Views\Teacher\Create.cshtml" />
+    <Content Include="Views\Shared\_word.cshtml" />
+    <Content Include="Views\Shared\_lexicology4.cshtml" />
+    <Content Include="Views\Shared\_morphems.cshtml" />
+    <Content Include="Views\Shared\_answer.cshtml" />
+    <Content Include="Views\Shared\_parts.cshtml" />
+    <Content Include="Views\Teacher\Edit.cshtml" />
+    <Content Include="Views\Teacher\ExercisesListAll.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\themes\base\" />
+    <Folder Include="Content\themes\black-tie\" />
+    <Folder Include="Content\themes\blitzer\" />
+    <Folder Include="Content\themes\cupertino\" />
+    <Folder Include="Content\themes\dark-hive\" />
+    <Folder Include="Content\themes\dot-luv\" />
+    <Folder Include="Content\themes\eggplant\" />
+    <Folder Include="Content\themes\excite-bike\" />
+    <Folder Include="Content\themes\hot-sneaks\" />
+    <Folder Include="Content\themes\humanity\" />
+    <Folder Include="Content\themes\le-frog\" />
+    <Folder Include="Content\themes\mint-choc\" />
+    <Folder Include="Content\themes\overcast\" />
+    <Folder Include="Content\themes\pepper-grinder\" />
+    <Folder Include="Content\themes\redmond\" />
+    <Folder Include="Content\themes\smoothness\" />
+    <Folder Include="Content\themes\south-street\" />
+    <Folder Include="Content\themes\start\" />
+    <Folder Include="Content\themes\sunny\" />
+    <Folder Include="Content\themes\swanky-purse\" />
+    <Folder Include="Content\themes\trontastic\" />
+    <Folder Include="Content\themes\ui-darkness\" />
+    <Folder Include="Content\themes\ui-lightness\" />
+    <Folder Include="Content\themes\vader\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseFirst\DatabaseFirst.csproj">
+      <Project>{a1450863-b9d4-4516-824f-343cec457bc4}</Project>
+      <Name>DatabaseFirst</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48371</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48371/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

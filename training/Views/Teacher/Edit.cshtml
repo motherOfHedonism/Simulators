@@ -1,0 +1,74 @@
+﻿@if (User.IsInRole("Владелец"))
+{
+    @Scripts.Render("~/Scripts/edit.js")
+    <div>
+        <h1 class="js-syllMirror-word"> </h1>
+    </div>
+
+    <div class="row AB disabledClass" data-id_tr="@ViewData["id_tr"]" data_id_t="@ViewData["part"]" data-level="@ViewData["realLevel"]" data-id="@ViewData["id_e"]" style="margin-right:-60%;margin-left:-5%; white-space: nowrap;margin-top:3%">
+        <form class="exercise1 twol" style="display:inline-block;">
+            @Html.Partial("_word")
+        </form>
+        <form class="exercise2 twol" style="display:inline-block;vertical-align: top;">
+            @Html.Partial("_answer")
+        </form>
+        <form class="exercise3 twol" style="display:none;vertical-align: top;">
+            @Html.Partial("_answer")
+        </form>
+        <button id="delbtnEx3" style="border-radius:80px;opacity:0.8;outline:none;vertical-align: top;margin-left:-3%;display:none" onclick="exercise3Delete()"><i class="glyphicon glyphicon-remove-circle" aria-hidden="true" style="font-size:50px"></i></button>
+        <form class="exercise4 twol" style="display:none;vertical-align:top;">
+            @Html.Partial("_answer")
+        </form>
+        <button id="delbtnEx4" style="border-radius:80px;opacity:0.8;outline:none;vertical-align: top;margin-left:-3%;display:none" onclick="exercise4Delete()"><i class="glyphicon glyphicon-remove-circle" aria-hidden="true" style="font-size:50px"></i></button>
+        <form class="exercise5 twol" style="display:none;vertical-align: top;">
+            @Html.Partial("_answer")
+        </form>
+        <button id="delbtnEx5" style="border-radius:80px;opacity:0.8;outline:none;vertical-align: top;margin-left:-3%;display:none; margin-right: 2%;" onclick="exercise5Delete()"><i class="glyphicon glyphicon-remove-circle" aria-hidden="true" style="font-size:50px"></i></button>
+        <button id="btnEx" style="border-radius:80px;opacity:0.8;outline:none;vertical-align: top;margin-right:2%" onclick="exerciseDisplay()"><i class="glyphicon glyphicon-plus-sign" aria-hidden="true" style="font-size:50px"></i></button>
+    </div>
+
+    <div id="morphems" style="align-content:center; margin-top: 1%; margin-bottom: 2%; border-top: 1px solid; padding-top: 2%;">
+        @Html.Partial("_morphems")
+    </div>
+    <div id="lexic2" class="lexicDiv" style="margin-left: 8%; margin-top: 1%; margin-bottom: 2%; padding-top: 2%; display: none;">
+        @Html.Partial("_lexicology2")
+    </div>
+    <div id="lexic3" class="lexicDiv" style="margin-left: 26%; margin-top: 1%; margin-bottom: 2%; padding-top: 2%; display: none;">
+        @Html.Partial("_lexicology3")
+    </div>
+    <div id="lexic4" class="lexicDiv" style="margin-left: 20%; margin-right:-40%; margin-top: 1%; margin-bottom: 2%; padding-top: 2%; display: none;">
+        @Html.Partial("_lexicology4")
+    </div>
+    <div class="row" id="disabledClassBtn" style="margin-bottom:10%; margin-top:2%; margin-right:48%">
+        <div class="butt form-group row buttonOk">
+            <div class="offset-sm-2 col-sm-2">
+                <button type="submit" disabled class="btn btn-primary js-syllMirror-ok" data-toggle="tooltip" title="Нельзя сохранить упражнение, пока все поля не заполнены" id="proverka">Cохранить</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var two = $('[type="radio"][value="2"]').parents('.form-check-label');
+        var four = $('[type="radio"][value="4"]').parents('.form-check-label');
+        var six = $('[type="radio"][value="6"]').parents('.form-check-label');
+        var seven = $('[type="radio"][value="7"]').parents('.form-check-label');
+        var eight = $('[type="radio"][value="8"]').parents('.form-check-label');
+        var fteen = $('[type="radio"][value="15"]').parents('.form-check-label');
+        for (var i = 0; i < two.length; i++) {
+            $(seven.get(i)).insertAfter(two.get(i));
+            $(eight.get(i)).insertAfter(seven.get(i));
+            $(four.get(i)).insertAfter(six.get(i));
+            $(fteen.get(i)).insertAfter(four.get(i));
+        }
+
+
+        $(document).ready(function () {
+            var a = $('.chooseInput');
+            a.slice(13, 26).attr('name', "optradio2");
+            a.slice(26, 39).attr('name', "optradio3");
+            a.slice(39, 52).attr('name', "optradio4");
+            a.slice(52, 65).attr('name', "optradio5");
+        });
+    </script>
+}

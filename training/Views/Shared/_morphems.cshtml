@@ -1,0 +1,43 @@
+﻿<h1 style="text-align:center">Сделай разбор по составу</h1>
+<h4 style="margin-bottom:2%;text-align:center">Для разделения частей слова используй знак <i>дефис</i> (-). Для обозначения нулевого окончания в конце слова поставь <i>дефис</i> после всех букв. Если нулевое окончание находится не в конце слова, то поставь два <i>дефиса</i> подряд. Например, разбор слова "снился" будет выглядеть так:"сн-и-л--ся"</h4>
+<ul style="text-align:center" class="morphemBonusUl">
+    <li class="morphemBonusLi" style="display: inline-block;text-align: left; margin-right:2%">
+        <div class="morphemBonusDivs">
+            <input maxlength="30" id="wordML" type="text" class="form-control js-syllMirror-word-morphems morphemBonusInputs forMorphii" onkeypress="testMorphem(event)">
+            <div class="morphContext"><br /></div>
+        </div>
+    </li>
+    <li class="morphemBonusLi" style="display: inline-block;  text-align: left;margin-right:2%">
+        <div class="morphemBonusDivs">
+            <input maxlength="30" id="answerML" type="text" class="form-control js-syllMirror-answer-morphems morphemBonusInputs forMorphii" onkeypress="testMorphem(event)">
+            <div class="morphContext"><br /></div>
+        </div>
+    </li>
+    <li class="morphemBonusLi" style="display: none;text-align: left; margin-right:2%">
+        <div class="morphemBonusDivs">
+            <input maxlength="30" id="answer2ML" type="text" class="form-control js-syllMirror-answer2-morphems morphemBonusInputs forMorphii" onkeypress="testMorphem(event)">
+            <div class="morphContext"><br /></div>
+        </div>
+    </li>
+    <li class="morphemBonusLi" style="display:none;text-align: left; margin-right:2%">
+        <div class="morphemBonusDivs">
+            <input maxlength="30" id="answer3ML" type="text" class="form-control js-syllMirror-answer3-morphems morphemBonusInputs forMorphii" onkeypress="testMorphem(event)">
+            <div class="morphContext"><br /></div>
+        </div>
+    </li>
+    <li class="morphemBonusLi" style="display:none;text-align: left; margin-right:2%">
+        <div class="morphemBonusDivs">
+            <input maxlength="30" id="answer4ML" type="text" class="form-control js-syllMirror-answer4-morphems morphemBonusInputs forMorphii" onkeypress="testMorphem(event)">
+            <div class="morphContext"><br /></div>
+        </div>
+    </li>
+    <li style=" width: 100%;
+                height: 0;
+                visibility: hidden;"></li>
+</ul>
+<script>
+   function testMorphem(event) {
+        event = event || window.event;
+        if (event.charCode && (event.charCode != 45)) { var obj = event.target || event.srcElement; redInput(obj); return false; }
+    };
+</script>

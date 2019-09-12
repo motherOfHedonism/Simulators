@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6ce451fd568847cf81e44395cbc1104b" Name="Diagram1" ZoomLevel="33">
+        <EntityTypeShape EntityType="trainingsModel.AspNetRole" Width="1.5" PointX="10.75" PointY="14.25" />
+        <EntityTypeShape EntityType="trainingsModel.AspNetUserClaim" Width="1.5" PointX="15.25" PointY="12.75" />
+        <EntityTypeShape EntityType="trainingsModel.AspNetUserLogin" Width="1.5" PointX="15.25" PointY="18.625" />
+        <EntityTypeShape EntityType="trainingsModel.AspNetUser" Width="1.5" PointX="13" PointY="12.75" />
+        <EntityTypeShape EntityType="trainingsModel.chislo" Width="1.5" PointX="0.75" PointY="29.5" />
+        <EntityTypeShape EntityType="trainingsModel.comment" Width="1.5" PointX="5.25" PointY="2.875" />
+        <EntityTypeShape EntityType="trainingsModel.deistvit" Width="1.5" PointX="0.75" PointY="76.375" />
+        <EntityTypeShape EntityType="trainingsModel.drob" Width="1.5" PointX="0.75" PointY="71.75" />
+        <EntityTypeShape EntityType="trainingsModel.exercise" Width="1.5" PointX="16" PointY="10.125" />
+        <EntityTypeShape EntityType="trainingsModel.forma" Width="1.5" PointX="0.75" PointY="74.125" />
+        <EntityTypeShape EntityType="trainingsModel.kolich" Width="1.5" PointX="0.75" PointY="69.375" />
+        <EntityTypeShape EntityType="trainingsModel.lexic" Width="1.5" PointX="6" PointY="11.5" />
+        <EntityTypeShape EntityType="trainingsModel.lexicAll" Width="1.5" PointX="8.25" PointY="10.875" />
+        <EntityTypeShape EntityType="trainingsModel.lexicology" Width="1.5" PointX="7.5" PointY="6.5" />
+        <EntityTypeShape EntityType="trainingsModel.lico" Width="1.5" PointX="0.75" PointY="31.875" />
+        <EntityTypeShape EntityType="trainingsModel.morphem" Width="1.5" PointX="3" PointY="15" />
+        <EntityTypeShape EntityType="trainingsModel.morphology" Width="1.5" PointX="3" PointY="1.5" />
+        <EntityTypeShape EntityType="trainingsModel.naklon" Width="1.5" PointX="0.75" PointY="24.75" />
+        <EntityTypeShape EntityType="trainingsModel.naricat" Width="1.5" PointX="0.75" PointY="60" />
+        <EntityTypeShape EntityType="trainingsModel.neizman" Width="1.5" PointX="0.75" PointY="55.25" />
+        <EntityTypeShape EntityType="trainingsModel.odush" Width="1.5" PointX="0.75" PointY="20.125" />
+        <EntityTypeShape EntityType="trainingsModel.padezh" Width="1.5" PointX="0.75" PointY="64.625" />
+        <EntityTypeShape EntityType="trainingsModel.part" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="trainingsModel.perehod" Width="1.5" PointX="0.75" PointY="22.5" />
+        <EntityTypeShape EntityType="trainingsModel.podrazryad" Width="1.5" PointX="0.75" PointY="13.125" />
+        <EntityTypeShape EntityType="trainingsModel.progress" Width="1.5" PointX="18.25" PointY="13.875" />
+        <EntityTypeShape EntityType="trainingsModel.proizvodnost" Width="1.5" PointX="0.75" PointY="45.875" />
+        <EntityTypeShape EntityType="trainingsModel.prost" Width="1.5" PointX="0.75" PointY="50.625" />
+        <EntityTypeShape EntityType="trainingsModel.razryad" Width="1.5" PointX="0.75" PointY="41.25" />
+        <EntityTypeShape EntityType="trainingsModel.razryadpoznach" Width="1.5" PointX="0.75" PointY="17.75" />
+        <EntityTypeShape EntityType="trainingsModel.razryadznach" Width="1.5" PointX="0.75" PointY="38.875" />
+        <EntityTypeShape EntityType="trainingsModel.rod" Width="1.5" PointX="0.75" PointY="53" />
+        <EntityTypeShape EntityType="trainingsModel.sklonen" Width="1.5" PointX="0.75" PointY="43.625" />
+        <EntityTypeShape EntityType="trainingsModel.sochinit" Width="1.5" PointX="0.75" PointY="36.5" />
+        <EntityTypeShape EntityType="trainingsModel.spryazh" Width="1.5" PointX="0.75" PointY="62.375" />
+        <EntityTypeShape EntityType="trainingsModel.stepsrav" Width="1.5" PointX="0.75" PointY="67" />
+        <EntityTypeShape EntityType="trainingsModel.syll_mirror" Width="1.5" PointX="10.5" PointY="5.625" />
+        <EntityTypeShape EntityType="trainingsModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="trainingsModel.theme" Width="1.5" PointX="12.75" PointY="6.5" />
+        <EntityTypeShape EntityType="trainingsModel.training" Width="1.5" PointX="10.5" PointY="2.625" />
+        <EntityTypeShape EntityType="trainingsModel.upotrebl" Width="1.5" PointX="0.75" PointY="57.625" />
+        <EntityTypeShape EntityType="trainingsModel.vid" Width="1.5" PointX="0.75" PointY="27.125" />
+        <EntityTypeShape EntityType="trainingsModel.vozvrat" Width="1.5" PointX="0.75" PointY="48.25" />
+        <EntityTypeShape EntityType="trainingsModel.vremya" Width="1.5" PointX="0.75" PointY="15.375" />
+        <EntityTypeShape EntityType="trainingsModel.word" Width="1.5" PointX="5.25" PointY="5.5" />
+        <EntityTypeShape EntityType="trainingsModel.znacobraz" Width="1.5" PointX="0.75" PointY="34.25" />
+        <EntityTypeShape EntityType="trainingsModel.lexic_view" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="trainingsModel.lexicIds_view" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="trainingsModel.morphology_view" Width="1.5" PointX="5.75" PointY="15.75" />
+        <EntityTypeShape EntityType="trainingsModel.nextView" Width="1.5" PointX="14.75" PointY="4.75" />
+        <EntityTypeShape EntityType="trainingsModel.nextView1" Width="1.5" PointX="7.75" PointY="15.75" />
+        <EntityTypeShape EntityType="trainingsModel.part1" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="trainingsModel.progressUser" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="trainingsModel.Teacher" Width="1.5" PointX="12.75" PointY="9.75" />
+        <EntityTypeShape EntityType="trainingsModel.TeachU" Width="1.5" PointX="9.75" PointY="16.75" />
+        <EntityTypeShape EntityType="trainingsModel.Them" Width="1.5" PointX="17.75" PointY="17.75" />
+        <EntityTypeShape EntityType="trainingsModel.wordsList" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="trainingsModel.wordsListAll" Width="1.5" PointX="18.75" PointY="6.75" />
+        <EntityTypeShape EntityType="trainingsModel.wordsMorphologyId" Width="1.5" PointX="11.75" PointY="18.75" />
+        <EntityTypeShape EntityType="trainingsModel.wordsName" Width="1.5" PointX="2.75" PointY="19.75" />
+        <EntityTypeShape EntityType="trainingsModel.wordsPartsId" Width="1.5" PointX="19.75" PointY="17.75" />
+        <EntityTypeShape EntityType="trainingsModel.wordsView" Width="1.5" PointX="20.75" PointY="0.75" />
+        <AssociationConnector Association="trainingsModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="trainingsModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="trainingsModel.FK_progress_AspNetUsers" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_chislo" />
+        <AssociationConnector Association="trainingsModel.FK_lexicology_comments" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_deistvit" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_drob" />
+        <AssociationConnector Association="trainingsModel.FK_exercise_trainings1" />
+        <AssociationConnector Association="trainingsModel.FK_progress_exercise" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_forma" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_kolich" />
+        <AssociationConnector Association="trainingsModel.FK_lexicAll_lexic" />
+        <AssociationConnector Association="trainingsModel.FK_lexicAll_lexic1" />
+        <AssociationConnector Association="trainingsModel.FK_lexicAll_lexic2" />
+        <AssociationConnector Association="trainingsModel.FK_lexicAll_lexic3" />
+        <AssociationConnector Association="trainingsModel.FK_lexicAll_lexic4" />
+        <AssociationConnector Association="trainingsModel.FK_lexicAll_lexic5" />
+        <AssociationConnector Association="trainingsModel.FK_syll_mirror_lexicAll" />
+        <AssociationConnector Association="trainingsModel.FK_lexicology_words" />
+        <AssociationConnector Association="trainingsModel.FK_lexicology_words1" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_lico" />
+        <AssociationConnector Association="trainingsModel.FK_words_morphems" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_naklon" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_naricat" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_neizmen" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_odush" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_padezh" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_parts" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_perehod" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_podrazryad" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_proizvodnost" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_prost" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_razryad" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_razryadpoznach" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_razryadznach" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_rod" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_sklonen" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_sochinit" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_spryazh" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_stepsrav" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_upotrebls" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_vid" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_vozvrat" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_vremya" />
+        <AssociationConnector Association="trainingsModel.FK_morphology_znacobraz" />
+        <AssociationConnector Association="trainingsModel.FK_words_morphology" />
+        <AssociationConnector Association="trainingsModel.FK_theme_parts" />
+        <AssociationConnector Association="trainingsModel.FK_syll_mirror_words4" />
+        <AssociationConnector Association="trainingsModel.FK_syll_mirror_words5" />
+        <AssociationConnector Association="trainingsModel.FK_syll_mirror_words6" />
+        <AssociationConnector Association="trainingsModel.FK_syll_mirror_words7" />
+        <AssociationConnector Association="trainingsModel.FK_syll_mirror_words8" />
+        <AssociationConnector Association="trainingsModel.FK_theme_syll_mirror" />
+        <AssociationConnector Association="trainingsModel.FK_theme_trainings" />
+        <AssociationConnector Association="trainingsModel.FK_theme_trainings1" />
+        <AssociationConnector Association="trainingsModel.AspNetUserRoles" />
+        <AssociationConnector Association="trainingsModel.teach_user" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

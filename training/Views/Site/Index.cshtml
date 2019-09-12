@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Обо мне";
+}
+
+<div class="Group-2">
+    <img src="/img/igor-borisovich.jpg"
+         srcset="img/igor-borisovich@2x.png 2x,
+                 img/igor-borisovich@3x.png 3x"
+         class="igor_borisovich">
+
+    <div class="igor_borisovich_text"> Непомнящий Игорь Борисович</div>
+    <div class="igor_borisovich_text1">Заслуженный учитель РФ по русскому языку и литературе</div>
+</div>
+<div class="container">
+
+    <div class="biograf abz">
+        <p>
+            Родился в 1962 году в Брянске. Окончил музыкальное училище по классу скрипки, а затем филфак Брянского
+            педагогического института.
+            На протяжении почти четверти века учительствовал в Брянской гимназии №1.
+        </p>
+        <p class="abz">
+            Заслуженный учитель РФ. Кандидат филологических наук, автор двух книг о творчестве Тютчева: "О, нашей мысли
+            обольщенье..." (2002 г.) и "Лирика Тютчева и вопросы интертекста" (2011 г.). Лауреат Всероссийской Тютчевской премии "Русский путь"
+            (2011 г.). Автор пяти поэтических сборников. Два из них, "Знак переноса" (2002 г.) и "Восковое крыло" (2009 г.), выдвигались на
+            литературные премии имени А. Григорьева и И. Бунина.
+        </p>
+        <p>
+            <a href="mailto:nib-znak@yandex.ru"><i class="fa fa-envelope-o"></i> nib-znak@yandex.ru</a>
+        </p>
+    </div>
+    <div class="container">
+        <div class="gramot">
+            <a href="@Url.Action("Fit", "Site")"><img src="~/img/Тютчев.jpg"></a>
+            <a href="@Url.Action("Teach", "Site")"><img src="~/img/УчебноеПособие.jpg"></a>
+            <a href="@Url.Action("Books", "Site")#СмотроваяПлощадка"><img src="~/img/СмотроваяПлощадка.jpeg"></a>
+        </div>
+    </div>
+</div>
+

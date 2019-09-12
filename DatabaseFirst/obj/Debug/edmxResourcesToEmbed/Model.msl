@@ -1,0 +1,863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище trainingsModelContainer" CdmEntityContainer="trainingsEntities">
+    <FunctionImportMapping FunctionImportName="Procedure" FunctionName="Хранилище trainingsModel.Procedure">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="trainingsModel.Procedure_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="progressPro" FunctionName="Хранилище trainingsModel.progressPro">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="trainingsModel.progressPro_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище trainingsModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище trainingsModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище trainingsModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище trainingsModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="trainingsModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище trainingsModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="trainingsModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище trainingsModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище trainingsModel.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="InsStud" FunctionName="Хранилище trainingsModel.InsStud" />
+    <FunctionImportMapping FunctionImportName="RemStud" FunctionName="Хранилище trainingsModel.RemStud" />
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="trainingsModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="trainingsModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="trainingsModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="trainingsModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chisloes">
+      <EntityTypeMapping TypeName="trainingsModel.chislo">
+        <MappingFragment StoreEntitySet="chislo">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comments">
+      <EntityTypeMapping TypeName="trainingsModel.comment">
+        <MappingFragment StoreEntitySet="comments">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deistvits">
+      <EntityTypeMapping TypeName="trainingsModel.deistvit">
+        <MappingFragment StoreEntitySet="deistvit">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="drobs">
+      <EntityTypeMapping TypeName="trainingsModel.drob">
+        <MappingFragment StoreEntitySet="drob">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exercises">
+      <EntityTypeMapping TypeName="trainingsModel.exercise">
+        <MappingFragment StoreEntitySet="exercise">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formas">
+      <EntityTypeMapping TypeName="trainingsModel.forma">
+        <MappingFragment StoreEntitySet="forma">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="koliches">
+      <EntityTypeMapping TypeName="trainingsModel.kolich">
+        <MappingFragment StoreEntitySet="kolich">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lexics">
+      <EntityTypeMapping TypeName="trainingsModel.lexic">
+        <MappingFragment StoreEntitySet="lexic">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lexicAlls">
+      <EntityTypeMapping TypeName="trainingsModel.lexicAll">
+        <MappingFragment StoreEntitySet="lexicAll">
+          <ScalarProperty Name="lexic_1_4" ColumnName="lexic_1_4" />
+          <ScalarProperty Name="lexic_2_4" ColumnName="lexic_2_4" />
+          <ScalarProperty Name="lexic_3_4" ColumnName="lexic_3_4" />
+          <ScalarProperty Name="lexic_1_3" ColumnName="lexic_1_3" />
+          <ScalarProperty Name="lexic_2_3" ColumnName="lexic_2_3" />
+          <ScalarProperty Name="lexic_1_2" ColumnName="lexic_1_2" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lexicologies">
+      <EntityTypeMapping TypeName="trainingsModel.lexicology">
+        <MappingFragment StoreEntitySet="lexicology">
+          <ScalarProperty Name="id_comment" ColumnName="id_comment" />
+          <ScalarProperty Name="id_word2" ColumnName="id_word2" />
+          <ScalarProperty Name="id_word1" ColumnName="id_word1" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="licoes">
+      <EntityTypeMapping TypeName="trainingsModel.lico">
+        <MappingFragment StoreEntitySet="lico">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="morphems">
+      <EntityTypeMapping TypeName="trainingsModel.morphem">
+        <MappingFragment StoreEntitySet="morphems">
+          <ScalarProperty Name="okonchan2" ColumnName="okonchan2" />
+          <ScalarProperty Name="okonchan1" ColumnName="okonchan1" />
+          <ScalarProperty Name="suffix4" ColumnName="suffix4" />
+          <ScalarProperty Name="suffix3" ColumnName="suffix3" />
+          <ScalarProperty Name="suffix2" ColumnName="suffix2" />
+          <ScalarProperty Name="suffix1" ColumnName="suffix1" />
+          <ScalarProperty Name="root2" ColumnName="root2" />
+          <ScalarProperty Name="root1" ColumnName="root1" />
+          <ScalarProperty Name="prefix3" ColumnName="prefix3" />
+          <ScalarProperty Name="prefix2" ColumnName="prefix2" />
+          <ScalarProperty Name="prefix1" ColumnName="prefix1" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="morphologies">
+      <EntityTypeMapping TypeName="trainingsModel.morphology">
+        <MappingFragment StoreEntitySet="morphology">
+          <ScalarProperty Name="podrazryad" ColumnName="podrazryad" />
+          <ScalarProperty Name="razryadpoznach" ColumnName="razryadpoznach" />
+          <ScalarProperty Name="upotrebls" ColumnName="upotrebls" />
+          <ScalarProperty Name="sochinit" ColumnName="sochinit" />
+          <ScalarProperty Name="proizvodnost" ColumnName="proizvodnost" />
+          <ScalarProperty Name="znacobraz" ColumnName="znacobraz" />
+          <ScalarProperty Name="neizmen" ColumnName="neizmen" />
+          <ScalarProperty Name="deistvit" ColumnName="deistvit" />
+          <ScalarProperty Name="vremya" ColumnName="vremya" />
+          <ScalarProperty Name="naklon" ColumnName="naklon" />
+          <ScalarProperty Name="perehod" ColumnName="perehod" />
+          <ScalarProperty Name="vozvrat" ColumnName="vozvrat" />
+          <ScalarProperty Name="spryazh" ColumnName="spryazh" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="lico" ColumnName="lico" />
+          <ScalarProperty Name="razryadznach" ColumnName="razryadznach" />
+          <ScalarProperty Name="drob" ColumnName="drob" />
+          <ScalarProperty Name="kolich" ColumnName="kolich" />
+          <ScalarProperty Name="prost" ColumnName="prost" />
+          <ScalarProperty Name="stepsrav" ColumnName="stepsrav" />
+          <ScalarProperty Name="forma" ColumnName="forma" />
+          <ScalarProperty Name="razryad" ColumnName="razryad" />
+          <ScalarProperty Name="padezh" ColumnName="padezh" />
+          <ScalarProperty Name="chislo" ColumnName="chislo" />
+          <ScalarProperty Name="sklonen" ColumnName="sklonen" />
+          <ScalarProperty Name="rod" ColumnName="rod" />
+          <ScalarProperty Name="naricat" ColumnName="naricat" />
+          <ScalarProperty Name="odush" ColumnName="odush" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="naklons">
+      <EntityTypeMapping TypeName="trainingsModel.naklon">
+        <MappingFragment StoreEntitySet="naklon">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="naricats">
+      <EntityTypeMapping TypeName="trainingsModel.naricat">
+        <MappingFragment StoreEntitySet="naricat">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="neizmen">
+      <EntityTypeMapping TypeName="trainingsModel.neizman">
+        <MappingFragment StoreEntitySet="neizmen">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="odushes">
+      <EntityTypeMapping TypeName="trainingsModel.odush">
+        <MappingFragment StoreEntitySet="odush">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="padezhs">
+      <EntityTypeMapping TypeName="trainingsModel.padezh">
+        <MappingFragment StoreEntitySet="padezh">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="parts">
+      <EntityTypeMapping TypeName="trainingsModel.part">
+        <MappingFragment StoreEntitySet="parts">
+          <ScalarProperty Name="podrazryad" ColumnName="podrazryad" />
+          <ScalarProperty Name="razryadpoznach" ColumnName="razryadpoznach" />
+          <ScalarProperty Name="upotrebls" ColumnName="upotrebls" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="sochinit" ColumnName="sochinit" />
+          <ScalarProperty Name="proizvodnost" ColumnName="proizvodnost" />
+          <ScalarProperty Name="znacobraz" ColumnName="znacobraz" />
+          <ScalarProperty Name="neizmen" ColumnName="neizmen" />
+          <ScalarProperty Name="deistvit" ColumnName="deistvit" />
+          <ScalarProperty Name="vremya" ColumnName="vremya" />
+          <ScalarProperty Name="naklon" ColumnName="naklon" />
+          <ScalarProperty Name="perehod" ColumnName="perehod" />
+          <ScalarProperty Name="vozvrat" ColumnName="vozvrat" />
+          <ScalarProperty Name="spryazh" ColumnName="spryazh" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="lico" ColumnName="lico" />
+          <ScalarProperty Name="razryadznach" ColumnName="razryadznach" />
+          <ScalarProperty Name="drob" ColumnName="drob" />
+          <ScalarProperty Name="kolich" ColumnName="kolich" />
+          <ScalarProperty Name="prost" ColumnName="prost" />
+          <ScalarProperty Name="stepsrav" ColumnName="stepsrav" />
+          <ScalarProperty Name="forma" ColumnName="forma" />
+          <ScalarProperty Name="razryad" ColumnName="razryad" />
+          <ScalarProperty Name="padezh" ColumnName="padezh" />
+          <ScalarProperty Name="chislo" ColumnName="chislo" />
+          <ScalarProperty Name="sklonen" ColumnName="sklonen" />
+          <ScalarProperty Name="rod" ColumnName="rod" />
+          <ScalarProperty Name="naricat" ColumnName="naricat" />
+          <ScalarProperty Name="odush" ColumnName="odush" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="perehods">
+      <EntityTypeMapping TypeName="trainingsModel.perehod">
+        <MappingFragment StoreEntitySet="perehod">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="podrazryads">
+      <EntityTypeMapping TypeName="trainingsModel.podrazryad">
+        <MappingFragment StoreEntitySet="podrazryad">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="progresses">
+      <EntityTypeMapping TypeName="trainingsModel.progress">
+        <MappingFragment StoreEntitySet="progress">
+          <ScalarProperty Name="mark_add" ColumnName="mark_add" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="id_exercice" ColumnName="id_exercice" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proizvodnosts">
+      <EntityTypeMapping TypeName="trainingsModel.proizvodnost">
+        <MappingFragment StoreEntitySet="proizvodnost">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prosts">
+      <EntityTypeMapping TypeName="trainingsModel.prost">
+        <MappingFragment StoreEntitySet="prost">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="razryads">
+      <EntityTypeMapping TypeName="trainingsModel.razryad">
+        <MappingFragment StoreEntitySet="razryad">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="razryadpoznaches">
+      <EntityTypeMapping TypeName="trainingsModel.razryadpoznach">
+        <MappingFragment StoreEntitySet="razryadpoznach">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="razryadznaches">
+      <EntityTypeMapping TypeName="trainingsModel.razryadznach">
+        <MappingFragment StoreEntitySet="razryadznach">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rods">
+      <EntityTypeMapping TypeName="trainingsModel.rod">
+        <MappingFragment StoreEntitySet="rod">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sklonens">
+      <EntityTypeMapping TypeName="trainingsModel.sklonen">
+        <MappingFragment StoreEntitySet="sklonen">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sochinits">
+      <EntityTypeMapping TypeName="trainingsModel.sochinit">
+        <MappingFragment StoreEntitySet="sochinit">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spryazhs">
+      <EntityTypeMapping TypeName="trainingsModel.spryazh">
+        <MappingFragment StoreEntitySet="spryazh">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stepsravs">
+      <EntityTypeMapping TypeName="trainingsModel.stepsrav">
+        <MappingFragment StoreEntitySet="stepsrav">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="syll_mirror">
+      <EntityTypeMapping TypeName="trainingsModel.syll_mirror">
+        <MappingFragment StoreEntitySet="syll_mirror">
+          <ScalarProperty Name="isComment" ColumnName="isComment" />
+          <ScalarProperty Name="isMorphemes" ColumnName="isMorphemes" />
+          <ScalarProperty Name="id_lexic" ColumnName="id_lexic" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="id_answer4" ColumnName="id_answer4" />
+          <ScalarProperty Name="id_answer3" ColumnName="id_answer3" />
+          <ScalarProperty Name="id_answer2" ColumnName="id_answer2" />
+          <ScalarProperty Name="id_answer1" ColumnName="id_answer1" />
+          <ScalarProperty Name="id_word" ColumnName="id_word" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="trainingsModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="themes">
+      <EntityTypeMapping TypeName="trainingsModel.theme">
+        <MappingFragment StoreEntitySet="theme">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="trainings">
+      <EntityTypeMapping TypeName="trainingsModel.training">
+        <MappingFragment StoreEntitySet="trainings">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="upotrebls">
+      <EntityTypeMapping TypeName="trainingsModel.upotrebl">
+        <MappingFragment StoreEntitySet="upotrebls">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vids">
+      <EntityTypeMapping TypeName="trainingsModel.vid">
+        <MappingFragment StoreEntitySet="vid">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vozvrats">
+      <EntityTypeMapping TypeName="trainingsModel.vozvrat">
+        <MappingFragment StoreEntitySet="vozvrat">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vremyas">
+      <EntityTypeMapping TypeName="trainingsModel.vremya">
+        <MappingFragment StoreEntitySet="vremya">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="words">
+      <EntityTypeMapping TypeName="trainingsModel.word">
+        <MappingFragment StoreEntitySet="words">
+          <ScalarProperty Name="morphems" ColumnName="morphems" />
+          <ScalarProperty Name="context" ColumnName="context" />
+          <ScalarProperty Name="num_accent" ColumnName="num_accent" />
+          <ScalarProperty Name="id_morphology" ColumnName="id_morphology" />
+          <ScalarProperty Name="phonetic" ColumnName="phonetic" />
+          <ScalarProperty Name="id_morphems" ColumnName="id_morphems" />
+          <ScalarProperty Name="primary_form" ColumnName="primary_form" />
+          <ScalarProperty Name="word1" ColumnName="word" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="znacobrazs">
+      <EntityTypeMapping TypeName="trainingsModel.znacobraz">
+        <MappingFragment StoreEntitySet="znacobraz">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lexic_view">
+      <EntityTypeMapping TypeName="trainingsModel.lexic_view">
+        <MappingFragment StoreEntitySet="lexic_view">
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+          <ScalarProperty Name="name14" ColumnName="name14" />
+          <ScalarProperty Name="lexic_1_4" ColumnName="lexic_1_4" />
+          <ScalarProperty Name="name24" ColumnName="name24" />
+          <ScalarProperty Name="lexic_2_4" ColumnName="lexic_2_4" />
+          <ScalarProperty Name="name34" ColumnName="name34" />
+          <ScalarProperty Name="lexic_3_4" ColumnName="lexic_3_4" />
+          <ScalarProperty Name="name13" ColumnName="name13" />
+          <ScalarProperty Name="lexic_1_3" ColumnName="lexic_1_3" />
+          <ScalarProperty Name="name23" ColumnName="name23" />
+          <ScalarProperty Name="lexic_2_3" ColumnName="lexic_2_3" />
+          <ScalarProperty Name="name12" ColumnName="name12" />
+          <ScalarProperty Name="lexic_1_2" ColumnName="lexic_1_2" />
+          <ScalarProperty Name="id_lexicAll" ColumnName="id_lexicAll" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lexicIds_view">
+      <EntityTypeMapping TypeName="trainingsModel.lexicIds_view">
+        <MappingFragment StoreEntitySet="lexicIds_view">
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+          <ScalarProperty Name="id_lexic" ColumnName="id_lexic" />
+          <ScalarProperty Name="lexic_1_4" ColumnName="lexic_1_4" />
+          <ScalarProperty Name="lexic_2_4" ColumnName="lexic_2_4" />
+          <ScalarProperty Name="lexic_3_4" ColumnName="lexic_3_4" />
+          <ScalarProperty Name="lexic_1_3" ColumnName="lexic_1_3" />
+          <ScalarProperty Name="lexic_2_3" ColumnName="lexic_2_3" />
+          <ScalarProperty Name="lexic_1_2" ColumnName="lexic_1_2" />
+          <ScalarProperty Name="id_lexicAll" ColumnName="id_lexicAll" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="morphology_view">
+      <EntityTypeMapping TypeName="trainingsModel.morphology_view">
+        <MappingFragment StoreEntitySet="morphology_view">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="morphems" ColumnName="morphems" />
+          <ScalarProperty Name="podrazryad" ColumnName="podrazryad" />
+          <ScalarProperty Name="razryadpoznach" ColumnName="razryadpoznach" />
+          <ScalarProperty Name="upotrebls" ColumnName="upotrebls" />
+          <ScalarProperty Name="context" ColumnName="context" />
+          <ScalarProperty Name="sochinit" ColumnName="sochinit" />
+          <ScalarProperty Name="proizvodnost" ColumnName="proizvodnost" />
+          <ScalarProperty Name="znacobraz" ColumnName="znacobraz" />
+          <ScalarProperty Name="neizmen" ColumnName="neizmen" />
+          <ScalarProperty Name="deistvit" ColumnName="deistvit" />
+          <ScalarProperty Name="vremya" ColumnName="vremya" />
+          <ScalarProperty Name="naklon" ColumnName="naklon" />
+          <ScalarProperty Name="perehod" ColumnName="perehod" />
+          <ScalarProperty Name="vozvrat" ColumnName="vozvrat" />
+          <ScalarProperty Name="spryazh" ColumnName="spryazh" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="lico" ColumnName="lico" />
+          <ScalarProperty Name="razryadznach" ColumnName="razryadznach" />
+          <ScalarProperty Name="drob" ColumnName="drob" />
+          <ScalarProperty Name="kolich" ColumnName="kolich" />
+          <ScalarProperty Name="prost" ColumnName="prost" />
+          <ScalarProperty Name="stepsrav" ColumnName="stepsrav" />
+          <ScalarProperty Name="forma" ColumnName="forma" />
+          <ScalarProperty Name="razryad" ColumnName="razryad" />
+          <ScalarProperty Name="padezh" ColumnName="padezh" />
+          <ScalarProperty Name="chislo" ColumnName="chislo" />
+          <ScalarProperty Name="sklonen" ColumnName="sklonen" />
+          <ScalarProperty Name="rod" ColumnName="rod" />
+          <ScalarProperty Name="naricat" ColumnName="naricat" />
+          <ScalarProperty Name="odush" ColumnName="odush" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="num_accent" ColumnName="num_accent" />
+          <ScalarProperty Name="id_morphology" ColumnName="id_morphology" />
+          <ScalarProperty Name="phonetic" ColumnName="phonetic" />
+          <ScalarProperty Name="id_morphems" ColumnName="id_morphems" />
+          <ScalarProperty Name="primary_form" ColumnName="primary_form" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nextViews">
+      <EntityTypeMapping TypeName="trainingsModel.nextView">
+        <MappingFragment StoreEntitySet="nextView">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="isComment" ColumnName="isComment" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="isMorphemes" ColumnName="isMorphemes" />
+          <ScalarProperty Name="id_answer4" ColumnName="id_answer4" />
+          <ScalarProperty Name="id_answer3" ColumnName="id_answer3" />
+          <ScalarProperty Name="id_answer2" ColumnName="id_answer2" />
+          <ScalarProperty Name="id_answer1" ColumnName="id_answer1" />
+          <ScalarProperty Name="id_word" ColumnName="id_word" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nextView1">
+      <EntityTypeMapping TypeName="trainingsModel.nextView1">
+        <MappingFragment StoreEntitySet="nextView1">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="id_answer4" ColumnName="id_answer4" />
+          <ScalarProperty Name="id_answer3" ColumnName="id_answer3" />
+          <ScalarProperty Name="id_answer2" ColumnName="id_answer2" />
+          <ScalarProperty Name="id_answer1" ColumnName="id_answer1" />
+          <ScalarProperty Name="id_word" ColumnName="id_word" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="part1">
+      <EntityTypeMapping TypeName="trainingsModel.part1">
+        <MappingFragment StoreEntitySet="part1">
+          <ScalarProperty Name="podrazryad" ColumnName="podrazryad" />
+          <ScalarProperty Name="razryadpoznach" ColumnName="razryadpoznach" />
+          <ScalarProperty Name="upotrebls" ColumnName="upotrebls" />
+          <ScalarProperty Name="sochinit" ColumnName="sochinit" />
+          <ScalarProperty Name="proizvodnost" ColumnName="proizvodnost" />
+          <ScalarProperty Name="znacobraz" ColumnName="znacobraz" />
+          <ScalarProperty Name="neizmen" ColumnName="neizmen" />
+          <ScalarProperty Name="deistvit" ColumnName="deistvit" />
+          <ScalarProperty Name="vremya" ColumnName="vremya" />
+          <ScalarProperty Name="naklon" ColumnName="naklon" />
+          <ScalarProperty Name="perehod" ColumnName="perehod" />
+          <ScalarProperty Name="vozvrat" ColumnName="vozvrat" />
+          <ScalarProperty Name="spryazh" ColumnName="spryazh" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="lico" ColumnName="lico" />
+          <ScalarProperty Name="razryadznach" ColumnName="razryadznach" />
+          <ScalarProperty Name="drob" ColumnName="drob" />
+          <ScalarProperty Name="kolich" ColumnName="kolich" />
+          <ScalarProperty Name="prost" ColumnName="prost" />
+          <ScalarProperty Name="stepsrav" ColumnName="stepsrav" />
+          <ScalarProperty Name="forma" ColumnName="forma" />
+          <ScalarProperty Name="razryad" ColumnName="razryad" />
+          <ScalarProperty Name="padezh" ColumnName="padezh" />
+          <ScalarProperty Name="chislo" ColumnName="chislo" />
+          <ScalarProperty Name="sklonen" ColumnName="sklonen" />
+          <ScalarProperty Name="rod" ColumnName="rod" />
+          <ScalarProperty Name="naricat" ColumnName="naricat" />
+          <ScalarProperty Name="odush" ColumnName="odush" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="progressUsers">
+      <EntityTypeMapping TypeName="trainingsModel.progressUser">
+        <MappingFragment StoreEntitySet="progressUser">
+          <ScalarProperty Name="mark_add" ColumnName="mark_add" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="trainingsModel.Teacher">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeachUs">
+      <EntityTypeMapping TypeName="trainingsModel.TeachU">
+        <MappingFragment StoreEntitySet="TeachUs">
+          <ScalarProperty Name="id_user2" ColumnName="id_user2" />
+          <ScalarProperty Name="id_user1" ColumnName="id_user1" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thems">
+      <EntityTypeMapping TypeName="trainingsModel.Them">
+        <MappingFragment StoreEntitySet="Thems">
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wordsLists">
+      <EntityTypeMapping TypeName="trainingsModel.wordsList">
+        <MappingFragment StoreEntitySet="wordsList">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="answer4_name" ColumnName="answer4_name" />
+          <ScalarProperty Name="answer3_name" ColumnName="answer3_name" />
+          <ScalarProperty Name="answer2_name" ColumnName="answer2_name" />
+          <ScalarProperty Name="answer1_name" ColumnName="answer1_name" />
+          <ScalarProperty Name="word_name" ColumnName="word_name" />
+          <ScalarProperty Name="answer4_id_morphology" ColumnName="answer4_id_morphology" />
+          <ScalarProperty Name="answer3_id_morphology" ColumnName="answer3_id_morphology" />
+          <ScalarProperty Name="answer2_id_morphology" ColumnName="answer2_id_morphology" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="answer4_word" ColumnName="answer4_word" />
+          <ScalarProperty Name="answer3_word" ColumnName="answer3_word" />
+          <ScalarProperty Name="answer2_word" ColumnName="answer2_word" />
+          <ScalarProperty Name="answer1_word" ColumnName="answer1_word" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wordsListAlls">
+      <EntityTypeMapping TypeName="trainingsModel.wordsListAll">
+        <MappingFragment StoreEntitySet="wordsListAll">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="answer4_name" ColumnName="answer4_name" />
+          <ScalarProperty Name="answer3_name" ColumnName="answer3_name" />
+          <ScalarProperty Name="answer2_name" ColumnName="answer2_name" />
+          <ScalarProperty Name="answer1_name" ColumnName="answer1_name" />
+          <ScalarProperty Name="word_name" ColumnName="word_name" />
+          <ScalarProperty Name="answer4_id_morphology" ColumnName="answer4_id_morphology" />
+          <ScalarProperty Name="answer3_id_morphology" ColumnName="answer3_id_morphology" />
+          <ScalarProperty Name="answer2_id_morphology" ColumnName="answer2_id_morphology" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="answer4_word" ColumnName="answer4_word" />
+          <ScalarProperty Name="answer3_word" ColumnName="answer3_word" />
+          <ScalarProperty Name="answer2_word" ColumnName="answer2_word" />
+          <ScalarProperty Name="answer1_word" ColumnName="answer1_word" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wordsMorphologyIds">
+      <EntityTypeMapping TypeName="trainingsModel.wordsMorphologyId">
+        <MappingFragment StoreEntitySet="wordsMorphologyIds">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="answer4_id_morphology" ColumnName="answer4_id_morphology" />
+          <ScalarProperty Name="answer3_id_morphology" ColumnName="answer3_id_morphology" />
+          <ScalarProperty Name="answer2_id_morphology" ColumnName="answer2_id_morphology" />
+          <ScalarProperty Name="answer1_id_morphology" ColumnName="answer1_id_morphology" />
+          <ScalarProperty Name="id_morphology" ColumnName="id_morphology" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="answer4_word" ColumnName="answer4_word" />
+          <ScalarProperty Name="answer3_word" ColumnName="answer3_word" />
+          <ScalarProperty Name="answer2_word" ColumnName="answer2_word" />
+          <ScalarProperty Name="answer1_word" ColumnName="answer1_word" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wordsNames">
+      <EntityTypeMapping TypeName="trainingsModel.wordsName">
+        <MappingFragment StoreEntitySet="wordsNames">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="answer4_word" ColumnName="answer4_word" />
+          <ScalarProperty Name="answer3_word" ColumnName="answer3_word" />
+          <ScalarProperty Name="answer2_word" ColumnName="answer2_word" />
+          <ScalarProperty Name="answer1_word" ColumnName="answer1_word" />
+          <ScalarProperty Name="word_word" ColumnName="word_word" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wordsPartsIds">
+      <EntityTypeMapping TypeName="trainingsModel.wordsPartsId">
+        <MappingFragment StoreEntitySet="wordsPartsIds">
+          <ScalarProperty Name="id_training" ColumnName="id_training" />
+          <ScalarProperty Name="answer4_id_part" ColumnName="answer4_id_part" />
+          <ScalarProperty Name="answer3_id_part" ColumnName="answer3_id_part" />
+          <ScalarProperty Name="answer2_id_part" ColumnName="answer2_id_part" />
+          <ScalarProperty Name="answer1_id_part" ColumnName="answer1_id_part" />
+          <ScalarProperty Name="word_id_part" ColumnName="word_id_part" />
+          <ScalarProperty Name="answer4_id_morphology" ColumnName="answer4_id_morphology" />
+          <ScalarProperty Name="answer3_id_morphology" ColumnName="answer3_id_morphology" />
+          <ScalarProperty Name="answer2_id_morphology" ColumnName="answer2_id_morphology" />
+          <ScalarProperty Name="answer1_id_morphology" ColumnName="answer1_id_morphology" />
+          <ScalarProperty Name="id_morphology" ColumnName="id_morphology" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="answer4_word" ColumnName="answer4_word" />
+          <ScalarProperty Name="answer3_word" ColumnName="answer3_word" />
+          <ScalarProperty Name="answer2_word" ColumnName="answer2_word" />
+          <ScalarProperty Name="answer1_word" ColumnName="answer1_word" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id_exercise" ColumnName="id_exercise" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wordsViews">
+      <EntityTypeMapping TypeName="trainingsModel.wordsView">
+        <MappingFragment StoreEntitySet="wordsView">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id_morphology" ColumnName="id_morphology" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="Expr1" ColumnName="Expr1" />
+          <ScalarProperty Name="id_part" ColumnName="id_part" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="trainingsModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUser">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRole">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="teach_user" TypeName="trainingsModel.teach_user" StoreEntitySet="teach_user">
+      <EndProperty Name="AspNetUser1">
+        <ScalarProperty Name="Id" ColumnName="id_user2" />
+      </EndProperty>
+      <EndProperty Name="AspNetUser">
+        <ScalarProperty Name="Id" ColumnName="id_user1" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

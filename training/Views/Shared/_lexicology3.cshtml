@@ -1,0 +1,59 @@
+﻿<h1 id="otcomment" style="text-align:center;margin-top:-1%">Откомментируй</h1>
+<div style="margin-left:22%">
+    <div style="margin-left:20%" class="radio">
+        @foreach (var item in ViewData["lexic"] as List<DatabaseFirst.lexic>)
+        {
+            <input type="radio" name="lexika" class="lexic3_12 L L3">@item.name<Br>
+        }
+    </div>
+    <div style="margin-left:45%; margin-top:-11.7%" class="radio">
+        @foreach (var item in ViewData["lexic"] as List<DatabaseFirst.lexic>)
+        {
+            <input type="radio" name="lexika2" class="lexic3_23 L L3">@item.name<Br>
+        }
+    </div>
+    <div style="width:auto; margin-left:10%;margin-top:-5%">
+        <div class="forLexic" id="answerL0" style="display:inline; width:10%;height:10%;font-size:18px; text-align:center; ">
+        </div>
+        <canvas width="110" height="80" style="display:inline-block;" id="canvas0"></canvas>
+        <div class="forLexic" id="answer2L0" style="display:inline; width:10%;height:10%; text-align:center;font-size:18px"></div>
+        <canvas width="110" height="80" style="display:inline-block;" id="canvas20"></canvas>
+        <div class="forLexic" id="answer3L0" style="display:inline; width:10%;height:10%; text-align:center;font-size:18px"></div>
+        <div style="vertical-align:bottom;top:0;width:auto;">
+            <div class="forLexicText" style="vertical-align:bottom;top:0;width:10%;display:inline"></div>
+            <div class="forLexicText" style="vertical-align:bottom;top:0;width:10%; display:inline"></div>
+            <div class="forLexicText" style="vertical-align:bottom;top:0;width:10%; display:inline"></div>
+        </div>
+        <canvas width="450" height="80" style="display:inline-block;margin-top:-5%" id="canvas30"></canvas>
+    </div>
+    <div style="margin-left:33%;" class="radio">
+        @foreach (var item in ViewData["lexic"] as List<DatabaseFirst.lexic>)
+        {
+            <input type="radio" name="lexika3" class="lexic3_13 L L3">@item.name<Br>
+        }
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var firstWidth;
+        var cnvs = document.getElementById("canvas0");
+        var ctxt = cnvs.getContext("2d");
+        ctxt.strokeStyle = "darkgrey";
+        ctxt.lineWidth = 3;
+        ctxt.arc(55, 130, 75, 1.25 * Math.PI, 1.75 * Math.PI, false);
+        ctxt.stroke();
+        var cnvs = document.getElementById("canvas20");
+        var ctxt = cnvs.getContext("2d");
+        ctxt.strokeStyle = "darkgrey";
+        ctxt.lineWidth = 3;
+        ctxt.arc(55, 130, 75, 1.25 * Math.PI, 1.75 * Math.PI, false);
+        ctxt.stroke();
+        firstWidth = document.getElementById("answer2L0").offsetWidth;
+        var cnvs = document.getElementById("canvas30");
+        var ctxt = cnvs.getContext("2d");
+        ctxt.strokeStyle = "darkgrey";
+        ctxt.lineWidth = 3;
+        ctxt.arc(195 + firstWidth / 10, -261, 340, 0.35 * Math.PI, 0.65 * Math.PI, false);
+        ctxt.stroke();
+    });
+</script>

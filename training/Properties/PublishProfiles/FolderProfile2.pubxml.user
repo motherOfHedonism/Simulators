@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Nastya\Desktop\New</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/DatabaseFirst.dll">
+      <publishTime>12/10/2018 20:41:10</publishTime>
+    </File>
+    <File Include="bin/DatabaseFirst.dll.config">
+      <publishTime>09/16/2018 21:39:59</publishTime>
+    </File>
+    <File Include="bin/DatabaseFirst.pdb">
+      <publishTime>12/10/2018 20:41:10</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/EntityFramework.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/EntityFramework.SqlServer.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.AspNet.Identity.Core.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.AspNet.Identity.EntityFramework.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.AspNet.Identity.Owin.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Host.SystemWeb.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.Facebook.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.Google.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.MicrosoftAccount.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Owin.Security.Twitter.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Helpers.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Mvc.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Optimization.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Razor.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.resources.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="bin/training.dll">
+      <publishTime>12/10/2018 20:41:11</publishTime>
+    </File>
+    <File Include="bin/training.pdb">
+      <publishTime>12/10/2018 20:41:11</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/.gitignore">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/balloon.css">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/balloon.min.css">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/LICENSE">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/logo.png">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/package.json">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/readme.md">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/sample.gif">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/src/balloon.less">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/balloon.css-master/src/balloon.scss">
+      <publishTime>10/16/2017 19:14:35</publishTime>
+    </File>
+    <File Include="Content/BookReaderDemo.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/font-awesome.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_444444_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_555555_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_777620_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_777777_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_cc0000_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/images/ui-icons_ffffff_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.structure.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.structure.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.theme.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/jquery-ui.theme.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/m.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>10/21/2018 21:14:08</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/1.jpg">
+      <publishTime>09/18/2018 20:45:07</publishTime>
+    </File>
+    <File Include="img/chehov.jpg">
+      <publishTime>09/18/2018 21:53:40</publishTime>
+    </File>
+    <File Include="img/group-2.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/igor-borisovich.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/invalid-name.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/iskusstvo.jpg">
+      <publishTime>09/18/2018 21:54:05</publishTime>
+    </File>
+    <File Include="img/lomonosov.jpg">
+      <publishTime>09/18/2018 21:54:50</publishTime>
+    </File>
+    <File Include="img/Novy_Bereg_Magazine.jpg">
+      <publishTime>10/16/2018 19:31:11</publishTime>
+    </File>
+    <File Include="img/olimpiada.jpg">
+      <publishTime>09/18/2018 21:55:49</publishTime>
+    </File>
+    <File Include="img/PlavMost.jpg">
+      <publishTime>10/14/2018 16:00:02</publishTime>
+    </File>
+    <File Include="img/proza.jpg">
+      <publishTime>09/18/2018 21:56:13</publishTime>
+    </File>
+    <File Include="img/soavtor.jpg">
+      <publishTime>09/18/2018 21:56:20</publishTime>
+    </File>
+    <File Include="img/table.jpg">
+      <publishTime>09/18/2018 21:57:25</publishTime>
+    </File>
+    <File Include="img/traning.jpg">
+      <publishTime>09/18/2018 21:57:30</publishTime>
+    </File>
+    <File Include="img/tutchev.jpg">
+      <publishTime>09/18/2018 21:57:37</publishTime>
+    </File>
+    <File Include="img/tutchev2.jpg">
+      <publishTime>09/18/2018 21:57:41</publishTime>
+    </File>
+    <File Include="img/znak.jpg">
+      <publishTime>09/18/2018 21:57:46</publishTime>
+    </File>
+    <File Include="img/ВосковоеКрыло.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/ЗнакПереноса.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/НочнойПеррон.jpeg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/СмотроваяПлощадка.jpeg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/Тютчев.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/УчебноеПособие.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="img/ЧасСнегопада.jpg">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/AUTHORS.txt">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/external/jquery/jquery.js">
+      <publishTime>11/10/2018 15:34:54</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/index.html">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.structure.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.theme.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/LICENSE.txt">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="jquery-ui-1_12_1/jquery-ui-1.12.1/package.json">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Lirika/~%24ак переноса.doc">
+      <publishTime>02/13/2018 12:30:26</publishTime>
+    </File>
+    <File Include="Lirika/~%24сковое крыло %28избранное%29.doc">
+      <publishTime>02/13/2018 12:30:26</publishTime>
+    </File>
+    <File Include="Lirika/~%24стая книга.doc">
+      <publishTime>02/13/2018 12:30:26</publishTime>
+    </File>
+    <File Include="Lirika/~WRL0003.tmp">
+      <publishTime>02/13/2018 12:30:26</publishTime>
+    </File>
+    <File Include="Lirika/~WRL0004.tmp">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/~WRL0142.tmp">
+      <publishTime>02/13/2018 12:30:26</publishTime>
+    </File>
+    <File Include="Lirika/~WRL2867.tmp">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/~WRL3696.tmp">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Восковое крыло %28избранное%29.doc">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Восковое крыло.doc">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Знак переноса.doc">
+      <publishTime>02/13/2018 12:30:26</publishTime>
+    </File>
+    <File Include="Lirika/Ночной перрон %28избранное%29.doc">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Ночной перрон.doc">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Поэмы/В плюсквамперфекте.doc">
+      <publishTime>02/13/2018 12:30:42</publishTime>
+    </File>
+    <File Include="Lirika/Поэмы/КОМАНДИРОВКА.doc">
+      <publishTime>02/13/2018 12:30:42</publishTime>
+    </File>
+    <File Include="Lirika/Поэмы/На родине отца....doc">
+      <publishTime>02/13/2018 12:30:42</publishTime>
+    </File>
+    <File Include="Lirika/Смотровая площадка.doc">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Час снегопада %28избранное%29.doc">
+      <publishTime>02/13/2018 12:30:28</publishTime>
+    </File>
+    <File Include="Lirika/Час снегопада.doc">
+      <publishTime>02/13/2018 12:30:30</publishTime>
+    </File>
+    <File Include="Lirika/Шестая книга.doc">
+      <publishTime>02/13/2018 12:30:30</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="pdf/1_О_тютчевской_циклизации.PDF">
+      <publishTime>09/26/2018 01:08:15</publishTime>
+    </File>
+    <File Include="pdf/2_СВЯТАЯ_НОЧЬ_НА_НЕБОСКЛОН_ВЗОШЛА.PDF">
+      <publishTime>09/26/2018 00:14:15</publishTime>
+    </File>
+    <File Include="pdf/3_ЗДЕСЬ_ЧЕЛОВЕК_ЛИШЬ_СНИТСЯ_САМ_СЕБЕ.PDF">
+      <publishTime>09/26/2018 01:07:33</publishTime>
+    </File>
+    <File Include="pdf/4_ВСЯ_В_НАСТОЯЩЕМ_РАЗЛИТА.PDF">
+      <publishTime>09/26/2018 00:14:33</publishTime>
+    </File>
+    <File Include="pdf/5_ПРИМЕЧАНИЯ_К_ПЕРВОЙ_ГЛАВЕ.PDF">
+      <publishTime>09/26/2018 00:14:49</publishTime>
+    </File>
+    <File Include="pdf/автореферат.PDF">
+      <publishTime>09/26/2018 00:11:43</publishTime>
+    </File>
+    <File Include="pdf/Ася.PDF">
+      <publishTime>09/26/2018 00:12:05</publishTime>
+    </File>
+    <File Include="pdf/Безумие.PDF">
+      <publishTime>09/26/2018 00:11:59</publishTime>
+    </File>
+    <File Include="pdf/В_плюсквамперфекте.PDF">
+      <publishTime>09/26/2018 00:08:35</publishTime>
+    </File>
+    <File Include="pdf/Введение__монограию_%28без_литературы%29.PDF">
+      <publishTime>09/26/2018 00:12:40</publishTime>
+    </File>
+    <File Include="pdf/Восковое_крыло_%28избранное%29.PDF">
+      <publishTime>09/25/2018 22:58:33</publishTime>
+    </File>
+    <File Include="pdf/Диссертация_из_12пт.PDF">
+      <publishTime>09/26/2018 00:12:54</publishTime>
+    </File>
+    <File Include="pdf/Знак_переноса.PDF">
+      <publishTime>09/26/2018 00:09:19</publishTime>
+    </File>
+    <File Include="pdf/КОМАНДИРОВКА.PDF">
+      <publishTime>09/26/2018 00:08:44</publishTime>
+    </File>
+    <File Include="pdf/ЛирикаТютчева_и_вопросы_интертекста.PDF">
+      <publishTime>09/26/2018 00:14:01</publishTime>
+    </File>
+    <File Include="pdf/Материалы_Говорящие_знаки %281%29.PDF">
+      <publishTime>09/26/2018 00:14:07</publishTime>
+    </File>
+    <File Include="pdf/Материалы_Говорящие_знаки.PDF">
+      <publishTime>09/26/2018 00:10:33</publishTime>
+    </File>
+    <File Include="pdf/Материалы_Стань_соавтором.PDF">
+      <publishTime>09/26/2018 00:10:22</publishTime>
+    </File>
+    <File Include="pdf/Методика_русский.PDF">
+      <publishTime>09/26/2018 00:10:11</publishTime>
+    </File>
+    <File Include="pdf/На_родине_отца....PDF">
+      <publishTime>09/26/2018 00:08:53</publishTime>
+    </File>
+    <File Include="pdf/Ночной_перрон_%28избранное%29.PDF">
+      <publishTime>09/26/2018 00:09:30</publishTime>
+    </File>
+    <File Include="pdf/Оглянувшийся Орфей.pdf">
+      <publishTime>11/17/2018 23:37:46</publishTime>
+    </File>
+    <File Include="pdf/олимп10-11.PDF">
+      <publishTime>09/26/2018 00:09:43</publishTime>
+    </File>
+    <File Include="pdf/Послесловие Потупова-converted.pdf">
+      <publishTime>10/23/2018 10:16:19</publishTime>
+    </File>
+    <File Include="pdf/Предисловие_Льва_Озерова.PDF">
+      <publishTime>09/26/2018 00:13:07</publishTime>
+    </File>
+    <File Include="pdf/Программа__Искусство_слова.PDF">
+      <publishTime>09/26/2018 00:11:09</publishTime>
+    </File>
+    <File Include="pdf/Программа_занятий_с_олимпиадниками.PDF">
+      <publishTime>09/26/2018 00:10:59</publishTime>
+    </File>
+    <File Include="pdf/Программа_спецкурса_по_Тютчеву.PDF">
+      <publishTime>09/26/2018 00:11:22</publishTime>
+    </File>
+    <File Include="pdf/СВЕТ_ПОЛЯРНОЙ.PDF">
+      <publishTime>09/26/2018 00:13:36</publishTime>
+    </File>
+    <File Include="pdf/Смотровая_площадка.PDF">
+      <publishTime>09/26/2018 00:30:51</publishTime>
+    </File>
+    <File Include="pdf/ТАЙНОЙ ДОБРОТЫ СОГЛЯДАТАЙ-converted.pdf">
+      <publishTime>10/23/2018 10:18:38</publishTime>
+    </File>
+    <File Include="pdf/Час_снегопада_%28избранное%29.PDF">
+      <publishTime>09/26/2018 00:28:50</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/dialog.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.3.ui.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Scripts/syllMirror.js">
+      <publishTime>12/02/2018 16:08:48</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/Материалы Говорящие знаки.doc">
+      <publishTime>02/13/2018 12:30:42</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/Материалы Стань соавтором.doc">
+      <publishTime>02/13/2018 12:30:42</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/План -консп 1.doc">
+      <publishTime>02/13/2018 12:30:54</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/Программа  Искусство слова.doc">
+      <publishTime>02/13/2018 12:30:54</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/Программа занятий с олимпиадниками.doc">
+      <publishTime>02/13/2018 12:30:42</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/Программа спецкурса по Тютчеву.doc">
+      <publishTime>02/13/2018 12:30:44</publishTime>
+    </File>
+    <File Include="teacher_texts/courses/программа якутия.doc">
+      <publishTime>02/13/2018 12:30:46</publishTime>
+    </File>
+    <File Include="teacher_texts/Методика русский.doc">
+      <publishTime>02/13/2018 12:30:30</publishTime>
+    </File>
+    <File Include="teacher_texts/моспроект.doc">
+      <publishTime>02/13/2018 12:30:30</publishTime>
+    </File>
+    <File Include="teacher_texts/олимп10-11.doc">
+      <publishTime>02/13/2018 12:30:30</publishTime>
+    </File>
+    <File Include="teacher_texts/Языковые таблицы.doc">
+      <publishTime>02/13/2018 12:30:30</publishTime>
+    </File>
+    <File Include="Texts/автореферат.doc">
+      <publishTime>09/25/2018 20:46:40</publishTime>
+    </File>
+    <File Include="Texts/Ася.doc">
+      <publishTime>09/25/2018 20:47:02</publishTime>
+    </File>
+    <File Include="Texts/Безумие.DOC">
+      <publishTime>09/25/2018 20:47:04</publishTime>
+    </File>
+    <File Include="Texts/Введение__монограию %28без литературы%29.doc">
+      <publishTime>09/25/2018 20:47:08</publishTime>
+    </File>
+    <File Include="Texts/ВизитныеКарточки.doc">
+      <publishTime>09/18/2018 18:35:52</publishTime>
+    </File>
+    <File Include="Texts/Диссертация_из_12пт.doc">
+      <publishTime>09/25/2018 20:46:51</publishTime>
+    </File>
+    <File Include="Texts/Заметки.doc">
+      <publishTime>09/25/2018 20:44:17</publishTime>
+    </File>
+    <File Include="Texts/ЛирикаТютчева_и_вопросы_интертекста.doc">
+      <publishTime>09/25/2018 22:26:54</publishTime>
+    </File>
+    <File Include="Texts/Материалы Говорящие знаки.doc">
+      <publishTime>09/25/2018 19:30:30</publishTime>
+    </File>
+    <File Include="Texts/Предисловие Льва Озерова.doc">
+      <publishTime>09/25/2018 20:44:19</publishTime>
+    </File>
+    <File Include="Texts/СВЕТ ПОЛЯРНОЙ.doc">
+      <publishTime>09/25/2018 20:44:23</publishTime>
+    </File>
+    <File Include="Tutchev/1 О тютчевской циклизации.doc">
+      <publishTime>02/13/2018 12:30:50</publishTime>
+    </File>
+    <File Include="Tutchev/2 СВЯТАЯ НОЧЬ НА НЕБОСКЛОН ВЗОШЛА.doc">
+      <publishTime>02/13/2018 12:30:50</publishTime>
+    </File>
+    <File Include="Tutchev/3 ЗДЕСЬ ЧЕЛОВЕК ЛИШЬ СНИТСЯ САМ СЕБЕ.doc">
+      <publishTime>02/13/2018 12:30:50</publishTime>
+    </File>
+    <File Include="Tutchev/4 ВСЯ В НАСТОЯЩЕМ РАЗЛИТА.doc">
+      <publishTime>02/13/2018 12:30:50</publishTime>
+    </File>
+    <File Include="Tutchev/5 ПРИМЕЧАНИЯ К ПЕРВОЙ ГЛАВЕ.doc">
+      <publishTime>02/13/2018 12:30:50</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Admin/TeachUser.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Exercise/ExerciseOne.cshtml">
+      <publishTime>12/02/2018 00:43:12</publishTime>
+    </File>
+    <File Include="Views/Exercise/ExerciseTwo.cshtml">
+      <publishTime>11/17/2018 23:36:24</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>10/20/2018 15:36:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Shared/_styllMirrorMorphology.cshtml">
+      <publishTime>12/02/2018 15:41:03</publishTime>
+    </File>
+    <File Include="Views/Site/Bn.cshtml">
+      <publishTime>11/17/2018 23:32:46</publishTime>
+    </File>
+    <File Include="Views/Site/Books.cshtml">
+      <publishTime>10/18/2018 23:26:16</publishTime>
+    </File>
+    <File Include="Views/Site/Fit.cshtml">
+      <publishTime>11/17/2018 23:41:29</publishTime>
+    </File>
+    <File Include="Views/Site/Index.cshtml">
+      <publishTime>11/17/2018 23:19:59</publishTime>
+    </File>
+    <File Include="Views/Site/Poems.cshtml">
+      <publishTime>11/18/2018 00:21:37</publishTime>
+    </File>
+    <File Include="Views/Site/Teach.cshtml">
+      <publishTime>11/17/2018 23:31:18</publishTime>
+    </File>
+    <File Include="Views/Site/Teach_copy.cshtml">
+      <publishTime>09/21/2018 22:19:00</publishTime>
+    </File>
+    <File Include="Views/Table/Student.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Table/Teacher.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Training/Index.cshtml">
+      <publishTime>11/17/2018 23:29:44</publishTime>
+    </File>
+    <File Include="Views/Training/testdialog.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/Training/ViewTraining.cshtml">
+      <publishTime>10/28/2018 15:58:00</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/19/2018 13:43:17</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/10/2018 20:41:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
